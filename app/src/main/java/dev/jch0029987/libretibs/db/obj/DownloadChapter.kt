@@ -1,8 +1,8 @@
-package com.github.libretube.db.obj
+package dev.jch0029987.libretibs.db.obj
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.github.libretube.api.obj.ChapterSegment
+import dev.jch0029987.libretibs.api.obj.ChapterSegment
 
 @Entity(tableName = "downloadChapters")
 data class DownloadChapter(

@@ -1,10 +1,10 @@
-package com.github.libretube.db.obj
+package dev.jch0029987.libretibs.db.obj
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.github.libretube.api.obj.StreamItem
-import com.github.libretube.extensions.toMillis
+import dev.jch0029987.libretibs.api.obj.StreamItem
+import dev.jch0029987.libretibs.extensions.toMillis
 import kotlinx.datetime.LocalDate
 import kotlinx.serialization.Serializable
 

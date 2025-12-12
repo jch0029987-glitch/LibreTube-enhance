@@ -1,11 +1,11 @@
-package com.github.libretube.db.dao
+package dev.jch0029987.libretibs.db.dao
 
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Update
-import com.github.libretube.db.obj.LocalSubscription
+import dev.jch0029987.libretibs.db.obj.LocalSubscription
 
 @Dao
 interface LocalSubscriptionDao {

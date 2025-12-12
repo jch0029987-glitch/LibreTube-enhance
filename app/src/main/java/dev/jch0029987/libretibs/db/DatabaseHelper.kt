@@ -1,13 +1,13 @@
-package com.github.libretube.db
+package dev.jch0029987.libretibs.db
 
-import com.github.libretube.api.obj.StreamItem
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.db.DatabaseHolder.Database
-import com.github.libretube.db.obj.SearchHistoryItem
-import com.github.libretube.db.obj.WatchHistoryItem
-import com.github.libretube.enums.ContentFilter
-import com.github.libretube.extensions.toID
-import com.github.libretube.helpers.PreferenceHelper
+import dev.jch0029987.libretibs.api.obj.StreamItem
+import dev.jch0029987.libretibs.constants.PreferenceKeys
+import dev.jch0029987.libretibs.db.DatabaseHolder.Database
+import dev.jch0029987.libretibs.db.obj.SearchHistoryItem
+import dev.jch0029987.libretibs.db.obj.WatchHistoryItem
+import dev.jch0029987.libretibs.enums.ContentFilter
+import dev.jch0029987.libretibs.extensions.toID
+import dev.jch0029987.libretibs.helpers.PreferenceHelper
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.withContext
