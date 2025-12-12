@@ -31,6 +31,21 @@ import dev.jch0029987.libretibs.db.obj.WatchHistoryItem
 import dev.jch0029987.libretibs.db.obj.WatchPosition
 
     @Database(
+        entities = [
+            Subscription::class,
+            WatchHistoryEntity::class,
+            SearchHistoryItem::class,
+            LocalPlaylist::class,
+            PlaylistBookmark::class,
+            Download::class,
+            DownloadItem::class,
+            DownloadPlaylist::class,
+            DownloadPlaylistVideosCrossRef::class,
+            WatchPosition::class
+        ],
+        version = 20,
+        exportSchema = false
+    )
         entities = [Subscription::class, WatchHistoryEntity::class, SearchHistoryItem::class, LocalPlaylist::class, PlaylistBookmark::class, Download::class, DownloadItem::class, DownloadPlaylist::class, DownloadPlaylistVideosCrossRef::class, WatchPosition::class],
         version = 20,
         exportSchema = true
