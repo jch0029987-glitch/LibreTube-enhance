@@ -112,3 +112,4 @@ abstract class AppDatabase : RoomDatabase() {
      */
     abstract fun feedDao(): SubscriptionsFeedDao
 }
+
