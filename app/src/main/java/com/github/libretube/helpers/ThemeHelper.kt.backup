@@ -52,11 +52,6 @@ object ThemeHelper {
             "purple" -> R.style.Theme_Purple
             "monochrome" -> R.style.Theme_Monochrome
             "violet" -> R.style.Theme_Violet
-        "orange" -> R.style.Theme_Orange
-        "teal" -> R.style.Theme_Teal
-        "indigo" -> R.style.Theme_Indigo
-        "brown" -> R.style.Theme_Brown
-        "grey" -> R.style.Theme_Grey
             else -> throw IllegalArgumentException()
         }
     }

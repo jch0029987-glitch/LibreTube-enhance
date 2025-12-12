@@ -21,11 +21,6 @@
         <item>@string/color_purple</item>
         <item>@string/theme_monochrome</item>
         <item>@string/color_violet</item>
-    <item>@string/color_orange</item>
-    <item>@string/color_teal</item>
-    <item>@string/color_indigo</item>
-    <item>@string/color_brown</item>
-    <item>@string/color_grey</item>
     </string-array>
 
     <string-array name="accentsValue">
@@ -37,11 +32,6 @@
         <item>purple</item>
         <item>monochrome</item>
         <item>violet</item>
-    <item>orange</item>
-    <item>teal</item>
-    <item>indigo</item>
-    <item>brown</item>
-    <item>grey</item>
     </string-array>
 
     <string-array name="defres">

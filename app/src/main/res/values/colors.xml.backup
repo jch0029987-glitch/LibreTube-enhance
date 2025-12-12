@@ -403,19 +403,4 @@
     <color name="violet_theme_dark_inverseSurface">#EFDBFF</color>
     <color name="violet_theme_dark_inversePrimary">#714AAA</color>
 
-    <!-- New accent colors -->
-    <color name="accent_orange">#FFFF5722</color>
-    <color name="accent_orange_dark">#FFE64A19</color>
-
-    <color name="accent_teal">#FF009688</color>
-    <color name="accent_teal_dark">#FF00796B</color>
-
-    <color name="accent_indigo">#FF3F51B5</color>
-    <color name="accent_indigo_dark">#FF303F9F</color>
-
-    <color name="accent_brown">#FF795548</color>
-    <color name="accent_brown_dark">#FF5D4037</color>
-
-    <color name="accent_grey">#FF607D8B</color>
-    <color name="accent_grey_dark">#FF455A64</color>
 </resources>

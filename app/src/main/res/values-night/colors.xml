@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="splash_screen_icon_color">#ccc</color>
+    <!-- New accent dark colors -->
+    <color name="accent_orange_dark">#FFE64A19</color>
+    <color name="accent_teal_dark">#FF00796B</color>
+    <color name="accent_indigo_dark">#FF303F9F</color>
+    <color name="accent_brown_dark">#FF5D4037</color>
+    <color name="accent_grey_dark">#FF455A64</color>
 </resources>
