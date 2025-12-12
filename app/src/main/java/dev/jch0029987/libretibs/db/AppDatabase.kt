@@ -49,16 +49,6 @@ import dev.jch0029987.libretibs.db.obj.WatchPosition
         SubscriptionsFeedItem::class
     ],
     version = 21,
-    autoMigrations = [
-        AutoMigration(from = 7, to = 8),
-        AutoMigration(from = 8, to = 9),
-        AutoMigration(from = 9, to = 10),
-        AutoMigration(from = 10, to = 11),
-        AutoMigration(from = 16, to = 17),
-        AutoMigration(from = 18, to = 19),
-        AutoMigration(from = 19, to = 20),
-        AutoMigration(from = 20, to = 21)
-    ]
 )
 @TypeConverters(Converters::class)
 abstract class AppDatabase : RoomDatabase() {
@@ -112,4 +102,5 @@ abstract class AppDatabase : RoomDatabase() {
      */
     abstract fun feedDao(): SubscriptionsFeedDao
 }
+
 
