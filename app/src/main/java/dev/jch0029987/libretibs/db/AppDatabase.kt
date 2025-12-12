@@ -1,52 +1,34 @@
 package dev.jch0029987.libretibs.db
 
-import androidx.room.AutoMigration
 import androidx.room.Database
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
-import dev.jch0029987.libretibs.db.dao.CustomInstanceDao
-import dev.jch0029987.libretibs.db.dao.DownloadDao
-import dev.jch0029987.libretibs.db.dao.LocalPlaylistsDao
-import dev.jch0029987.libretibs.db.dao.LocalSubscriptionDao
-import dev.jch0029987.libretibs.db.dao.PlaylistBookmarkDao
-import dev.jch0029987.libretibs.db.dao.SearchHistoryDao
-import dev.jch0029987.libretibs.db.dao.SubscriptionGroupsDao
-import dev.jch0029987.libretibs.db.dao.SubscriptionsFeedDao
-import dev.jch0029987.libretibs.db.dao.WatchHistoryDao
-import dev.jch0029987.libretibs.db.dao.WatchPositionDao
-import dev.jch0029987.libretibs.db.obj.CustomInstance
-import dev.jch0029987.libretibs.db.obj.Download
-import dev.jch0029987.libretibs.db.obj.DownloadChapter
-import dev.jch0029987.libretibs.db.obj.DownloadItem
-import dev.jch0029987.libretibs.db.obj.DownloadPlaylist
-import dev.jch0029987.libretibs.db.obj.DownloadPlaylistVideosCrossRef
-import dev.jch0029987.libretibs.db.obj.LocalPlaylist
-import dev.jch0029987.libretibs.db.obj.LocalPlaylistItem
-import dev.jch0029987.libretibs.db.obj.LocalSubscription
-import dev.jch0029987.libretibs.db.obj.PlaylistBookmark
-import dev.jch0029987.libretibs.db.obj.SearchHistoryItem
-import dev.jch0029987.libretibs.db.obj.SubscriptionGroup
-import dev.jch0029987.libretibs.db.obj.SubscriptionsFeedItem
-import dev.jch0029987.libretibs.db.obj.WatchHistoryItem
-import dev.jch0029987.libretibs.db.obj.WatchPosition
+import dev.jch0029987.libretibs.db.dao.*
+import dev.jch0029987.libretibs.db.obj.*
 
-    @Database(
-        entities = [
-            Subscription::class,
-            WatchHistoryEntity::class,
-            SearchHistoryItem::class,
-            LocalPlaylist::class,
-            PlaylistBookmark::class,
-            Download::class,
-            DownloadItem::class,
-            DownloadPlaylist::class,
-            DownloadPlaylistVideosCrossRef::class,
-            WatchPosition::class
-        ],
-        version = 20,
-        exportSchema = false
-    )
-        entities = [Subscription::class, WatchHistoryEntity::class, SearchHistoryItem::class, LocalPlaylist::class, PlaylistBookmark::class, Download::class, DownloadItem::class, DownloadPlaylist::class, DownloadPlaylistVideosCrossRef::class, WatchPosition::class],
-        version = 20,
-        exportSchema = true
-    )
+@Database(
+    entities = [
+        Subscription::class,
+        WatchHistoryEntity::class,
+        SearchHistoryItem::class,
+        LocalPlaylist::class,
+        PlaylistBookmark::class,
+        Download::class,
+        DownloadItem::class,
+        DownloadPlaylist::class,
+        DownloadPlaylistVideosCrossRef::class,
+        WatchPosition::class
+    ],
+    version = 20,
+    exportSchema = false
+)
+@TypeConverters(Converters::class)
+abstract class AppDatabase : RoomDatabase() {
+    abstract fun subscriptionDao(): SubscriptionDao
+    abstract fun watchHistoryDao(): WatchHistoryDao
+    abstract fun searchHistoryDao(): SearchHistoryDao
+    abstract fun localPlaylistDao(): LocalPlaylistDao
+    abstract fun playlistBookmarkDao(): PlaylistBookmarkDao
+    abstract fun downloadDao(): DownloadDao
+    abstract fun watchPositionDao(): WatchPositionDao
+}
