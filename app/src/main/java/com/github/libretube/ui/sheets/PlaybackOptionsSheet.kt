@@ -1,4 +1,4 @@
-package com.github.libretube.ui.sheets
+package dev.jch0029987.libretibs.ui.sheets
 
 import android.content.Context
 import android.os.Bundle
@@ -10,14 +10,14 @@ import androidx.core.view.isGone
 import androidx.media3.common.PlaybackParameters
 import androidx.media3.session.MediaController
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.github.libretube.R
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.databinding.PlaybackBottomSheetBinding
-import com.github.libretube.enums.PlayerCommand
-import com.github.libretube.extensions.round
-import com.github.libretube.helpers.PreferenceHelper
-import com.github.libretube.services.AbstractPlayerService
-import com.github.libretube.ui.adapters.SliderLabelsAdapter
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.constants.PreferenceKeys
+import dev.jch0029987.libretibs.databinding.PlaybackBottomSheetBinding
+import dev.jch0029987.libretibs.enums.PlayerCommand
+import dev.jch0029987.libretibs.extensions.round
+import dev.jch0029987.libretibs.helpers.PreferenceHelper
+import dev.jch0029987.libretibs.services.AbstractPlayerService
+import dev.jch0029987.libretibs.ui.adapters.SliderLabelsAdapter
 import kotlin.math.absoluteValue
 import kotlin.math.log
 import kotlin.math.pow

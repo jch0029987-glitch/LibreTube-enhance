@@ -1,4 +1,4 @@
-package com.github.libretube.api.poToken
+package dev.jch0029987.libretibs.api.poToken
 
 import okio.ByteString.Companion.decodeBase64
 import okio.ByteString.Companion.toByteString

@@ -1,11 +1,11 @@
-package com.github.libretube.receivers
+package dev.jch0029987.libretibs.receivers
 
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
-import com.github.libretube.constants.IntentData
-import com.github.libretube.services.DownloadService
-import com.github.libretube.ui.activities.MainActivity
+import dev.jch0029987.libretibs.constants.IntentData
+import dev.jch0029987.libretibs.services.DownloadService
+import dev.jch0029987.libretibs.ui.activities.MainActivity
 
 class DownloadReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context?, intent: Intent?) {

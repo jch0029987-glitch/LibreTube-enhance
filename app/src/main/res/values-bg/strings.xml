@@ -184,7 +184,7 @@
         <item quantity="one">%d нов поток</item>
         <item quantity="other">%d нов потоци</item>
     </plurals>
-    <string name="welcome">Добре дошли в LibreTube</string>
+    <string name="welcome">Добре дошли в LibreTibs Enhance</string>
     <string name="pinch_control">Контрол чрез прищипване</string>
     <string name="notgmail">Това е за Piped профил</string>
     <string name="change_region">Изглежда, че тенденцията не е налична за текущия регион. Моля, изберете друг в настройките.</string>
@@ -427,7 +427,7 @@
     <string name="category">Категории</string>
     <string name="flameIcon">Летящ пламък</string>
     <string name="play_automatically">Изпални автоматично</string>
-    <string name="audio_only_mode_summary">Превърнете LibreTube в музикален плейър</string>
+    <string name="audio_only_mode_summary">Превърнете LibreTibs Enhance в музикален плейър</string>
     <string name="unknown_audio_language">Неизвестен аудио език</string>
     <string name="failed_fetching_instances">Не може да се извлекат налични инстанции.</string>
     <string name="same_as_fullscreen">Същото като цял екран</string>
@@ -502,7 +502,7 @@
     <string name="thumbnail_time">Време за миниатюри</string>
     <string name="best_quality">Най-добро</string>
     <string name="external_download_provider">Външен доставчик на изтегляне</string>
-    <string name="external_download_provider_summary">Въведи името на пакета на приложението, което искате да използвате за изтегляне на видеоклипове. Оставете празно, за да използвате вградената програма за изтегляне на LibreTube.</string>
+    <string name="external_download_provider_summary">Въведи името на пакета на приложението, което искате да използвате за изтегляне на видеоклипове. Оставете празно, за да използвате вградената програма за изтегляне на LibreTibs Enhance.</string>
     <string name="screenshot">Екранна снимка</string>
     <string name="pip">PiP</string>
     <string name="local_stream_extraction">Извличане на локален поток</string>

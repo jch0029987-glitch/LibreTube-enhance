@@ -1,16 +1,16 @@
-package com.github.libretube.api
+package dev.jch0029987.libretibs.api
 
 import androidx.core.text.isDigitsOnly
-import com.github.libretube.api.obj.Playlist
-import com.github.libretube.api.obj.Playlists
-import com.github.libretube.api.obj.StreamItem
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.enums.PlaylistType
-import com.github.libretube.helpers.PreferenceHelper
-import com.github.libretube.obj.PipedImportPlaylist
-import com.github.libretube.repo.LocalPlaylistsRepository
-import com.github.libretube.repo.PipedPlaylistRepository
-import com.github.libretube.repo.PlaylistRepository
+import dev.jch0029987.libretibs.api.obj.Playlist
+import dev.jch0029987.libretibs.api.obj.Playlists
+import dev.jch0029987.libretibs.api.obj.StreamItem
+import dev.jch0029987.libretibs.constants.PreferenceKeys
+import dev.jch0029987.libretibs.enums.PlaylistType
+import dev.jch0029987.libretibs.helpers.PreferenceHelper
+import dev.jch0029987.libretibs.obj.PipedImportPlaylist
+import dev.jch0029987.libretibs.repo.LocalPlaylistsRepository
+import dev.jch0029987.libretibs.repo.PipedPlaylistRepository
+import dev.jch0029987.libretibs.repo.PlaylistRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll

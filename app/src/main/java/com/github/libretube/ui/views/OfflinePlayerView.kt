@@ -1,9 +1,9 @@
-package com.github.libretube.ui.views
+package dev.jch0029987.libretibs.ui.views
 
 import android.content.Context
 import android.util.AttributeSet
 import androidx.appcompat.app.AppCompatActivity
-import com.github.libretube.api.obj.ChapterSegment
+import dev.jch0029987.libretibs.api.obj.ChapterSegment
 
 class OfflinePlayerView(
     context: Context,

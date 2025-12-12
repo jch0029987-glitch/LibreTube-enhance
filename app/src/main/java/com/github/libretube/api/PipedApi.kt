@@ -1,14 +1,14 @@
-package com.github.libretube.api
+package dev.jch0029987.libretibs.api
 
-import com.github.libretube.api.obj.Channel
-import com.github.libretube.api.obj.ChannelTabResponse
-import com.github.libretube.api.obj.CommentsPage
-import com.github.libretube.api.obj.DeArrowContent
-import com.github.libretube.api.obj.Playlist
-import com.github.libretube.api.obj.SearchResult
-import com.github.libretube.api.obj.SegmentData
-import com.github.libretube.api.obj.StreamItem
-import com.github.libretube.api.obj.Streams
+import dev.jch0029987.libretibs.api.obj.Channel
+import dev.jch0029987.libretibs.api.obj.ChannelTabResponse
+import dev.jch0029987.libretibs.api.obj.CommentsPage
+import dev.jch0029987.libretibs.api.obj.DeArrowContent
+import dev.jch0029987.libretibs.api.obj.Playlist
+import dev.jch0029987.libretibs.api.obj.SearchResult
+import dev.jch0029987.libretibs.api.obj.SegmentData
+import dev.jch0029987.libretibs.api.obj.StreamItem
+import dev.jch0029987.libretibs.api.obj.Streams
 import retrofit2.http.GET
 import retrofit2.http.Path
 import retrofit2.http.Query

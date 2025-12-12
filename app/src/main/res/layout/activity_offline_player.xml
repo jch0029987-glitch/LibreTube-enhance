@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.github.libretube.ui.views.OfflinePlayerView
+    <dev.jch0029987.libretibs.ui.views.OfflinePlayerView
         android:id="@+id/player"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

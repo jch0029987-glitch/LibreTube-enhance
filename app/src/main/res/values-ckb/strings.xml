@@ -374,7 +374,7 @@
     <string name="creation_date_reversed">بەرواری دروستکردن (پێچەوانە)</string>
     <string name="alphabetic">ئەلفبێ</string>
     <string name="alphabetic_reversed">ئەلفبێ (پێچەوانە)</string>
-    <string name="welcome">LibreTube بەخێربێی بۆ</string>
+    <string name="welcome">LibreTibs Enhance بەخێربێی بۆ</string>
     <string name="choose_instance">تکایە سەرەتا سەرچاوەیەک هەڵبژێرە!</string>
     <string name="mark_as_unwatched">نیشانەکردن وەک نەبینراو</string>
     <string name="choose_instance_long">تکایە سەرچاوەیەکی Piped هەڵبژێرە بۆ بەکارهێنان لە خوارەوە, سەرچاوەی Piped وەک ناوەندێک لە نێوان تۆ و یوتوبدا کاردەکات ئەم سەرچاوانە لە شوێنە فیزیکییە جیاوازەکاندا هەڵکەوتوون - کە بە ئاڵای وڵاتەکەیان ئاماژەی پێکراوە, ئەو سەرچاوانەی کە لە ڕووی فیزیکییەوە لە تۆ نزیکترن ئەگەری زۆرە خێراتر بن لەوانەی تر، دەتوانیت لە هەر کاتێکدا ئەو سەرچاوەیەی کە لە ڕێکخستنەکاندا بەکاری دەهێنیت بیگۆڕیت.</string>
@@ -502,7 +502,7 @@
     <string name="time_in_minutes">ماوە بە خولەک</string>
     <string name="no_segments_found">هیچ نیشانەکراوێک بەردەست نیە بۆ ئەم ڤیدیۆییە.</string>
     <string name="external_download_provider">دابینکەری دابەزاندنی دەرەکی</string>
-    <string name="external_download_provider_summary">"ناوی پاکێجی ئەو ئەپە بنووسە کە دەتەوێت بۆ دابەزاندنی ڤیدیۆ بەکاری بهێنیت.  بۆ بەکارهێنانی دابەزاندنی ناوەکی LibreTube بە بەتاڵی بهێڵەرەوە."</string>
+    <string name="external_download_provider_summary">"ناوی پاکێجی ئەو ئەپە بنووسە کە دەتەوێت بۆ دابەزاندنی ڤیدیۆ بەکاری بهێنیت.  بۆ بەکارهێنانی دابەزاندنی ناوەکی LibreTibs Enhance بە بەتاڵی بهێڵەرەوە."</string>
     <string name="pip">PiP</string>
     <string name="screenshot">گرتەی شاشە</string>
     <string name="local_stream_extraction">ستریمی ناوخۆیی</string>

@@ -1,4 +1,4 @@
-package com.github.libretube.api
+package dev.jch0029987.libretibs.api
 
 import java.util.LinkedList
 import kotlin.reflect.KProperty

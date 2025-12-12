@@ -1,6 +1,6 @@
-package com.github.libretube.obj
+package dev.jch0029987.libretibs.obj
 
-import com.github.libretube.ui.dialogs.ShareDialog
+import dev.jch0029987.libretibs.ui.dialogs.ShareDialog
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 

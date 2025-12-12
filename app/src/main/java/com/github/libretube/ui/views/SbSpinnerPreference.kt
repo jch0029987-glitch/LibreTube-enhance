@@ -1,4 +1,4 @@
-package com.github.libretube.ui.views
+package dev.jch0029987.libretibs.ui.views
 
 import android.content.Context
 import android.content.res.TypedArray
@@ -10,8 +10,8 @@ import android.widget.Spinner
 import android.widget.TextView
 import androidx.preference.Preference
 import androidx.preference.PreferenceViewHolder
-import com.github.libretube.R
-import com.github.libretube.helpers.PreferenceHelper
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.helpers.PreferenceHelper
 
 class SbSpinnerPreference(context: Context, attrs: AttributeSet) : Preference(context, attrs) {
     private lateinit var adapter: ArrayAdapter<CharSequence>

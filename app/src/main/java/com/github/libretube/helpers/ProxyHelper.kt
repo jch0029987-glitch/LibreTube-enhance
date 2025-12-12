@@ -1,8 +1,8 @@
-package com.github.libretube.helpers
+package dev.jch0029987.libretibs.helpers
 
-import com.github.libretube.api.PipedMediaServiceRepository
-import com.github.libretube.api.RetrofitInstance
-import com.github.libretube.constants.PreferenceKeys
+import dev.jch0029987.libretibs.api.PipedMediaServiceRepository
+import dev.jch0029987.libretibs.api.RetrofitInstance
+import dev.jch0029987.libretibs.constants.PreferenceKeys
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

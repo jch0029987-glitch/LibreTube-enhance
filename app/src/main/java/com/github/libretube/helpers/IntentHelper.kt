@@ -1,4 +1,4 @@
-package com.github.libretube.helpers
+package dev.jch0029987.libretibs.helpers
 
 import android.content.Context
 import android.content.Intent
@@ -9,11 +9,11 @@ import android.os.Build
 import androidx.core.net.toUri
 import androidx.core.os.bundleOf
 import androidx.fragment.app.FragmentManager
-import com.github.libretube.R
-import com.github.libretube.constants.IntentData
-import com.github.libretube.extensions.toastFromMainThread
-import com.github.libretube.ui.sheets.IntentChooserSheet
-import com.github.libretube.util.TextUtils.toTimeInSeconds
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.constants.IntentData
+import dev.jch0029987.libretibs.extensions.toastFromMainThread
+import dev.jch0029987.libretibs.ui.sheets.IntentChooserSheet
+import dev.jch0029987.libretibs.util.TextUtils.toTimeInSeconds
 
 object IntentHelper {
     private fun getResolveIntent(link: String) = Intent(Intent.ACTION_VIEW)

@@ -1,4 +1,4 @@
-package com.github.libretube.helpers
+package dev.jch0029987.libretibs.helpers
 
 import android.content.Context
 import android.net.Uri
@@ -6,14 +6,14 @@ import android.util.Log
 import androidx.core.content.edit
 import androidx.preference.PreferenceManager
 import androidx.work.ExistingPeriodicWorkPolicy
-import com.github.libretube.R
-import com.github.libretube.api.JsonHelper
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.db.DatabaseHolder.Database
-import com.github.libretube.extensions.TAG
-import com.github.libretube.extensions.toastFromMainDispatcher
-import com.github.libretube.obj.BackupFile
-import com.github.libretube.obj.PreferenceItem
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.api.JsonHelper
+import dev.jch0029987.libretibs.constants.PreferenceKeys
+import dev.jch0029987.libretibs.db.DatabaseHolder.Database
+import dev.jch0029987.libretibs.extensions.TAG
+import dev.jch0029987.libretibs.extensions.toastFromMainDispatcher
+import dev.jch0029987.libretibs.obj.BackupFile
+import dev.jch0029987.libretibs.obj.PreferenceItem
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import kotlinx.serialization.ExperimentalSerializationApi

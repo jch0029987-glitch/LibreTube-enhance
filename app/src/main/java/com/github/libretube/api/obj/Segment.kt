@@ -1,4 +1,4 @@
-package com.github.libretube.api.obj
+package dev.jch0029987.libretibs.api.obj
 
 import android.os.Parcelable
 import androidx.collection.FloatFloatPair

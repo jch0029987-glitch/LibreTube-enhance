@@ -1,7 +1,7 @@
-package com.github.libretube.ui.viewholders
+package dev.jch0029987.libretibs.ui.viewholders
 
 import androidx.recyclerview.widget.RecyclerView
-import com.github.libretube.databinding.SliderLabelItemBinding
+import dev.jch0029987.libretibs.databinding.SliderLabelItemBinding
 
 class SliderLabelViewHolder(
     val binding: SliderLabelItemBinding

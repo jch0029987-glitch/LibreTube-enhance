@@ -1,4 +1,4 @@
-package com.github.libretube.workers
+package dev.jch0029987.libretibs.workers
 
 import android.Manifest
 import android.app.Notification
@@ -15,18 +15,18 @@ import androidx.core.app.PendingIntentCompat
 import androidx.core.content.ContextCompat
 import androidx.work.CoroutineWorker
 import androidx.work.WorkerParameters
-import com.github.libretube.LibreTubeApp.Companion.PUSH_CHANNEL_NAME
-import com.github.libretube.R
-import com.github.libretube.api.SubscriptionHelper
-import com.github.libretube.api.obj.StreamItem
-import com.github.libretube.constants.IntentData
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.extensions.TAG
-import com.github.libretube.extensions.toID
-import com.github.libretube.helpers.ImageHelper
-import com.github.libretube.helpers.PreferenceHelper
-import com.github.libretube.ui.activities.MainActivity
-import com.github.libretube.ui.views.TimePickerPreference
+import dev.jch0029987.libretibs.LibreTubeApp.Companion.PUSH_CHANNEL_NAME
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.api.SubscriptionHelper
+import dev.jch0029987.libretibs.api.obj.StreamItem
+import dev.jch0029987.libretibs.constants.IntentData
+import dev.jch0029987.libretibs.constants.PreferenceKeys
+import dev.jch0029987.libretibs.extensions.TAG
+import dev.jch0029987.libretibs.extensions.toID
+import dev.jch0029987.libretibs.helpers.ImageHelper
+import dev.jch0029987.libretibs.helpers.PreferenceHelper
+import dev.jch0029987.libretibs.ui.activities.MainActivity
+import dev.jch0029987.libretibs.ui.views.TimePickerPreference
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll

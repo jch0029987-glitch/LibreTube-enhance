@@ -1,4 +1,4 @@
-package com.github.libretube.enums
+package dev.jch0029987.libretibs.enums
 
 enum class PlayerCommand {
     SKIP_SILENCE,

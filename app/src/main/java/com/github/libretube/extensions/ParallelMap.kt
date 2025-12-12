@@ -1,4 +1,4 @@
-package com.github.libretube.extensions
+package dev.jch0029987.libretibs.extensions
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async

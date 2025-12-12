@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.github.libretube.ui.views.CustomSwipeToRefresh
+    <dev.jch0029987.libretibs.ui.views.CustomSwipeToRefresh
         android:id="@+id/refresh"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -189,7 +189,7 @@
 
         </ScrollView>
 
-    </com.github.libretube.ui.views.CustomSwipeToRefresh>
+    </dev.jch0029987.libretibs.ui.views.CustomSwipeToRefresh>
 
     <LinearLayout
         android:id="@+id/nothing_here"

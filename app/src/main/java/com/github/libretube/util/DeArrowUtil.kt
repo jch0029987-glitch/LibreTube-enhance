@@ -1,11 +1,11 @@
-package com.github.libretube.util
+package dev.jch0029987.libretibs.util
 
 import android.util.Log
-import com.github.libretube.api.MediaServiceRepository
-import com.github.libretube.api.obj.DeArrowContent
-import com.github.libretube.api.obj.Streams
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.helpers.PreferenceHelper
+import dev.jch0029987.libretibs.api.MediaServiceRepository
+import dev.jch0029987.libretibs.api.obj.DeArrowContent
+import dev.jch0029987.libretibs.api.obj.Streams
+import dev.jch0029987.libretibs.constants.PreferenceKeys
+import dev.jch0029987.libretibs.helpers.PreferenceHelper
 
 object DeArrowUtil {
     private fun extractTitleAndThumbnail(content: DeArrowContent): Pair<String?, String?> {

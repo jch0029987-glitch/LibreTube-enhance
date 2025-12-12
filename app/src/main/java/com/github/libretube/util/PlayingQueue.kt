@@ -1,14 +1,14 @@
-package com.github.libretube.util
+package dev.jch0029987.libretibs.util
 
 import androidx.media3.common.Player
-import com.github.libretube.api.MediaServiceRepository
-import com.github.libretube.api.PlaylistsHelper
-import com.github.libretube.api.obj.StreamItem
-import com.github.libretube.extensions.move
-import com.github.libretube.extensions.runCatchingIO
-import com.github.libretube.extensions.toID
-import com.github.libretube.helpers.PlayerHelper
-import com.github.libretube.util.PlayingQueue.queueMode
+import dev.jch0029987.libretibs.api.MediaServiceRepository
+import dev.jch0029987.libretibs.api.PlaylistsHelper
+import dev.jch0029987.libretibs.api.obj.StreamItem
+import dev.jch0029987.libretibs.extensions.move
+import dev.jch0029987.libretibs.extensions.runCatchingIO
+import dev.jch0029987.libretibs.extensions.toID
+import dev.jch0029987.libretibs.helpers.PlayerHelper
+import dev.jch0029987.libretibs.util.PlayingQueue.queueMode
 import kotlinx.coroutines.Job
 import java.util.Collections
 

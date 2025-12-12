@@ -1,12 +1,12 @@
-package com.github.libretube.ui.dialogs
+package dev.jch0029987.libretibs.ui.dialogs
 
 import android.annotation.SuppressLint
 import android.app.Dialog
 import android.os.Bundle
 import androidx.fragment.app.DialogFragment
-import com.github.libretube.R
-import com.github.libretube.helpers.ClipboardHelper
-import com.github.libretube.helpers.PreferenceHelper
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.helpers.ClipboardHelper
+import dev.jch0029987.libretibs.helpers.PreferenceHelper
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class ErrorDialog : DialogFragment() {

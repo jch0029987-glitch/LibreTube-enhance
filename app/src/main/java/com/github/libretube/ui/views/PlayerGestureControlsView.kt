@@ -1,11 +1,11 @@
-package com.github.libretube.ui.views
+package dev.jch0029987.libretibs.ui.views
 
 import android.content.Context
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import androidx.constraintlayout.widget.ConstraintLayout
-import com.github.libretube.databinding.PlayerGestureControlsViewBinding
-import com.github.libretube.extensions.normalize
+import dev.jch0029987.libretibs.databinding.PlayerGestureControlsViewBinding
+import dev.jch0029987.libretibs.extensions.normalize
 
 class PlayerGestureControlsView(
     context: Context,

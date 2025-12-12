@@ -55,12 +55,12 @@
             app:key="notification_time"
             app:title="@string/notification_time" />
 
-        <com.github.libretube.ui.views.TimePickerPreference
+        <dev.jch0029987.libretibs.ui.views.TimePickerPreference
             android:dependency="notification_time"
             app:key="notification_start_time"
             app:title="@string/start_time" />
 
-        <com.github.libretube.ui.views.TimePickerPreference
+        <dev.jch0029987.libretibs.ui.views.TimePickerPreference
             android:dependency="notification_time"
             app:key="notification_end_time"
             app:title="@string/end_time" />

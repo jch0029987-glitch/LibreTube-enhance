@@ -1,4 +1,4 @@
-package com.github.libretube.ui.sheets
+package dev.jch0029987.libretibs.ui.sheets
 
 import android.os.Bundle
 import android.view.View
@@ -6,12 +6,12 @@ import android.widget.RadioButton
 import android.widget.RadioGroup
 import androidx.core.os.bundleOf
 import androidx.fragment.app.setFragmentResult
-import com.github.libretube.R
-import com.github.libretube.constants.IntentData
-import com.github.libretube.databinding.FilterSortSheetBinding
-import com.github.libretube.enums.ContentFilter
-import com.github.libretube.extensions.parcelableArrayList
-import com.github.libretube.obj.SelectableOption
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.constants.IntentData
+import dev.jch0029987.libretibs.databinding.FilterSortSheetBinding
+import dev.jch0029987.libretibs.enums.ContentFilter
+import dev.jch0029987.libretibs.extensions.parcelableArrayList
+import dev.jch0029987.libretibs.obj.SelectableOption
 
 class FilterSortBottomSheet : ExpandedBottomSheet(R.layout.filter_sort_sheet) {
     private var _binding: FilterSortSheetBinding? = null

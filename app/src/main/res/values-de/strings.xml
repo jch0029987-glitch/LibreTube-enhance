@@ -332,7 +332,7 @@
     <string name="alternative_pip_controls_summary">Buttons für \"Nur Audio\" und \"Überspringen\" im Bild-im-Bild-Modus anzeigen anstelle von Vor- und Zurückspulen</string>
     <string name="replies">Antworten</string>
     <string name="concurrent_downloads_limit_reached">Maximal Anzahl von Downloads erreicht.</string>
-    <string name="audio_only_mode_summary">LibreTube in einen Musikplayer umwandeln</string>
+    <string name="audio_only_mode_summary">LibreTibs Enhance in einen Musikplayer umwandeln</string>
     <string name="faq">Häufig gestellte Fragen</string>
     <string name="help">Hilfe</string>
     <string name="concurrent_downloads">Maximale Anzahl gleichzeitiger Downloads</string>
@@ -379,7 +379,7 @@
     <string name="export_playlists_to">Playlists exportieren nach</string>
     <string name="import_playlists_from">Playlists importieren aus</string>
     <string name="home_tab_content">Inhalt der Startseite</string>
-    <string name="welcome">Willkommen bei LibreTube</string>
+    <string name="welcome">Willkommen bei LibreTibs Enhance</string>
     <string name="mark_as_unwatched">Als ungesehen markieren</string>
     <string name="choose_instance">Bitte wähle zuerst eine Instanz aus!</string>
     <string name="choose_instance_long">Bitte wähle unten eine Piped-Instanz aus. Die Piped-Instanz fungiert als Vermittler (Proxy) zwischen deinem Gerät und YouTube. Diese Instanzen befinden sich an verschiedenen physischen Standorten - erkennbar an den jeweiligen Landesflaggen. Instanzen in deiner Nähe sind wahrscheinlich schneller als Instanzen, die sich weiter weg befinden. Du kannst die verwendete Instanz jederzeit in den Einstellungen ändern.</string>
@@ -502,7 +502,7 @@
     <string name="title">Titel</string>
     <string name="import_temp_playlist">Temporäre Playlist importieren?</string>
     <string name="external_download_provider">Externe Download-App</string>
-    <string name="external_download_provider_summary">Gib den Paketnamen der App ein, die zum Herunterladen von Videos verwendet werden soll. Nichts eintragen, um den eingebauten Downloader von LibreTube zu verwenden.</string>
+    <string name="external_download_provider_summary">Gib den Paketnamen der App ein, die zum Herunterladen von Videos verwendet werden soll. Nichts eintragen, um den eingebauten Downloader von LibreTibs Enhance zu verwenden.</string>
     <string name="screenshot">Screenshot</string>
     <string name="pip">PiP</string>
     <string name="local_stream_extraction">Direkter Abruf von Videos</string>

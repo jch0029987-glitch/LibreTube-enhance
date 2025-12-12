@@ -1,4 +1,4 @@
-package com.github.libretube.ui.views
+package dev.jch0029987.libretibs.ui.views
 
 import android.content.Context
 import android.text.InputType
@@ -7,8 +7,8 @@ import android.view.LayoutInflater
 import android.widget.ArrayAdapter
 import android.widget.FrameLayout
 import androidx.core.content.res.use
-import com.github.libretube.R
-import com.github.libretube.databinding.DropdownMenuBinding
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.databinding.DropdownMenuBinding
 
 /**
  * Exposed Dropdown Menu

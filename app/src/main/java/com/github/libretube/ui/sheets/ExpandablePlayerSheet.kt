@@ -1,10 +1,10 @@
-package com.github.libretube.ui.sheets
+package dev.jch0029987.libretibs.ui.sheets
 
 import android.os.Bundle
 import android.view.View
 import androidx.annotation.LayoutRes
 import androidx.fragment.app.activityViewModels
-import com.github.libretube.ui.models.CommonPlayerViewModel
+import dev.jch0029987.libretibs.ui.models.CommonPlayerViewModel
 
 abstract class ExpandablePlayerSheet(@LayoutRes layoutResId: Int) :
     UndimmedBottomSheet(layoutResId) {

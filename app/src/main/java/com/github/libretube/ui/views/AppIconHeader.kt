@@ -1,14 +1,14 @@
-package com.github.libretube.ui.views
+package dev.jch0029987.libretibs.ui.views
 
 import android.content.Context
 import android.content.Intent
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.widget.LinearLayout
-import com.github.libretube.BuildConfig
-import com.github.libretube.databinding.AppIconHeaderBinding
-import com.github.libretube.helpers.ClipboardHelper
-import com.github.libretube.ui.activities.AboutActivity.Companion.GITHUB_URL
+import dev.jch0029987.libretibs.BuildConfig
+import dev.jch0029987.libretibs.databinding.AppIconHeaderBinding
+import dev.jch0029987.libretibs.helpers.ClipboardHelper
+import dev.jch0029987.libretibs.ui.activities.AboutActivity.Companion.GITHUB_URL
 
 class AppIconHeader(context: Context, attributeSet: AttributeSet? = null) :
     LinearLayout(context, attributeSet) {

@@ -1,4 +1,4 @@
-package com.github.libretube.util
+package dev.jch0029987.libretibs.util
 
 import android.text.Editable
 import android.text.Html

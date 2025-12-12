@@ -1,17 +1,17 @@
-package com.github.libretube.api
+package dev.jch0029987.libretibs.api
 
 import androidx.annotation.StringRes
-import com.github.libretube.R
-import com.github.libretube.api.obj.Channel
-import com.github.libretube.api.obj.ChannelTabResponse
-import com.github.libretube.api.obj.CommentsPage
-import com.github.libretube.api.obj.DeArrowContent
-import com.github.libretube.api.obj.Playlist
-import com.github.libretube.api.obj.SearchResult
-import com.github.libretube.api.obj.SegmentData
-import com.github.libretube.api.obj.StreamItem
-import com.github.libretube.api.obj.Streams
-import com.github.libretube.helpers.PlayerHelper
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.api.obj.Channel
+import dev.jch0029987.libretibs.api.obj.ChannelTabResponse
+import dev.jch0029987.libretibs.api.obj.CommentsPage
+import dev.jch0029987.libretibs.api.obj.DeArrowContent
+import dev.jch0029987.libretibs.api.obj.Playlist
+import dev.jch0029987.libretibs.api.obj.SearchResult
+import dev.jch0029987.libretibs.api.obj.SegmentData
+import dev.jch0029987.libretibs.api.obj.StreamItem
+import dev.jch0029987.libretibs.api.obj.Streams
+import dev.jch0029987.libretibs.helpers.PlayerHelper
 
 interface MediaServiceRepository {
     fun getTrendingCategories(): List<TrendingCategory>

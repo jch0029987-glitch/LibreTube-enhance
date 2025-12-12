@@ -1,4 +1,4 @@
-package com.github.libretube.obj
+package dev.jch0029987.libretibs.obj
 
 sealed class DownloadStatus {
 

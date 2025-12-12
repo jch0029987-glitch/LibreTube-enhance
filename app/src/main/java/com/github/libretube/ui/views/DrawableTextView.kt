@@ -1,4 +1,4 @@
-package com.github.libretube.ui.views
+package dev.jch0029987.libretibs.ui.views
 
 import android.content.Context
 import android.content.res.TypedArray
@@ -7,7 +7,7 @@ import android.util.AttributeSet
 import android.view.Gravity
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.core.content.res.use
-import com.github.libretube.R
+import dev.jch0029987.libretibs.R
 
 /**
  * TextView with custom sizable drawable support.

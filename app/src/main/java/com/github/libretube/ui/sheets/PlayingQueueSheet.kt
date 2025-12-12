@@ -1,4 +1,4 @@
-package com.github.libretube.ui.sheets
+package dev.jch0029987.libretibs.ui.sheets
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -7,17 +7,17 @@ import androidx.core.os.bundleOf
 import androidx.fragment.app.setFragmentResult
 import androidx.media3.common.Player
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.github.libretube.R
-import com.github.libretube.constants.IntentData
-import com.github.libretube.databinding.QueueBottomSheetBinding
-import com.github.libretube.db.DatabaseHelper
-import com.github.libretube.db.DatabaseHolder
-import com.github.libretube.db.obj.WatchPosition
-import com.github.libretube.extensions.setActionListener
-import com.github.libretube.extensions.toID
-import com.github.libretube.ui.adapters.PlayingQueueAdapter
-import com.github.libretube.ui.dialogs.AddToPlaylistDialog
-import com.github.libretube.util.PlayingQueue
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.constants.IntentData
+import dev.jch0029987.libretibs.databinding.QueueBottomSheetBinding
+import dev.jch0029987.libretibs.db.DatabaseHelper
+import dev.jch0029987.libretibs.db.DatabaseHolder
+import dev.jch0029987.libretibs.db.obj.WatchPosition
+import dev.jch0029987.libretibs.extensions.setActionListener
+import dev.jch0029987.libretibs.extensions.toID
+import dev.jch0029987.libretibs.ui.adapters.PlayingQueueAdapter
+import dev.jch0029987.libretibs.ui.dialogs.AddToPlaylistDialog
+import dev.jch0029987.libretibs.util.PlayingQueue
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

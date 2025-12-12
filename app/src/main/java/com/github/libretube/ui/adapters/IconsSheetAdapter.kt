@@ -1,16 +1,16 @@
-package com.github.libretube.ui.adapters
+package dev.jch0029987.libretibs.ui.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
 import androidx.recyclerview.widget.RecyclerView
-import com.github.libretube.R
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.databinding.AppIconItemBinding
-import com.github.libretube.helpers.PreferenceHelper
-import com.github.libretube.helpers.ThemeHelper
-import com.github.libretube.ui.viewholders.IconsSheetViewHolder
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.constants.PreferenceKeys
+import dev.jch0029987.libretibs.databinding.AppIconItemBinding
+import dev.jch0029987.libretibs.helpers.PreferenceHelper
+import dev.jch0029987.libretibs.helpers.ThemeHelper
+import dev.jch0029987.libretibs.ui.viewholders.IconsSheetViewHolder
 
 class IconsSheetAdapter : RecyclerView.Adapter<IconsSheetViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): IconsSheetViewHolder {

@@ -1,4 +1,4 @@
-package com.github.libretube.ui.dialogs
+package dev.jch0029987.libretibs.ui.dialogs
 
 import android.app.Dialog
 import android.content.DialogInterface
@@ -10,17 +10,17 @@ import androidx.core.os.bundleOf
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.setFragmentResult
 import androidx.lifecycle.lifecycleScope
-import com.github.libretube.R
-import com.github.libretube.api.JsonHelper
-import com.github.libretube.api.RetrofitInstance
-import com.github.libretube.api.obj.Login
-import com.github.libretube.api.obj.Token
-import com.github.libretube.constants.IntentData
-import com.github.libretube.databinding.DialogLoginBinding
-import com.github.libretube.extensions.TAG
-import com.github.libretube.extensions.toastFromMainDispatcher
-import com.github.libretube.helpers.PreferenceHelper
-import com.github.libretube.ui.preferences.InstanceSettings.Companion.INSTANCE_DIALOG_REQUEST_KEY
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.api.JsonHelper
+import dev.jch0029987.libretibs.api.RetrofitInstance
+import dev.jch0029987.libretibs.api.obj.Login
+import dev.jch0029987.libretibs.api.obj.Token
+import dev.jch0029987.libretibs.constants.IntentData
+import dev.jch0029987.libretibs.databinding.DialogLoginBinding
+import dev.jch0029987.libretibs.extensions.TAG
+import dev.jch0029987.libretibs.extensions.toastFromMainDispatcher
+import dev.jch0029987.libretibs.helpers.PreferenceHelper
+import dev.jch0029987.libretibs.ui.preferences.InstanceSettings.Companion.INSTANCE_DIALOG_REQUEST_KEY
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

@@ -1,4 +1,4 @@
-package com.github.libretube.ui.sheets
+package dev.jch0029987.libretibs.ui.sheets
 
 import android.app.Dialog
 import android.content.res.Configuration

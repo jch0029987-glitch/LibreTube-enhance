@@ -330,7 +330,7 @@
     <string name="unknown">Ukjent</string>
     <string name="resume">Fortsett</string>
     <string name="forward">Spol forover</string>
-    <string name="audio_only_mode_summary">Gjør LibreTube til en musikkspiller</string>
+    <string name="audio_only_mode_summary">Gjør LibreTibs Enhance til en musikkspiller</string>
     <string name="sleep_timer">Søvntidsur</string>
     <string name="skip_silence">Hopp over stillhet</string>
     <string name="help">Hjelp</string>
@@ -364,7 +364,7 @@
     <string name="group_name">Gruppenavn</string>
     <string name="play_automatically">Spill automatisk</string>
     <string name="play_automatically_summary">Spill valgte video automatisk</string>
-    <string name="welcome">Velkommen til LibreTube</string>
+    <string name="welcome">Velkommen til LibreTibs Enhance</string>
     <string name="choose_instance">Velg en instans først.</string>
     <string name="mark_as_unwatched">Marker som usett</string>
     <string name="show_stream_thumbnails">Vis miniatyrbilder fra videostrøm</string>
@@ -498,7 +498,7 @@
     <string name="external_player">Ekstern avspiller</string>
     <string name="external_download_provider">Ekstern nedlastingstilbyder</string>
     <string name="enqueue_playlist_description">Viser en merknad når du legger til videoer i en spilleliste som skal lastes ned.</string>
-    <string name="external_download_provider_summary">Skriv inn pakkenavnet på programmet du ønsker å bruke til å laste ned videoer. La stå tomt for å bruke LibreTubes forvalgte nedlaster.</string>
+    <string name="external_download_provider_summary">Skriv inn pakkenavnet på programmet du ønsker å bruke til å laste ned videoer. La stå tomt for å bruke LibreTibs Enhances forvalgte nedlaster.</string>
     <string name="also_clear_watch_positions">Tøm også huskede posisjoner</string>
     <string name="import_temp_playlist_summary">Opprett ny spilleliste som heter «%1$s» inneholdende %2$d videoer?</string>
     <string name="enqueueing_playlist_download">Legger til videoer som skal lastes ned i spillelisten «%1$s»</string>

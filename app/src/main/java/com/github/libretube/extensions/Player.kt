@@ -1,4 +1,4 @@
-package com.github.libretube.extensions
+package dev.jch0029987.libretibs.extensions
 
 import androidx.media3.common.Player
 

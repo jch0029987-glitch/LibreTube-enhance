@@ -324,7 +324,7 @@
     <string name="pause">Jeda</string>
     <string name="alternative_pip_controls">Kontrol gambar dalam gambar alternatif</string>
     <string name="alternative_pip_controls_summary">Hanya tampilkan audio dan kontrol lewati dalam mode gambar dalam gambar daripada maju dan mundur</string>
-    <string name="audio_only_mode_summary">Jadikan LibreTube menjadi pemutar musik</string>
+    <string name="audio_only_mode_summary">Jadikan LibreTibs Enhance menjadi pemutar musik</string>
     <string name="audio_only_mode">Mode hanya audio</string>
     <string name="no_subtitle">Tidak ada takarir</string>
     <string name="download_paused">Unduhan dijeda</string>
@@ -380,7 +380,7 @@
     <string name="home_tab_content">Konten tab beranda</string>
     <string name="mark_as_unwatched">Tandai sebagai belum ditonton</string>
     <string name="choose_instance">Silakan pilih sebuah server terlebih dahulu!</string>
-    <string name="welcome">Selamat datang di LibreTube</string>
+    <string name="welcome">Selamat datang di LibreTibs Enhance</string>
     <string name="choose_instance_long">Silakan pilih sebuah server Piped untuk digunakan dari daftar bawah. Server Piped akan menjadi perantara antara Anda dan YouTube. Server yang ada di bawah terletak di lokasi fisik yang berbeda, ditandai oleh bendera negaranya. Server yang terletak lebih dekat dengan Anda kemunginkan lebih cepat daripada yang server yang terletak jauh. Anda dapat mengubah server yang digunakan dalam pengaturan kapan saja.</string>
     <string name="playlist_description">Deskripsi daftar putar</string>
     <string name="emptyPlaylistDescription">Deskripsi daftar putar tidak bisa kosong</string>
@@ -501,7 +501,7 @@
     <string name="title">Judul</string>
     <string name="best_quality">Terbaik</string>
     <string name="external_download_provider">Penyedia unduhan eksternal</string>
-    <string name="external_download_provider_summary">Masukkan nama paket apli yang Anda ingin gunakan untuk mengunduh video. Biarkan kosong untuk menggunakan pengunduh bawaan LibreTube.</string>
+    <string name="external_download_provider_summary">Masukkan nama paket apli yang Anda ingin gunakan untuk mengunduh video. Biarkan kosong untuk menggunakan pengunduh bawaan LibreTibs Enhance.</string>
     <string name="import_watch_history">Impor riwayat tontonan</string>
     <string name="local_ryd">Pengekstrak Return YouTube Dislikes lokal</string>
     <string name="local_ryd_summary">Dapatkan informasi tidak suka secara langsung dari https://returnyoutubedislikeapi.com</string>

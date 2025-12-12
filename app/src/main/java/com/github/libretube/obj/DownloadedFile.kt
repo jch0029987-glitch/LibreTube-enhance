@@ -1,7 +1,7 @@
-package com.github.libretube.obj
+package dev.jch0029987.libretibs.obj
 
 import android.graphics.Bitmap
-import com.github.libretube.api.obj.Streams
+import dev.jch0029987.libretibs.api.obj.Streams
 
 data class DownloadedFile(
     val name: String,

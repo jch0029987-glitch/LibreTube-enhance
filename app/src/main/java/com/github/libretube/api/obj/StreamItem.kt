@@ -1,12 +1,12 @@
-package com.github.libretube.api.obj
+package dev.jch0029987.libretibs.api.obj
 
 import android.os.Parcelable
-import com.github.libretube.db.obj.LocalPlaylistItem
-import com.github.libretube.db.obj.SubscriptionsFeedItem
-import com.github.libretube.db.obj.WatchHistoryItem
-import com.github.libretube.extensions.toID
-import com.github.libretube.extensions.toLocalDate
-import com.github.libretube.helpers.ProxyHelper
+import dev.jch0029987.libretibs.db.obj.LocalPlaylistItem
+import dev.jch0029987.libretibs.db.obj.SubscriptionsFeedItem
+import dev.jch0029987.libretibs.db.obj.WatchHistoryItem
+import dev.jch0029987.libretibs.extensions.toID
+import dev.jch0029987.libretibs.extensions.toLocalDate
+import dev.jch0029987.libretibs.helpers.ProxyHelper
 import kotlinx.parcelize.Parcelize
 import kotlinx.serialization.Serializable
 

@@ -1,4 +1,4 @@
-package com.github.libretube.util
+package dev.jch0029987.libretibs.util
 
 import android.net.Uri
 import androidx.annotation.OptIn
@@ -11,7 +11,7 @@ import androidx.media3.exoplayer.hls.playlist.HlsPlaylist
 import androidx.media3.exoplayer.hls.playlist.HlsPlaylistParser
 import androidx.media3.exoplayer.hls.playlist.HlsPlaylistParserFactory
 import androidx.media3.exoplayer.upstream.ParsingLoadable
-import com.github.libretube.helpers.PlayerHelper
+import dev.jch0029987.libretibs.helpers.PlayerHelper
 import java.io.InputStream
 
 /**

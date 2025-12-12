@@ -1,8 +1,8 @@
-package com.github.libretube.api
+package dev.jch0029987.libretibs.api
 
-import com.github.libretube.BuildConfig
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.helpers.PreferenceHelper
+import dev.jch0029987.libretibs.BuildConfig
+import dev.jch0029987.libretibs.constants.PreferenceKeys
+import dev.jch0029987.libretibs.helpers.PreferenceHelper
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor

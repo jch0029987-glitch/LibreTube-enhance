@@ -36,7 +36,7 @@
 
     </LinearLayout>
 
-    <com.github.libretube.ui.views.DropdownMenu
+    <dev.jch0029987.libretibs.ui.views.DropdownMenu
         android:id="@+id/dearrow_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

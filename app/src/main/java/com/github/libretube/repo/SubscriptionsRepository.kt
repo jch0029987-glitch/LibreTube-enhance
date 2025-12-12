@@ -1,6 +1,6 @@
-package com.github.libretube.repo
+package dev.jch0029987.libretibs.repo
 
-import com.github.libretube.api.obj.Subscription
+import dev.jch0029987.libretibs.api.obj.Subscription
 
 interface SubscriptionsRepository {
     suspend fun subscribe(channelId: String, name: String, uploaderAvatar: String?, verified: Boolean)

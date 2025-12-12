@@ -1,4 +1,4 @@
-package com.github.libretube.util
+package dev.jch0029987.libretibs.util
 
 import okhttp3.OkHttpClient
 import okhttp3.RequestBody.Companion.toRequestBody

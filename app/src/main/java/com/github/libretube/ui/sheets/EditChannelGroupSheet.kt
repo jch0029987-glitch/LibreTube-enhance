@@ -1,4 +1,4 @@
-package com.github.libretube.ui.sheets
+package dev.jch0029987.libretibs.ui.sheets
 
 import android.os.Bundle
 import android.view.View
@@ -7,15 +7,15 @@ import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.github.libretube.R
-import com.github.libretube.api.SubscriptionHelper
-import com.github.libretube.api.obj.Subscription
-import com.github.libretube.databinding.DialogEditChannelGroupBinding
-import com.github.libretube.db.DatabaseHolder
-import com.github.libretube.db.obj.SubscriptionGroup
-import com.github.libretube.ui.adapters.SubscriptionGroupChannelsAdapter
-import com.github.libretube.ui.models.EditChannelGroupsModel
-import com.github.libretube.ui.models.SubscriptionsViewModel
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.api.SubscriptionHelper
+import dev.jch0029987.libretibs.api.obj.Subscription
+import dev.jch0029987.libretibs.databinding.DialogEditChannelGroupBinding
+import dev.jch0029987.libretibs.db.DatabaseHolder
+import dev.jch0029987.libretibs.db.obj.SubscriptionGroup
+import dev.jch0029987.libretibs.ui.adapters.SubscriptionGroupChannelsAdapter
+import dev.jch0029987.libretibs.ui.models.EditChannelGroupsModel
+import dev.jch0029987.libretibs.ui.models.SubscriptionsViewModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

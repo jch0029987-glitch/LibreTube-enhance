@@ -1,13 +1,13 @@
-package com.github.libretube.ui.views
+package dev.jch0029987.libretibs.ui.views
 
 import android.content.Context
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import androidx.preference.Preference
-import com.github.libretube.R
-import com.github.libretube.databinding.DialogSliderBinding
-import com.github.libretube.extensions.round
-import com.github.libretube.helpers.PreferenceHelper
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.databinding.DialogSliderBinding
+import dev.jch0029987.libretibs.extensions.round
+import dev.jch0029987.libretibs.helpers.PreferenceHelper
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlin.math.roundToInt
 

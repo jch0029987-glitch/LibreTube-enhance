@@ -1,11 +1,11 @@
-package com.github.libretube.util
+package dev.jch0029987.libretibs.util
 
 import android.content.Context
 import android.graphics.Bitmap
-import com.github.libretube.api.obj.PreviewFrames
-import com.github.libretube.helpers.ImageHelper
-import com.github.libretube.obj.PreviewFrame
-import com.github.libretube.ui.interfaces.TimeFrameReceiver
+import dev.jch0029987.libretibs.api.obj.PreviewFrames
+import dev.jch0029987.libretibs.helpers.ImageHelper
+import dev.jch0029987.libretibs.obj.PreviewFrame
+import dev.jch0029987.libretibs.ui.interfaces.TimeFrameReceiver
 
 class OnlineTimeFrameReceiver(
     private val context: Context,

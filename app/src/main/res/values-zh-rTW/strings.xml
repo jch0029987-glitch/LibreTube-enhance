@@ -310,7 +310,7 @@
     <string name="trends">熱門影片</string>
     <string name="featured">精選影片</string>
     <string name="audio_only_mode">純音訊模式</string>
-    <string name="audio_only_mode_summary">將LibreTube變成音樂播放器</string>
+    <string name="audio_only_mode_summary">將LibreTibs Enhance變成音樂播放器</string>
     <string name="no_subtitle">無字幕</string>
     <string name="download_paused">下載暫停</string>
     <string name="navbar_order">排序</string>
@@ -379,7 +379,7 @@
     <string name="export_playlists_to">匯出播放清單</string>
     <string name="home_tab_content">首頁分頁內容</string>
     <string name="mark_as_unwatched">標記為尚未觀看</string>
-    <string name="welcome">歡迎使用 LibreTube</string>
+    <string name="welcome">歡迎使用 LibreTibs Enhance</string>
     <string name="choose_instance">請先選擇站台！</string>
     <string name="choose_instance_long">請從下方選擇一個要使用的 Piped 站台。Piped 站台將會充當您與 YouTube 之間的中間人。這些站台位於不同的實際位置，由其國旗表示。離您較近的站台可能會比離您較遠的站台要快。您隨時都可以在設定中變更您使用的站台。</string>
     <string name="playlist_description">播放清單描述</string>
@@ -501,7 +501,7 @@
     <string name="thumbnail_time">縮圖時間</string>
     <string name="best_quality">最佳</string>
     <string name="external_download_provider">外部下載提供者</string>
-    <string name="external_download_provider_summary">輸入您要用於下載影片的應用程式軟體包名稱。留空以使用 LibreTube 的內建下載程式。</string>
+    <string name="external_download_provider_summary">輸入您要用於下載影片的應用程式軟體包名稱。留空以使用 LibreTibs Enhance 的內建下載程式。</string>
     <string name="screenshot">螢幕截圖</string>
     <string name="pip">畫中畫</string>
     <string name="local_stream_extraction">本機串流擷取</string>

@@ -1,4 +1,4 @@
-package com.github.libretube.api
+package dev.jch0029987.libretibs.api
 
 class LocalStreamsExtractionPipedMediaServiceRepository: PipedMediaServiceRepository() {
     private val newPipeDelegate = NewPipeMediaServiceRepository()

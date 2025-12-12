@@ -1,4 +1,4 @@
-package com.github.libretube.ui.dialogs
+package dev.jch0029987.libretibs.ui.dialogs
 
 import android.app.Dialog
 import android.content.Intent
@@ -7,11 +7,11 @@ import android.widget.ArrayAdapter
 import androidx.core.os.bundleOf
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.setFragmentResult
-import com.github.libretube.R
-import com.github.libretube.constants.IntentData
-import com.github.libretube.databinding.DialogPlayOfflineBinding
-import com.github.libretube.ui.activities.OfflinePlayerActivity
-import com.github.libretube.util.TextUtils
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.constants.IntentData
+import dev.jch0029987.libretibs.databinding.DialogPlayOfflineBinding
+import dev.jch0029987.libretibs.ui.activities.OfflinePlayerActivity
+import dev.jch0029987.libretibs.util.TextUtils
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class PlayOfflineDialog : DialogFragment() {

@@ -1,4 +1,4 @@
-package com.github.libretube.ui.base
+package dev.jch0029987.libretibs.ui.base
 
 import android.os.Bundle
 import android.text.InputType
@@ -9,11 +9,11 @@ import androidx.preference.ListPreference
 import androidx.preference.MultiSelectListPreference
 import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
-import com.github.libretube.R
-import com.github.libretube.databinding.DialogTextPreferenceBinding
-import com.github.libretube.ui.activities.SettingsActivity
-import com.github.libretube.ui.extensions.onSystemInsets
-import com.github.libretube.ui.preferences.EditNumberPreference
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.databinding.DialogTextPreferenceBinding
+import dev.jch0029987.libretibs.ui.activities.SettingsActivity
+import dev.jch0029987.libretibs.ui.extensions.onSystemInsets
+import dev.jch0029987.libretibs.ui.preferences.EditNumberPreference
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 /**

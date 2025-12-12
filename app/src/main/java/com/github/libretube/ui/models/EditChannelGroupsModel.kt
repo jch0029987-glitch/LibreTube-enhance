@@ -1,8 +1,8 @@
-package com.github.libretube.ui.models
+package dev.jch0029987.libretibs.ui.models
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.github.libretube.db.obj.SubscriptionGroup
+import dev.jch0029987.libretibs.db.obj.SubscriptionGroup
 
 class EditChannelGroupsModel : ViewModel() {
     val groups = MutableLiveData<List<SubscriptionGroup>>()

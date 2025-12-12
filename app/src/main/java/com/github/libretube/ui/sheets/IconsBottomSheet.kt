@@ -1,11 +1,11 @@
-package com.github.libretube.ui.sheets
+package dev.jch0029987.libretibs.ui.sheets
 
 import android.os.Bundle
 import android.view.View
 import androidx.recyclerview.widget.GridLayoutManager
-import com.github.libretube.R
-import com.github.libretube.databinding.BottomSheetBinding
-import com.github.libretube.ui.adapters.IconsSheetAdapter
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.databinding.BottomSheetBinding
+import dev.jch0029987.libretibs.ui.adapters.IconsSheetAdapter
 
 class IconsBottomSheet : ExpandedBottomSheet(R.layout.bottom_sheet) {
 

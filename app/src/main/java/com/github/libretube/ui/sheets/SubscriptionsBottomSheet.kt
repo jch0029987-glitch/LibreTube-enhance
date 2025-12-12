@@ -1,4 +1,4 @@
-package com.github.libretube.ui.sheets
+package dev.jch0029987.libretibs.ui.sheets
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -7,15 +7,15 @@ import androidx.core.content.ContextCompat
 import androidx.core.view.isVisible
 import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.activityViewModels
-import com.github.libretube.R
-import com.github.libretube.api.obj.Subscription
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.databinding.SheetSubscriptionsBinding
-import com.github.libretube.extensions.toID
-import com.github.libretube.helpers.PreferenceHelper
-import com.github.libretube.ui.adapters.SubscriptionChannelAdapter
-import com.github.libretube.ui.models.EditChannelGroupsModel
-import com.github.libretube.ui.models.SubscriptionsViewModel
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.api.obj.Subscription
+import dev.jch0029987.libretibs.constants.PreferenceKeys
+import dev.jch0029987.libretibs.databinding.SheetSubscriptionsBinding
+import dev.jch0029987.libretibs.extensions.toID
+import dev.jch0029987.libretibs.helpers.PreferenceHelper
+import dev.jch0029987.libretibs.ui.adapters.SubscriptionChannelAdapter
+import dev.jch0029987.libretibs.ui.models.EditChannelGroupsModel
+import dev.jch0029987.libretibs.ui.models.SubscriptionsViewModel
 import java.util.Locale
 
 class SubscriptionsBottomSheet : ExpandedBottomSheet(R.layout.sheet_subscriptions) {

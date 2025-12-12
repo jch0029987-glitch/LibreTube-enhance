@@ -35,7 +35,7 @@
 
     <PreferenceCategory app:title="@string/behavior">
 
-        <com.github.libretube.ui.views.SliderPreference
+        <dev.jch0029987.libretibs.ui.views.SliderPreference
             android:icon="@drawable/ic_skip"
             app:defValue="10.0"
             app:key="seek_increment"
@@ -108,7 +108,7 @@
             app:key="rich_caption_rendering"
             app:title="@string/rich_caption_rendering" />
 
-        <com.github.libretube.ui.views.SliderPreference
+        <dev.jch0029987.libretibs.ui.views.SliderPreference
             android:icon="@drawable/ic_text"
             android:key="captions_size"
             android:title="@string/captions_size"
@@ -152,7 +152,7 @@
             app:key="remember_playback_speed"
             app:title="@string/remember_playback_speed" />
 
-        <com.github.libretube.ui.views.SliderPreference
+        <dev.jch0029987.libretibs.ui.views.SliderPreference
             android:dependency="remember_playback_speed"
             android:icon="@drawable/ic_speed"
             app:defValue="1.0"
@@ -166,7 +166,7 @@
 
     <PreferenceCategory app:title="@string/misc">
 
-        <com.github.libretube.ui.preferences.EditNumberPreference
+        <dev.jch0029987.libretibs.ui.preferences.EditNumberPreference
             android:icon="@drawable/ic_time"
             app:defaultValue="50"
             app:key="buffering_goal"

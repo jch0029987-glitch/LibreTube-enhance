@@ -1,4 +1,4 @@
-package com.github.libretube.util
+package dev.jch0029987.libretibs.util
 
 import android.app.PendingIntent
 import android.content.Context
@@ -9,11 +9,11 @@ import androidx.media3.session.CommandButton
 import androidx.media3.session.DefaultMediaNotificationProvider
 import androidx.media3.session.MediaNotification
 import androidx.media3.session.MediaSession
-import com.github.libretube.LibreTubeApp.Companion.PLAYER_CHANNEL_NAME
-import com.github.libretube.R
-import com.github.libretube.enums.NotificationId
-import com.github.libretube.enums.PlayerEvent
-import com.github.libretube.helpers.PlayerHelper
+import dev.jch0029987.libretibs.LibreTubeApp.Companion.PLAYER_CHANNEL_NAME
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.enums.NotificationId
+import dev.jch0029987.libretibs.enums.PlayerEvent
+import dev.jch0029987.libretibs.helpers.PlayerHelper
 import com.google.common.collect.ImmutableList
 
 @androidx.annotation.OptIn(androidx.media3.common.util.UnstableApi::class)

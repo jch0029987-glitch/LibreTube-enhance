@@ -1,17 +1,17 @@
-package com.github.libretube.util
+package dev.jch0029987.libretibs.util
 
 import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.FragmentActivity
-import com.github.libretube.BuildConfig
-import com.github.libretube.R
-import com.github.libretube.api.RetrofitInstance
-import com.github.libretube.constants.IntentData.appUpdateChangelog
-import com.github.libretube.constants.IntentData.appUpdateURL
-import com.github.libretube.extensions.TAG
-import com.github.libretube.extensions.toastFromMainDispatcher
-import com.github.libretube.ui.dialogs.UpdateAvailableDialog
+import dev.jch0029987.libretibs.BuildConfig
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.api.RetrofitInstance
+import dev.jch0029987.libretibs.constants.IntentData.appUpdateChangelog
+import dev.jch0029987.libretibs.constants.IntentData.appUpdateURL
+import dev.jch0029987.libretibs.extensions.TAG
+import dev.jch0029987.libretibs.extensions.toastFromMainDispatcher
+import dev.jch0029987.libretibs.ui.dialogs.UpdateAvailableDialog
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import java.util.Locale

@@ -1,15 +1,15 @@
-package com.github.libretube.repo
+package dev.jch0029987.libretibs.repo
 
 import android.util.Log
-import com.github.libretube.api.obj.Subscription
-import com.github.libretube.db.DatabaseHolder.Database
-import com.github.libretube.db.obj.LocalSubscription
-import com.github.libretube.extensions.TAG
-import com.github.libretube.extensions.parallelMap
-import com.github.libretube.repo.LocalFeedRepository.Companion.CHANNEL_BATCH_DELAY
-import com.github.libretube.repo.LocalFeedRepository.Companion.CHANNEL_BATCH_SIZE
-import com.github.libretube.repo.LocalFeedRepository.Companion.CHANNEL_CHUNK_SIZE
-import com.github.libretube.ui.dialogs.ShareDialog.Companion.YOUTUBE_FRONTEND_URL
+import dev.jch0029987.libretibs.api.obj.Subscription
+import dev.jch0029987.libretibs.db.DatabaseHolder.Database
+import dev.jch0029987.libretibs.db.obj.LocalSubscription
+import dev.jch0029987.libretibs.extensions.TAG
+import dev.jch0029987.libretibs.extensions.parallelMap
+import dev.jch0029987.libretibs.repo.LocalFeedRepository.Companion.CHANNEL_BATCH_DELAY
+import dev.jch0029987.libretibs.repo.LocalFeedRepository.Companion.CHANNEL_BATCH_SIZE
+import dev.jch0029987.libretibs.repo.LocalFeedRepository.Companion.CHANNEL_CHUNK_SIZE
+import dev.jch0029987.libretibs.ui.dialogs.ShareDialog.Companion.YOUTUBE_FRONTEND_URL
 import kotlinx.coroutines.delay
 import org.schabi.newpipe.extractor.channel.ChannelInfo
 import java.util.concurrent.atomic.AtomicInteger

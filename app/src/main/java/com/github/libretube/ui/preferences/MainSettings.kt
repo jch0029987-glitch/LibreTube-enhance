@@ -1,14 +1,14 @@
-package com.github.libretube.ui.preferences
+package dev.jch0029987.libretibs.ui.preferences
 
 import android.os.Bundle
 import androidx.lifecycle.lifecycleScope
 import androidx.preference.Preference
-import com.github.libretube.BuildConfig
-import com.github.libretube.R
-import com.github.libretube.helpers.PreferenceHelper
-import com.github.libretube.ui.base.BasePreferenceFragment
-import com.github.libretube.ui.dialogs.ErrorDialog
-import com.github.libretube.util.UpdateChecker
+import dev.jch0029987.libretibs.BuildConfig
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.helpers.PreferenceHelper
+import dev.jch0029987.libretibs.ui.base.BasePreferenceFragment
+import dev.jch0029987.libretibs.ui.dialogs.ErrorDialog
+import dev.jch0029987.libretibs.util.UpdateChecker
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

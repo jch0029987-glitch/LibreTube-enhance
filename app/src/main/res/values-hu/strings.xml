@@ -332,7 +332,7 @@
     <string name="resume">Folytatás</string>
     <string name="concurrent_downloads_limit_reached">Az egyidejű letöltések maximális száma elérve.</string>
     <string name="audio_only_mode">Csak hang mód</string>
-    <string name="audio_only_mode_summary">Változtassa a LibreTube-ot zenelejátszóvá</string>
+    <string name="audio_only_mode_summary">Változtassa a LibreTibs Enhance-ot zenelejátszóvá</string>
     <string name="sleep_timer">Elalvási időzítő</string>
     <string name="skip_silence">Csend átugrása</string>
     <string name="help">Súgó</string>
@@ -381,7 +381,7 @@
     <string name="mark_as_unwatched">Megjelölés nem megtekintettnek</string>
     <string name="home_tab_content">Kezdőlap tartalma</string>
     <string name="choose_instance">Először válasszon egy példányt!</string>
-    <string name="welcome">Üdvözli a LibreTube</string>
+    <string name="welcome">Üdvözli a LibreTibs Enhance</string>
     <string name="stop">Leállítás</string>
     <string name="change_playlist_description">Lejátszási lista leírásának módosítása</string>
     <string name="playlist_description">Lejátszási lista leírása</string>
@@ -502,7 +502,7 @@
     <string name="contribute_to_dearrow">Közreműködés a DeArrow-hoz</string>
     <string name="best_quality">Legjobb</string>
     <string name="external_download_provider">Külső letöltési szolgáltató</string>
-    <string name="external_download_provider_summary">Adja meg a videók letöltéséhez használni kívánt alkalmazás csomagnevét. A LibreTube beépített letöltőjének használatához hagyja üresen.</string>
+    <string name="external_download_provider_summary">Adja meg a videók letöltéséhez használni kívánt alkalmazás csomagnevét. A LibreTibs Enhance beépített letöltőjének használatához hagyja üresen.</string>
     <string name="screenshot">Képernyőkép</string>
     <string name="pip">PiP</string>
     <string name="local_stream_extraction">Helyi közvetítés kinyerése</string>

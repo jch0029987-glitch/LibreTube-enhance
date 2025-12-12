@@ -1,4 +1,4 @@
-package com.github.libretube.ui.adapters.callbacks
+package dev.jch0029987.libretibs.ui.adapters.callbacks
 
 import androidx.recyclerview.widget.DiffUtil
 

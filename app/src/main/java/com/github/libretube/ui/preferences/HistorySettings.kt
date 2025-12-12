@@ -1,11 +1,11 @@
-package com.github.libretube.ui.preferences
+package dev.jch0029987.libretibs.ui.preferences
 
 import android.os.Bundle
 import androidx.preference.Preference
-import com.github.libretube.R
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.db.DatabaseHolder.Database
-import com.github.libretube.ui.base.BasePreferenceFragment
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.constants.PreferenceKeys
+import dev.jch0029987.libretibs.db.DatabaseHolder.Database
+import dev.jch0029987.libretibs.ui.base.BasePreferenceFragment
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

@@ -1,4 +1,4 @@
-package com.github.libretube.ui.views
+package dev.jch0029987.libretibs.ui.views
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -11,7 +11,7 @@ import androidx.media3.ui.DefaultTimeBar
 import androidx.media3.ui.PlayerControlView
 import androidx.media3.ui.TimeBar
 import androidx.media3.ui.TimeBar.OnScrubListener
-import com.github.libretube.extensions.dpToPx
+import dev.jch0029987.libretibs.extensions.dpToPx
 import kotlin.math.abs
 
 @UnstableApi

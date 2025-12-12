@@ -41,7 +41,7 @@
     <string name="addToPlaylist">Добавить в плейлист</string>
     <string name="success">Готово.</string>
     <string name="fail">Ошибка :(</string>
-    <string name="about">О LibreTube</string>
+    <string name="about">О LibreTibs Enhance</string>
     <string name="subscriptions">Подписки</string>
     <string name="library">Библиотека</string>
     <string name="videos">Видео</string>
@@ -332,7 +332,7 @@
     <string name="unknown">Неизвестно</string>
     <string name="resume">Продолжить</string>
     <string name="audio_only_mode">Режим только аудио</string>
-    <string name="audio_only_mode_summary">Превратите LibreTube в музыкальный проигрыватель</string>
+    <string name="audio_only_mode_summary">Превратите LibreTibs Enhance в музыкальный проигрыватель</string>
     <string name="sleep_timer">Таймер сна</string>
     <string name="skip_silence">Пропускать тишину</string>
     <string name="help">Справка</string>
@@ -382,7 +382,7 @@
     <string name="export_playlists_to">Экспорт плейлистов в</string>
     <string name="home_tab_content">Содержимое главной вкладки</string>
     <string name="mark_as_unwatched">Пометить как непросмотренное</string>
-    <string name="welcome">Добро пожаловать в LibreTube</string>
+    <string name="welcome">Добро пожаловать в LibreTibs Enhance</string>
     <string name="choose_instance">Пожалуйста, сперва выберите сервер!</string>
     <string name="choose_instance_long">Пожалуйста, выберите сервер Piped, который будет использован, снизу. Сервер Piped будет выступать в роли посредника между YouTube и вами. Эти серверы расположены в разных частях мира, обозначенных флагами их стран. Серверы, физически находящиеся ближе к вам, вероятно, будут быстрее серверов, расположенных далеко. Сменить сервер можно в любое время в настройках.</string>
     <string name="change_playlist_description">Изменить описание плейлиста</string>
@@ -504,7 +504,7 @@
     <string name="thumbnail_time">Показывать время на миниатюре</string>
     <string name="best_quality">Наилучшее</string>
     <string name="external_download_provider">Внешний скачиватель</string>
-    <string name="external_download_provider_summary">Название пакета приложения, которое будет использоваться для скачивания видео. Оставьте пустым, чтобы скачивать через LibreTube.</string>
+    <string name="external_download_provider_summary">Название пакета приложения, которое будет использоваться для скачивания видео. Оставьте пустым, чтобы скачивать через LibreTibs Enhance.</string>
     <string name="screenshot">Сохранить кадр</string>
     <string name="pip">КвК</string>
     <string name="local_stream_extraction">Локальное извлечение потока</string>

@@ -1,11 +1,11 @@
-package com.github.libretube.ui.extensions
+package dev.jch0029987.libretibs.ui.extensions
 
 import android.widget.TextView
 import androidx.core.view.isVisible
-import com.github.libretube.R
-import com.github.libretube.api.SubscriptionHelper
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.helpers.PreferenceHelper
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.api.SubscriptionHelper
+import dev.jch0029987.libretibs.constants.PreferenceKeys
+import dev.jch0029987.libretibs.helpers.PreferenceHelper
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.coroutines.CoroutineScope

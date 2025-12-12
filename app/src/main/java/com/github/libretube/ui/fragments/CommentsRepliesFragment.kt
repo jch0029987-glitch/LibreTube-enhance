@@ -1,4 +1,4 @@
-package com.github.libretube.ui.fragments
+package dev.jch0029987.libretibs.ui.fragments
 
 import android.os.Bundle
 import android.view.View
@@ -14,17 +14,17 @@ import androidx.paging.LoadState
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.LinearSmoothScroller
 import androidx.recyclerview.widget.RecyclerView
-import com.github.libretube.R
-import com.github.libretube.api.obj.Comment
-import com.github.libretube.constants.IntentData
-import com.github.libretube.databinding.FragmentCommentsBinding
-import com.github.libretube.extensions.formatShort
-import com.github.libretube.extensions.parcelable
-import com.github.libretube.helpers.NavigationHelper
-import com.github.libretube.ui.adapters.CommentsPagingAdapter
-import com.github.libretube.ui.models.CommentRepliesViewModel
-import com.github.libretube.ui.models.CommentsViewModel
-import com.github.libretube.ui.sheets.CommentsSheet
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.api.obj.Comment
+import dev.jch0029987.libretibs.constants.IntentData
+import dev.jch0029987.libretibs.databinding.FragmentCommentsBinding
+import dev.jch0029987.libretibs.extensions.formatShort
+import dev.jch0029987.libretibs.extensions.parcelable
+import dev.jch0029987.libretibs.helpers.NavigationHelper
+import dev.jch0029987.libretibs.ui.adapters.CommentsPagingAdapter
+import dev.jch0029987.libretibs.ui.models.CommentRepliesViewModel
+import dev.jch0029987.libretibs.ui.models.CommentsViewModel
+import dev.jch0029987.libretibs.ui.sheets.CommentsSheet
 
 class CommentsRepliesFragment : Fragment(R.layout.fragment_comments) {
 

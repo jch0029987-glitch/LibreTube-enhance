@@ -1,4 +1,4 @@
-package com.github.libretube.services
+package dev.jch0029987.libretibs.services
 
 import android.app.NotificationManager
 import android.app.PendingIntent.FLAG_CANCEL_CURRENT
@@ -23,36 +23,36 @@ import androidx.core.util.set
 import androidx.core.util.valueIterator
 import androidx.lifecycle.LifecycleService
 import androidx.lifecycle.lifecycleScope
-import com.github.libretube.LibreTubeApp.Companion.DOWNLOAD_CHANNEL_NAME
-import com.github.libretube.R
-import com.github.libretube.api.MediaServiceRepository
-import com.github.libretube.api.obj.Streams
-import com.github.libretube.constants.IntentData
-import com.github.libretube.db.DatabaseHolder.Database
-import com.github.libretube.db.obj.Download
-import com.github.libretube.db.obj.DownloadChapter
-import com.github.libretube.db.obj.DownloadItem
-import com.github.libretube.enums.FileType
-import com.github.libretube.enums.NotificationId
-import com.github.libretube.extensions.TAG
-import com.github.libretube.extensions.formatAsFileSize
-import com.github.libretube.extensions.getContentLength
-import com.github.libretube.extensions.parcelableExtra
-import com.github.libretube.extensions.toLocalDate
-import com.github.libretube.extensions.toastFromMainDispatcher
-import com.github.libretube.extensions.toastFromMainThread
-import com.github.libretube.helpers.DownloadHelper
-import com.github.libretube.helpers.DownloadHelper.getNotificationId
-import com.github.libretube.helpers.ImageHelper
-import com.github.libretube.helpers.NetworkHelper
-import com.github.libretube.helpers.ProxyHelper
-import com.github.libretube.obj.DownloadStatus
-import com.github.libretube.parcelable.DownloadData
-import com.github.libretube.receivers.NotificationReceiver
-import com.github.libretube.receivers.NotificationReceiver.Companion.ACTION_DOWNLOAD_PAUSE
-import com.github.libretube.receivers.NotificationReceiver.Companion.ACTION_DOWNLOAD_RESUME
-import com.github.libretube.receivers.NotificationReceiver.Companion.ACTION_DOWNLOAD_STOP
-import com.github.libretube.ui.activities.MainActivity
+import dev.jch0029987.libretibs.LibreTubeApp.Companion.DOWNLOAD_CHANNEL_NAME
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.api.MediaServiceRepository
+import dev.jch0029987.libretibs.api.obj.Streams
+import dev.jch0029987.libretibs.constants.IntentData
+import dev.jch0029987.libretibs.db.DatabaseHolder.Database
+import dev.jch0029987.libretibs.db.obj.Download
+import dev.jch0029987.libretibs.db.obj.DownloadChapter
+import dev.jch0029987.libretibs.db.obj.DownloadItem
+import dev.jch0029987.libretibs.enums.FileType
+import dev.jch0029987.libretibs.enums.NotificationId
+import dev.jch0029987.libretibs.extensions.TAG
+import dev.jch0029987.libretibs.extensions.formatAsFileSize
+import dev.jch0029987.libretibs.extensions.getContentLength
+import dev.jch0029987.libretibs.extensions.parcelableExtra
+import dev.jch0029987.libretibs.extensions.toLocalDate
+import dev.jch0029987.libretibs.extensions.toastFromMainDispatcher
+import dev.jch0029987.libretibs.extensions.toastFromMainThread
+import dev.jch0029987.libretibs.helpers.DownloadHelper
+import dev.jch0029987.libretibs.helpers.DownloadHelper.getNotificationId
+import dev.jch0029987.libretibs.helpers.ImageHelper
+import dev.jch0029987.libretibs.helpers.NetworkHelper
+import dev.jch0029987.libretibs.helpers.ProxyHelper
+import dev.jch0029987.libretibs.obj.DownloadStatus
+import dev.jch0029987.libretibs.parcelable.DownloadData
+import dev.jch0029987.libretibs.receivers.NotificationReceiver
+import dev.jch0029987.libretibs.receivers.NotificationReceiver.Companion.ACTION_DOWNLOAD_PAUSE
+import dev.jch0029987.libretibs.receivers.NotificationReceiver.Companion.ACTION_DOWNLOAD_RESUME
+import dev.jch0029987.libretibs.receivers.NotificationReceiver.Companion.ACTION_DOWNLOAD_STOP
+import dev.jch0029987.libretibs.ui.activities.MainActivity
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.SupervisorJob
@@ -652,9 +652,9 @@ class DownloadService : LifecycleService() {
     companion object {
         private const val DOWNLOAD_NOTIFICATION_GROUP = "download_notification_group"
         const val ACTION_SERVICE_STARTED =
-            "com.github.libretube.services.DownloadService.ACTION_SERVICE_STARTED"
+            "dev.jch0029987.libretibs.services.DownloadService.ACTION_SERVICE_STARTED"
         const val ACTION_SERVICE_STOPPED =
-            "com.github.libretube.services.DownloadService.ACTION_SERVICE_STOPPED"
+            "dev.jch0029987.libretibs.services.DownloadService.ACTION_SERVICE_STOPPED"
 
         // any values that are not in that range are strictly rate limited by YT or are very slow due
         // to the amount of requests that's being made

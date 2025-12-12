@@ -1,9 +1,9 @@
-package com.github.libretube.repo
+package dev.jch0029987.libretibs.repo
 
-import com.github.libretube.api.obj.Playlist
-import com.github.libretube.api.obj.Playlists
-import com.github.libretube.api.obj.StreamItem
-import com.github.libretube.obj.PipedImportPlaylist
+import dev.jch0029987.libretibs.api.obj.Playlist
+import dev.jch0029987.libretibs.api.obj.Playlists
+import dev.jch0029987.libretibs.api.obj.StreamItem
+import dev.jch0029987.libretibs.obj.PipedImportPlaylist
 
 interface PlaylistRepository {
     suspend fun getPlaylist(playlistId: String): Playlist

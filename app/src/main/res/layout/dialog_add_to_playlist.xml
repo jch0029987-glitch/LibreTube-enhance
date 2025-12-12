@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-    <com.github.libretube.ui.views.DropdownMenu
+    <dev.jch0029987.libretibs.ui.views.DropdownMenu
         android:id="@+id/playlists_spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

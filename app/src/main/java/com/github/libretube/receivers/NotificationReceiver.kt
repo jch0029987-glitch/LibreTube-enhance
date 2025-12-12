@@ -1,10 +1,10 @@
-package com.github.libretube.receivers
+package dev.jch0029987.libretibs.receivers
 
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import androidx.core.content.ContextCompat
-import com.github.libretube.services.DownloadService
+import dev.jch0029987.libretibs.services.DownloadService
 
 class NotificationReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context, intent: Intent) {
@@ -22,10 +22,10 @@ class NotificationReceiver : BroadcastReceiver() {
 
     companion object {
         const val ACTION_DOWNLOAD_RESUME =
-            "com.github.libretube.receivers.NotificationReceiver.ACTION_DOWNLOAD_RESUME"
+            "dev.jch0029987.libretibs.receivers.NotificationReceiver.ACTION_DOWNLOAD_RESUME"
         const val ACTION_DOWNLOAD_PAUSE =
-            "com.github.libretube.receivers.NotificationReceiver.ACTION_DOWNLOAD_PAUSE"
+            "dev.jch0029987.libretibs.receivers.NotificationReceiver.ACTION_DOWNLOAD_PAUSE"
         const val ACTION_DOWNLOAD_STOP =
-            "com.github.libretube.receivers.NotificationReceiver.ACTION_DOWNLOAD_STOP"
+            "dev.jch0029987.libretibs.receivers.NotificationReceiver.ACTION_DOWNLOAD_STOP"
     }
 }

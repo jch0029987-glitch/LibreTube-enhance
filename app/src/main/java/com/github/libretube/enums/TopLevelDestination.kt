@@ -1,8 +1,8 @@
-package com.github.libretube.enums
+package dev.jch0029987.libretibs.enums
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
-import com.github.libretube.R
+import dev.jch0029987.libretibs.R
 
 enum class TopLevelDestination(
     val route: String,

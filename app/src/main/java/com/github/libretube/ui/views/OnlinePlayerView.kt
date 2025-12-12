@@ -1,4 +1,4 @@
-package com.github.libretube.ui.views
+package dev.jch0029987.libretibs.ui.views
 
 import android.content.Context
 import android.os.Bundle
@@ -15,22 +15,22 @@ import androidx.media3.common.C
 import androidx.media3.common.Player
 import androidx.media3.common.util.UnstableApi
 import androidx.media3.session.MediaController
-import com.github.libretube.R
-import com.github.libretube.constants.IntentData
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.enums.PlayerCommand
-import com.github.libretube.extensions.toID
-import com.github.libretube.helpers.PlayerHelper
-import com.github.libretube.helpers.PreferenceHelper
-import com.github.libretube.obj.BottomSheetItem
-import com.github.libretube.services.AbstractPlayerService
-import com.github.libretube.ui.base.BaseActivity
-import com.github.libretube.ui.dialogs.SubmitDeArrowDialog
-import com.github.libretube.ui.dialogs.SubmitSegmentDialog
-import com.github.libretube.ui.interfaces.OnlinePlayerOptions
-import com.github.libretube.ui.models.CommonPlayerViewModel
-import com.github.libretube.ui.models.PlayerViewModel
-import com.github.libretube.util.PlayingQueue
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.constants.IntentData
+import dev.jch0029987.libretibs.constants.PreferenceKeys
+import dev.jch0029987.libretibs.enums.PlayerCommand
+import dev.jch0029987.libretibs.extensions.toID
+import dev.jch0029987.libretibs.helpers.PlayerHelper
+import dev.jch0029987.libretibs.helpers.PreferenceHelper
+import dev.jch0029987.libretibs.obj.BottomSheetItem
+import dev.jch0029987.libretibs.services.AbstractPlayerService
+import dev.jch0029987.libretibs.ui.base.BaseActivity
+import dev.jch0029987.libretibs.ui.dialogs.SubmitDeArrowDialog
+import dev.jch0029987.libretibs.ui.dialogs.SubmitSegmentDialog
+import dev.jch0029987.libretibs.ui.interfaces.OnlinePlayerOptions
+import dev.jch0029987.libretibs.ui.models.CommonPlayerViewModel
+import dev.jch0029987.libretibs.ui.models.PlayerViewModel
+import dev.jch0029987.libretibs.util.PlayingQueue
 
 @UnstableApi
 class OnlinePlayerView(

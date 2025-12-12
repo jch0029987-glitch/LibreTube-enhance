@@ -345,7 +345,7 @@
     <string name="nothing_selected">No hi ha res seleccionat.</string>
     <string name="color_violet">Violeta versàtil</string>
     <string name="playlistUrl">URL de la llista de reproducció</string>
-    <string name="audio_only_mode_summary">Converteix LibreTube en un reproductor de música</string>
+    <string name="audio_only_mode_summary">Converteix LibreTibs Enhance en un reproductor de música</string>
     <string name="sleep_timer">Temporitzador</string>
     <string name="skip_silence">Salta el silenci</string>
     <string name="help">Ajuda</string>
@@ -385,7 +385,7 @@
     <string name="tooltip_clear_queue">Esborra la cua</string>
     <string name="remove_bookmark">Elimina el marcador</string>
     <string name="playlist_description">Descripció de la llista de reproducció</string>
-    <string name="welcome">Us donem la benvinguda a LibreTube</string>
+    <string name="welcome">Us donem la benvinguda a LibreTibs Enhance</string>
     <string name="comments_count">Comentaris (%1$s)</string>
     <string name="category_highlight_summary">Podria ser el títol anunciat, la miniatura o la part més interessant del vídeo. Pots saltar-hi fent clic sobre ell a la secció de capítols.</string>
     <string name="pure_theme">Tema Pur</string>
@@ -503,7 +503,7 @@
     <string name="title">Títol</string>
     <string name="screenshot">Captura de pantalla</string>
     <string name="external_download_provider">Proveïdor extern de descàrregues</string>
-    <string name="external_download_provider_summary">Introduïu el nom del paquet de l\'app que voleu fer servir per descarregar vídeos. Deixeu-ho en blanc per fer servir el descarregador integrat de LibreTube.</string>
+    <string name="external_download_provider_summary">Introduïu el nom del paquet de l\'app que voleu fer servir per descarregar vídeos. Deixeu-ho en blanc per fer servir el descarregador integrat de LibreTibs Enhance.</string>
     <string name="audio_codecs">Còdecs d\'àudio</string>
     <string name="category_exclusive_access">Accés exclusiu</string>
     <string name="createNewPlaylist">Crea nova llista de reproducció</string>

@@ -1,4 +1,4 @@
-package com.github.libretube.ui.interfaces
+package dev.jch0029987.libretibs.ui.interfaces
 
 import android.graphics.Bitmap
 

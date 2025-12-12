@@ -1,4 +1,4 @@
-package com.github.libretube.ui.base
+package dev.jch0029987.libretibs.ui.base
 
 import android.content.Context
 import android.content.pm.ActivityInfo
@@ -8,13 +8,13 @@ import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
-import com.github.libretube.R
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.helpers.LocaleHelper
-import com.github.libretube.helpers.PreferenceHelper
-import com.github.libretube.helpers.ThemeHelper
-import com.github.libretube.helpers.ThemeHelper.getThemeMode
-import com.github.libretube.helpers.WindowHelper
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.constants.PreferenceKeys
+import dev.jch0029987.libretibs.helpers.LocaleHelper
+import dev.jch0029987.libretibs.helpers.PreferenceHelper
+import dev.jch0029987.libretibs.helpers.ThemeHelper
+import dev.jch0029987.libretibs.helpers.ThemeHelper.getThemeMode
+import dev.jch0029987.libretibs.helpers.WindowHelper
 import java.util.Locale
 
 /**

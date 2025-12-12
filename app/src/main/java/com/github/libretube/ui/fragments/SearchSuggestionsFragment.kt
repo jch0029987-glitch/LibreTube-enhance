@@ -1,4 +1,4 @@
-package com.github.libretube.ui.fragments
+package dev.jch0029987.libretibs.ui.fragments
 
 import android.os.Bundle
 import android.view.View
@@ -10,15 +10,15 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.findNavController
-import com.github.libretube.R
-import com.github.libretube.constants.IntentData
-import com.github.libretube.databinding.FragmentSearchSuggestionsBinding
-import com.github.libretube.extensions.anyChildFocused
-import com.github.libretube.ui.activities.MainActivity
-import com.github.libretube.ui.adapters.SearchHistoryAdapter
-import com.github.libretube.ui.adapters.SearchSuggestionsAdapter
-import com.github.libretube.ui.extensions.setOnBackPressed
-import com.github.libretube.ui.models.SearchViewModel
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.constants.IntentData
+import dev.jch0029987.libretibs.databinding.FragmentSearchSuggestionsBinding
+import dev.jch0029987.libretibs.extensions.anyChildFocused
+import dev.jch0029987.libretibs.ui.activities.MainActivity
+import dev.jch0029987.libretibs.ui.adapters.SearchHistoryAdapter
+import dev.jch0029987.libretibs.ui.adapters.SearchSuggestionsAdapter
+import dev.jch0029987.libretibs.ui.extensions.setOnBackPressed
+import dev.jch0029987.libretibs.ui.models.SearchViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext

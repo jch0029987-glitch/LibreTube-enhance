@@ -1,7 +1,7 @@
-package com.github.libretube.enums
+package dev.jch0029987.libretibs.enums
 
-import com.github.libretube.constants.PreferenceKeys.SELECTED_FEED_FILTERS
-import com.github.libretube.helpers.PreferenceHelper
+import dev.jch0029987.libretibs.constants.PreferenceKeys.SELECTED_FEED_FILTERS
+import dev.jch0029987.libretibs.helpers.PreferenceHelper
 
 enum class ContentFilter {
     VIDEOS,

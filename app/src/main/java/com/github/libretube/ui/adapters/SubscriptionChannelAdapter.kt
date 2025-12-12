@@ -1,21 +1,21 @@
-package com.github.libretube.ui.adapters
+package dev.jch0029987.libretibs.ui.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.os.bundleOf
 import androidx.recyclerview.widget.ListAdapter
-import com.github.libretube.api.obj.Subscription
-import com.github.libretube.constants.IntentData
-import com.github.libretube.databinding.ChannelSubscriptionRowBinding
-import com.github.libretube.extensions.toID
-import com.github.libretube.helpers.ContextHelper
-import com.github.libretube.helpers.ImageHelper
-import com.github.libretube.helpers.NavigationHelper
-import com.github.libretube.ui.adapters.callbacks.DiffUtilItemCallback
-import com.github.libretube.ui.base.BaseActivity
-import com.github.libretube.ui.extensions.setupSubscriptionButton
-import com.github.libretube.ui.sheets.ChannelOptionsBottomSheet
-import com.github.libretube.ui.viewholders.SubscriptionChannelViewHolder
+import dev.jch0029987.libretibs.api.obj.Subscription
+import dev.jch0029987.libretibs.constants.IntentData
+import dev.jch0029987.libretibs.databinding.ChannelSubscriptionRowBinding
+import dev.jch0029987.libretibs.extensions.toID
+import dev.jch0029987.libretibs.helpers.ContextHelper
+import dev.jch0029987.libretibs.helpers.ImageHelper
+import dev.jch0029987.libretibs.helpers.NavigationHelper
+import dev.jch0029987.libretibs.ui.adapters.callbacks.DiffUtilItemCallback
+import dev.jch0029987.libretibs.ui.base.BaseActivity
+import dev.jch0029987.libretibs.ui.extensions.setupSubscriptionButton
+import dev.jch0029987.libretibs.ui.sheets.ChannelOptionsBottomSheet
+import dev.jch0029987.libretibs.ui.viewholders.SubscriptionChannelViewHolder
 
 class SubscriptionChannelAdapter :
     ListAdapter<Subscription, SubscriptionChannelViewHolder>(DiffUtilItemCallback()) {

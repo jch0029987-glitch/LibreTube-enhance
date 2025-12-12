@@ -1,12 +1,12 @@
-package com.github.libretube.ui.adapters
+package dev.jch0029987.libretibs.ui.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.github.libretube.databinding.BottomSheetItemBinding
-import com.github.libretube.obj.BottomSheetItem
-import com.github.libretube.ui.extensions.setDrawables
-import com.github.libretube.ui.viewholders.BottomSheetViewHolder
+import dev.jch0029987.libretibs.databinding.BottomSheetItemBinding
+import dev.jch0029987.libretibs.obj.BottomSheetItem
+import dev.jch0029987.libretibs.ui.extensions.setDrawables
+import dev.jch0029987.libretibs.ui.viewholders.BottomSheetViewHolder
 
 class BottomSheetAdapter(
     private val items: List<BottomSheetItem>,

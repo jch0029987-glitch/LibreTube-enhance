@@ -29,7 +29,7 @@ android {
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.github.libretube"
+        applicationId = "dev.jch0029987.libretibs"
         minSdk = 26
         targetSdk = 35
         versionCode = 64
@@ -123,7 +123,7 @@ android {
         generateLocaleConfig = true
     }
 
-    namespace = "com.github.libretube"
+    namespace = "dev.jch0029987.libretibs"
 }
 
 dependencies {

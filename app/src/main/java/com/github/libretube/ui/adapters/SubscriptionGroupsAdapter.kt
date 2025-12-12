@@ -1,17 +1,17 @@
-package com.github.libretube.ui.adapters
+package dev.jch0029987.libretibs.ui.adapters
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.fragment.app.FragmentManager
 import androidx.recyclerview.widget.RecyclerView
-import com.github.libretube.R
-import com.github.libretube.databinding.SubscriptionGroupRowBinding
-import com.github.libretube.db.DatabaseHolder
-import com.github.libretube.db.obj.SubscriptionGroup
-import com.github.libretube.ui.models.EditChannelGroupsModel
-import com.github.libretube.ui.sheets.EditChannelGroupSheet
-import com.github.libretube.ui.viewholders.SubscriptionGroupsViewHolder
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.databinding.SubscriptionGroupRowBinding
+import dev.jch0029987.libretibs.db.DatabaseHolder
+import dev.jch0029987.libretibs.db.obj.SubscriptionGroup
+import dev.jch0029987.libretibs.ui.models.EditChannelGroupsModel
+import dev.jch0029987.libretibs.ui.sheets.EditChannelGroupSheet
+import dev.jch0029987.libretibs.ui.viewholders.SubscriptionGroupsViewHolder
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

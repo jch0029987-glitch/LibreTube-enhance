@@ -322,7 +322,7 @@
     <string name="alternative_pip_controls">Алтернативне контроле слике у слици</string>
     <string name="alternative_pip_controls_summary">Прикажите само звук и контроле за прескакање у слици у слици уместо премотавања унапред и уназад</string>
     <string name="audio_only_mode">Режим плејера аудио снимка</string>
-    <string name="audio_only_mode_summary">Претворите LibreTube у музички плејер</string>
+    <string name="audio_only_mode_summary">Претворите LibreTibs Enhance у музички плејер</string>
     <string name="concurrent_downloads_limit_reached">Достигнуто је ограничење максималног броја истовремених преузимања.</string>
     <string name="pinch_control_summary">Користите покрет штипања да бисте увећали/умањили приказ</string>
     <string name="unknown">Непознато</string>
@@ -380,7 +380,7 @@
         <item quantity="few">%d нова стрима</item>
         <item quantity="other">%d нових стримова</item>
     </plurals>
-    <string name="welcome">Добро дошли у LibreTube</string>
+    <string name="welcome">Добро дошли у LibreTibs Enhance</string>
     <string name="import_playlists_from">Увоз плејлиста из</string>
     <string name="tooltip_minimize">Минимизирај</string>
     <string name="sb_create_segment">Направи сегмент</string>
@@ -503,7 +503,7 @@
     <string name="thumbnail_time">Време сличице</string>
     <string name="best_quality">Најбољи</string>
     <string name="external_download_provider">Пружалац спољног програма за преузимање</string>
-    <string name="external_download_provider_summary">Унесите назив пакета апликације коју желите да користите за преузимање видео записа. Оставите празно да бисте користили уграђени програм за преузимање LibreTube-а.</string>
+    <string name="external_download_provider_summary">Унесите назив пакета апликације коју желите да користите за преузимање видео записа. Оставите празно да бисте користили уграђени програм за преузимање LibreTibs Enhance-а.</string>
     <string name="screenshot">Снимак екрана</string>
     <string name="pip">PiP</string>
     <string name="local_stream_extraction_summary">Директно прикупљање информација о репродукцији видео снимака са YouTube-а без коришћења Piped-а.</string>

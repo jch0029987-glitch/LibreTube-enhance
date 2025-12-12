@@ -1,4 +1,4 @@
-package com.github.libretube.helpers
+package dev.jch0029987.libretibs.helpers
 
 import android.content.Context
 import android.net.ConnectivityManager

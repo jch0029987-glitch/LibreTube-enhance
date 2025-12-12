@@ -1,10 +1,10 @@
-package com.github.libretube.util
+package dev.jch0029987.libretibs.util
 
 import android.content.Context
 import android.graphics.Bitmap
 import android.media.MediaMetadataRetriever
-import com.github.libretube.extensions.toAndroidUri
-import com.github.libretube.ui.interfaces.TimeFrameReceiver
+import dev.jch0029987.libretibs.extensions.toAndroidUri
+import dev.jch0029987.libretibs.ui.interfaces.TimeFrameReceiver
 import java.nio.file.Path
 
 class OfflineTimeFrameReceiver(

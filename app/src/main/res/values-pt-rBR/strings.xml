@@ -331,7 +331,7 @@
     <string name="concurrent_downloads_limit_reached">Limite máximo de downloads simultâneos atingido.</string>
     <string name="unknown">Desconhecido</string>
     <string name="resume">Continuar</string>
-    <string name="audio_only_mode_summary">Usar o LibreTube como player de músicas</string>
+    <string name="audio_only_mode_summary">Usar o LibreTibs Enhance como player de músicas</string>
     <string name="audio_only_mode">Somente áudio</string>
     <string name="sleep_timer">Temporizador</string>
     <string name="skip_silence">Pular silêncio</string>
@@ -383,7 +383,7 @@
     <string name="mark_as_unwatched">Marcar como não assistido</string>
     <string name="choose_instance_long">Escolha uma instância Piped para usar abaixo. A instância Piped atuará como intermediária entre você e o YouTube. Essas instâncias estão localizadas em locais físicos diferentes, indicados pelas bandeiras dos países. As instâncias fisicamente mais próximas de você são provavelmente mais rápidas do que as instâncias que não estão. Você pode alterar a instância usada nas configurações a qualquer momento.</string>
     <string name="choose_instance">Escolha uma instância primeiro!</string>
-    <string name="welcome">Bem-vindo ao LibreTube</string>
+    <string name="welcome">Bem-vindo ao LibreTibs Enhance</string>
     <string name="change_playlist_description">Alterar descrição da playlist</string>
     <string name="playlist_description">Descrição da playlist</string>
     <string name="emptyPlaylistDescription">A descrição da playlist não pode estar vazia</string>
@@ -503,7 +503,7 @@
     <string name="title">Título</string>
     <string name="best_quality">Melhor qualidade</string>
     <string name="external_download_provider">Provedor de download externo</string>
-    <string name="external_download_provider_summary">Digite o nome do pacote da aplicação que deseja usar para baixar vídeos. Deixe em branco para usar o provedor de download do LibreTube.</string>
+    <string name="external_download_provider_summary">Digite o nome do pacote da aplicação que deseja usar para baixar vídeos. Deixe em branco para usar o provedor de download do LibreTibs Enhance.</string>
     <string name="screenshot">Capturar tela</string>
     <string name="pip">PiP</string>
     <string name="local_stream_extraction">Extrair informações do vídeo localmente</string>

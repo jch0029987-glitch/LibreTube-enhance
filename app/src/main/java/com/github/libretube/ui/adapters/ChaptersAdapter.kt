@@ -1,16 +1,16 @@
-package com.github.libretube.ui.adapters
+package dev.jch0029987.libretibs.ui.adapters
 
 import android.graphics.Color
 import android.text.format.DateUtils
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.github.libretube.R
-import com.github.libretube.api.obj.ChapterSegment
-import com.github.libretube.databinding.ChaptersRowBinding
-import com.github.libretube.helpers.ImageHelper
-import com.github.libretube.helpers.ThemeHelper
-import com.github.libretube.ui.viewholders.ChaptersViewHolder
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.api.obj.ChapterSegment
+import dev.jch0029987.libretibs.databinding.ChaptersRowBinding
+import dev.jch0029987.libretibs.helpers.ImageHelper
+import dev.jch0029987.libretibs.helpers.ThemeHelper
+import dev.jch0029987.libretibs.ui.viewholders.ChaptersViewHolder
 
 class ChaptersAdapter(
     var chapters: List<ChapterSegment>,

@@ -1,4 +1,4 @@
-package com.github.libretube.constants
+package dev.jch0029987.libretibs.constants
 
 object IntentData {
     const val downloadData = "downloadData"

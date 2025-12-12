@@ -1,11 +1,11 @@
-package com.github.libretube.ui.activities
+package dev.jch0029987.libretibs.ui.activities
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
-import com.github.libretube.databinding.VideoTagRowBinding
-import com.github.libretube.ui.adapters.callbacks.DiffUtilItemCallback
-import com.github.libretube.ui.viewholders.VideoTagsViewHolder
+import dev.jch0029987.libretibs.databinding.VideoTagRowBinding
+import dev.jch0029987.libretibs.ui.adapters.callbacks.DiffUtilItemCallback
+import dev.jch0029987.libretibs.ui.viewholders.VideoTagsViewHolder
 
 class VideoTagsAdapter : ListAdapter<String, VideoTagsViewHolder>(DiffUtilItemCallback()) {
 

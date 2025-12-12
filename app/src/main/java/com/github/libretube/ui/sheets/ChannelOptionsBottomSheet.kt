@@ -1,18 +1,18 @@
-package com.github.libretube.ui.sheets
+package dev.jch0029987.libretibs.ui.sheets
 
 import android.os.Bundle
 import android.util.Log
 import androidx.core.os.bundleOf
-import com.github.libretube.R
-import com.github.libretube.api.MediaServiceRepository
-import com.github.libretube.constants.IntentData
-import com.github.libretube.enums.ShareObjectType
-import com.github.libretube.extensions.TAG
-import com.github.libretube.extensions.toID
-import com.github.libretube.helpers.BackgroundHelper
-import com.github.libretube.helpers.NavigationHelper
-import com.github.libretube.obj.ShareData
-import com.github.libretube.ui.dialogs.ShareDialog
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.api.MediaServiceRepository
+import dev.jch0029987.libretibs.constants.IntentData
+import dev.jch0029987.libretibs.enums.ShareObjectType
+import dev.jch0029987.libretibs.extensions.TAG
+import dev.jch0029987.libretibs.extensions.toID
+import dev.jch0029987.libretibs.helpers.BackgroundHelper
+import dev.jch0029987.libretibs.helpers.NavigationHelper
+import dev.jch0029987.libretibs.obj.ShareData
+import dev.jch0029987.libretibs.ui.dialogs.ShareDialog
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 

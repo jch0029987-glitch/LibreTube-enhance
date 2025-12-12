@@ -1,11 +1,11 @@
-package com.github.libretube.ui.models
+package dev.jch0029987.libretibs.ui.models
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.github.libretube.api.InstanceRepository
-import com.github.libretube.api.obj.PipedInstance
-import com.github.libretube.db.DatabaseHolder.Database
-import com.github.libretube.db.obj.CustomInstance
+import dev.jch0029987.libretibs.api.InstanceRepository
+import dev.jch0029987.libretibs.api.obj.PipedInstance
+import dev.jch0029987.libretibs.db.DatabaseHolder.Database
+import dev.jch0029987.libretibs.db.obj.CustomInstance
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.combine

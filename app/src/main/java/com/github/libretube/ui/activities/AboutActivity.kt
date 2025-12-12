@@ -1,4 +1,4 @@
-package com.github.libretube.ui.activities
+package dev.jch0029987.libretibs.ui.activities
 
 import android.annotation.SuppressLint
 import android.content.res.Resources
@@ -6,11 +6,11 @@ import android.os.Build
 import android.os.Bundle
 import androidx.core.text.HtmlCompat
 import androidx.core.text.parseAsHtml
-import com.github.libretube.R
-import com.github.libretube.databinding.ActivityAboutBinding
-import com.github.libretube.helpers.ClipboardHelper
-import com.github.libretube.helpers.IntentHelper
-import com.github.libretube.ui.base.BaseActivity
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.databinding.ActivityAboutBinding
+import dev.jch0029987.libretibs.helpers.ClipboardHelper
+import dev.jch0029987.libretibs.helpers.IntentHelper
+import dev.jch0029987.libretibs.ui.base.BaseActivity
 import com.google.android.material.card.MaterialCardView
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar

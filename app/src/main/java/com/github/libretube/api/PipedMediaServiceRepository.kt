@@ -1,18 +1,18 @@
-package com.github.libretube.api
+package dev.jch0029987.libretibs.api
 
-import com.github.libretube.api.RetrofitInstance.PIPED_API_URL
-import com.github.libretube.api.obj.Channel
-import com.github.libretube.api.obj.ChannelTabResponse
-import com.github.libretube.api.obj.CommentsPage
-import com.github.libretube.api.obj.DeArrowContent
-import com.github.libretube.api.obj.Message
-import com.github.libretube.api.obj.Playlist
-import com.github.libretube.api.obj.SearchResult
-import com.github.libretube.api.obj.SegmentData
-import com.github.libretube.api.obj.StreamItem
-import com.github.libretube.api.obj.Streams
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.helpers.PreferenceHelper
+import dev.jch0029987.libretibs.api.RetrofitInstance.PIPED_API_URL
+import dev.jch0029987.libretibs.api.obj.Channel
+import dev.jch0029987.libretibs.api.obj.ChannelTabResponse
+import dev.jch0029987.libretibs.api.obj.CommentsPage
+import dev.jch0029987.libretibs.api.obj.DeArrowContent
+import dev.jch0029987.libretibs.api.obj.Message
+import dev.jch0029987.libretibs.api.obj.Playlist
+import dev.jch0029987.libretibs.api.obj.SearchResult
+import dev.jch0029987.libretibs.api.obj.SegmentData
+import dev.jch0029987.libretibs.api.obj.StreamItem
+import dev.jch0029987.libretibs.api.obj.Streams
+import dev.jch0029987.libretibs.constants.PreferenceKeys
+import dev.jch0029987.libretibs.helpers.PreferenceHelper
 import kotlinx.serialization.encodeToString
 import retrofit2.HttpException
 

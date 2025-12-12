@@ -1,7 +1,7 @@
-package com.github.libretube.helpers
+package dev.jch0029987.libretibs.helpers
 
-import com.github.libretube.api.obj.PipedStream
-import com.github.libretube.api.obj.Streams
+import dev.jch0029987.libretibs.api.obj.PipedStream
+import dev.jch0029987.libretibs.api.obj.Streams
 import org.w3c.dom.Document
 import org.w3c.dom.Element
 import java.io.StringWriter

@@ -1,12 +1,12 @@
-package com.github.libretube.ui.adapters
+package dev.jch0029987.libretibs.ui.adapters
 
 import android.view.LayoutInflater
 import android.view.MenuItem
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.github.libretube.R
-import com.github.libretube.databinding.NavOptionsItemBinding
-import com.github.libretube.ui.viewholders.NavBarOptionsViewHolder
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.databinding.NavOptionsItemBinding
+import dev.jch0029987.libretibs.ui.viewholders.NavBarOptionsViewHolder
 
 class NavBarOptionsAdapter(
     val items: MutableList<MenuItem>,

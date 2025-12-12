@@ -1,15 +1,15 @@
-package com.github.libretube.ui.fragments
+package dev.jch0029987.libretibs.ui.fragments
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.github.libretube.R
-import com.github.libretube.databinding.FragmentNointernetBinding
-import com.github.libretube.helpers.NavigationHelper
-import com.github.libretube.helpers.NetworkHelper
-import com.github.libretube.ui.activities.SettingsActivity
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.databinding.FragmentNointernetBinding
+import dev.jch0029987.libretibs.helpers.NavigationHelper
+import dev.jch0029987.libretibs.helpers.NetworkHelper
+import dev.jch0029987.libretibs.ui.activities.SettingsActivity
 import com.google.android.material.snackbar.Snackbar
 
 class NoInternetFragment: Fragment(R.layout.fragment_nointernet) {

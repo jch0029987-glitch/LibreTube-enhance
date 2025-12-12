@@ -1,13 +1,13 @@
-package com.github.libretube.api
+package dev.jch0029987.libretibs.api
 
-import com.github.libretube.api.obj.DeArrowBody
-import com.github.libretube.api.obj.DeArrowContent
-import com.github.libretube.api.obj.PipedConfig
-import com.github.libretube.api.obj.PipedInstance
-import com.github.libretube.api.obj.SegmentData
-import com.github.libretube.api.obj.SubmitSegmentResponse
-import com.github.libretube.api.obj.VoteInfo
-import com.github.libretube.obj.update.UpdateInfo
+import dev.jch0029987.libretibs.api.obj.DeArrowBody
+import dev.jch0029987.libretibs.api.obj.DeArrowContent
+import dev.jch0029987.libretibs.api.obj.PipedConfig
+import dev.jch0029987.libretibs.api.obj.PipedInstance
+import dev.jch0029987.libretibs.api.obj.SegmentData
+import dev.jch0029987.libretibs.api.obj.SubmitSegmentResponse
+import dev.jch0029987.libretibs.api.obj.VoteInfo
+import dev.jch0029987.libretibs.obj.update.UpdateInfo
 import kotlinx.serialization.json.JsonElement
 import okhttp3.ResponseBody
 import retrofit2.Response

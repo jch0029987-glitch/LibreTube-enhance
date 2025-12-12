@@ -1,4 +1,4 @@
-package com.github.libretube.ui.dialogs
+package dev.jch0029987.libretibs.ui.dialogs
 
 import android.app.Dialog
 import android.content.DialogInterface
@@ -7,11 +7,11 @@ import androidx.core.os.bundleOf
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.lifecycleScope
-import com.github.libretube.R
-import com.github.libretube.constants.IntentData
-import com.github.libretube.databinding.DialogCustomIntancesListBinding
-import com.github.libretube.ui.adapters.CustomInstancesAdapter
-import com.github.libretube.ui.models.InstancesModel
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.constants.IntentData
+import dev.jch0029987.libretibs.databinding.DialogCustomIntancesListBinding
+import dev.jch0029987.libretibs.ui.adapters.CustomInstancesAdapter
+import dev.jch0029987.libretibs.ui.models.InstancesModel
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch

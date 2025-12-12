@@ -1,4 +1,4 @@
-package com.github.libretube.helpers
+package dev.jch0029987.libretibs.helpers
 
 import android.content.ClipData
 import android.content.ClipboardManager
@@ -6,7 +6,7 @@ import android.content.Context
 import android.os.Build
 import android.widget.Toast
 import androidx.core.content.getSystemService
-import com.github.libretube.R
+import dev.jch0029987.libretibs.R
 
 object ClipboardHelper {
     fun save(

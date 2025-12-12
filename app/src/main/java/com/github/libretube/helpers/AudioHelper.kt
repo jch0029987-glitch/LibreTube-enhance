@@ -1,10 +1,10 @@
-package com.github.libretube.helpers
+package dev.jch0029987.libretibs.helpers
 
 import android.content.Context
 import android.media.AudioManager
 import androidx.core.content.getSystemService
 import androidx.media.AudioManagerCompat
-import com.github.libretube.extensions.normalize
+import dev.jch0029987.libretibs.extensions.normalize
 
 class AudioHelper(context: Context) {
     private val audioManager = context.getSystemService<AudioManager>()!!

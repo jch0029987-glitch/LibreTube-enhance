@@ -6,13 +6,13 @@
     app:startDestination="@id/noInternetFragment">
     <fragment
         android:id="@+id/noInternetFragment"
-        android:name="com.github.libretube.ui.fragments.NoInternetFragment"
+        android:name="dev.jch0029987.libretibs.ui.fragments.NoInternetFragment"
         android:label="fragment_nointernet"
         tools:layout="@layout/fragment_nointernet" />
 
     <fragment
         android:id="@+id/downloadsFragment"
-        android:name="com.github.libretube.ui.fragments.DownloadsFragment"
+        android:name="dev.jch0029987.libretibs.ui.fragments.DownloadsFragment"
         android:label="@string/downloads"
         tools:layout="@layout/fragment_downloads" />
 </navigation>

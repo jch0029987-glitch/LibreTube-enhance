@@ -1,13 +1,13 @@
-package com.github.libretube.ui.tools
+package dev.jch0029987.libretibs.ui.tools
 
 import android.content.Context
 import android.os.Handler
 import android.os.Looper
 import android.os.Process
 import androidx.core.os.postDelayed
-import com.github.libretube.R
-import com.github.libretube.helpers.ContextHelper
-import com.github.libretube.ui.base.BaseActivity
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.helpers.ContextHelper
+import dev.jch0029987.libretibs.ui.base.BaseActivity
 import com.google.android.material.snackbar.Snackbar
 import java.util.Timer
 import kotlin.concurrent.scheduleAtFixedRate

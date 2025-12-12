@@ -1,15 +1,15 @@
-package com.github.libretube.repo
+package dev.jch0029987.libretibs.repo
 
-import com.github.libretube.api.MediaServiceRepository
-import com.github.libretube.api.PlaylistsHelper
-import com.github.libretube.api.PlaylistsHelper.MAX_CONCURRENT_IMPORT_CALLS
-import com.github.libretube.api.obj.Playlist
-import com.github.libretube.api.obj.Playlists
-import com.github.libretube.api.obj.StreamItem
-import com.github.libretube.db.DatabaseHolder
-import com.github.libretube.db.obj.LocalPlaylist
-import com.github.libretube.extensions.parallelMap
-import com.github.libretube.obj.PipedImportPlaylist
+import dev.jch0029987.libretibs.api.MediaServiceRepository
+import dev.jch0029987.libretibs.api.PlaylistsHelper
+import dev.jch0029987.libretibs.api.PlaylistsHelper.MAX_CONCURRENT_IMPORT_CALLS
+import dev.jch0029987.libretibs.api.obj.Playlist
+import dev.jch0029987.libretibs.api.obj.Playlists
+import dev.jch0029987.libretibs.api.obj.StreamItem
+import dev.jch0029987.libretibs.db.DatabaseHolder
+import dev.jch0029987.libretibs.db.obj.LocalPlaylist
+import dev.jch0029987.libretibs.extensions.parallelMap
+import dev.jch0029987.libretibs.obj.PipedImportPlaylist
 
 class LocalPlaylistsRepository: PlaylistRepository {
     override suspend fun getPlaylist(playlistId: String): Playlist {

@@ -1,7 +1,7 @@
-package com.github.libretube.json
+package dev.jch0029987.libretibs.json
 
 import android.util.Log
-import com.github.libretube.extensions.TAG
+import dev.jch0029987.libretibs.extensions.TAG
 import kotlinx.datetime.Instant
 import kotlinx.datetime.LocalDate
 import kotlinx.datetime.TimeZone

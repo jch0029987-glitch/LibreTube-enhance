@@ -1,13 +1,13 @@
-package com.github.libretube.ui.preferences
+package dev.jch0029987.libretibs.ui.preferences
 
 import android.os.Bundle
 import androidx.preference.ListPreference
 import androidx.preference.SwitchPreferenceCompat
 import androidx.work.ExistingPeriodicWorkPolicy
-import com.github.libretube.R
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.helpers.NotificationHelper
-import com.github.libretube.ui.base.BasePreferenceFragment
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.constants.PreferenceKeys
+import dev.jch0029987.libretibs.helpers.NotificationHelper
+import dev.jch0029987.libretibs.ui.base.BasePreferenceFragment
 
 class NotificationSettings : BasePreferenceFragment() {
     override val titleResourceId: Int = R.string.notifications

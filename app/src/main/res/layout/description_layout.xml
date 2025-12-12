@@ -76,7 +76,7 @@
                 android:textIsSelectable="true"
                 tools:text="10M views - 2 days ago " />
 
-            <com.github.libretube.ui.views.DrawableTextView
+            <dev.jch0029987.libretibs.ui.views.DrawableTextView
                 android:id="@+id/textLike"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -85,7 +85,7 @@
                 app:drawableStartDimen="12dp"
                 tools:text="4.2K" />
 
-            <com.github.libretube.ui.views.DrawableTextView
+            <dev.jch0029987.libretibs.ui.views.DrawableTextView
                 android:id="@+id/textDislike"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

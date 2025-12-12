@@ -1,9 +1,9 @@
-package com.github.libretube.ui.extensions
+package dev.jch0029987.libretibs.ui.extensions
 
 import androidx.core.view.isGone
-import com.github.libretube.R
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.helpers.PreferenceHelper
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.constants.PreferenceKeys
+import dev.jch0029987.libretibs.helpers.PreferenceHelper
 import com.google.android.material.button.MaterialButton
 
 fun MaterialButton.setupNotificationBell(channelId: String) {

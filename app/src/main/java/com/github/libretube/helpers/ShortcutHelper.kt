@@ -1,13 +1,13 @@
-package com.github.libretube.helpers
+package dev.jch0029987.libretibs.helpers
 
 import android.content.Context
 import android.content.Intent
 import androidx.core.content.pm.ShortcutInfoCompat
 import androidx.core.content.pm.ShortcutManagerCompat
 import androidx.core.graphics.drawable.IconCompat
-import com.github.libretube.constants.IntentData
-import com.github.libretube.enums.TopLevelDestination
-import com.github.libretube.ui.activities.MainActivity
+import dev.jch0029987.libretibs.constants.IntentData
+import dev.jch0029987.libretibs.enums.TopLevelDestination
+import dev.jch0029987.libretibs.ui.activities.MainActivity
 
 object ShortcutHelper {
 

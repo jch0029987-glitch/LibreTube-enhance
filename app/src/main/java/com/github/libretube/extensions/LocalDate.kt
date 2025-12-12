@@ -1,4 +1,4 @@
-package com.github.libretube.extensions
+package dev.jch0029987.libretibs.extensions
 
 import kotlinx.datetime.Instant
 import kotlinx.datetime.LocalDate

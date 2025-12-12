@@ -323,7 +323,7 @@
     <string name="forward">पुढे</string>
     <string name="alternative_pip_controls_summary">फॉरवर्ड आणि रिवाइंड ऐवजी फक्त ऑडिओ दाखवा आणि PiP मध्ये नियंत्रणे वगळा</string>
     <string name="audio_only_mode">फक्त ऑडिओ मोड</string>
-    <string name="audio_only_mode_summary">LibreTube ला म्युझिक प्लेअरमध्ये बदला</string>
+    <string name="audio_only_mode_summary">LibreTibs Enhance ला म्युझिक प्लेअरमध्ये बदला</string>
     <string name="skip_silence">मौन वगळा</string>
     <string name="autoplay_countdown">ऑटोप्ले काउंटडाउन</string>
     <string name="autoplay_countdown_summary">पुढील व्हिडिओ ऑटो-प्ले करण्यापूर्वी 5 सेकंदचा काउंटडाउन दर्शवा</string>

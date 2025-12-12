@@ -1,7 +1,7 @@
-package com.github.libretube
+package dev.jch0029987.libretibs
 
-import com.github.libretube.util.TextUtils.parseDurationString
-import com.github.libretube.util.TextUtils.toTimeInSeconds
+import dev.jch0029987.libretibs.util.TextUtils.parseDurationString
+import dev.jch0029987.libretibs.util.TextUtils.toTimeInSeconds
 import org.junit.Assert.assertEquals
 import org.junit.Test
 

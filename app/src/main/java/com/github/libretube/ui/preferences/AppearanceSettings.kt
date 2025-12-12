@@ -1,17 +1,17 @@
-package com.github.libretube.ui.preferences
+package dev.jch0029987.libretibs.ui.preferences
 
 import android.os.Bundle
 import androidx.preference.ListPreference
 import androidx.preference.Preference
 import androidx.preference.SwitchPreferenceCompat
-import com.github.libretube.R
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.helpers.PreferenceHelper
-import com.github.libretube.ui.adapters.IconsSheetAdapter
-import com.github.libretube.ui.base.BasePreferenceFragment
-import com.github.libretube.ui.dialogs.NavBarOptionsDialog
-import com.github.libretube.ui.dialogs.RequireRestartDialog
-import com.github.libretube.ui.sheets.IconsBottomSheet
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.constants.PreferenceKeys
+import dev.jch0029987.libretibs.helpers.PreferenceHelper
+import dev.jch0029987.libretibs.ui.adapters.IconsSheetAdapter
+import dev.jch0029987.libretibs.ui.base.BasePreferenceFragment
+import dev.jch0029987.libretibs.ui.dialogs.NavBarOptionsDialog
+import dev.jch0029987.libretibs.ui.dialogs.RequireRestartDialog
+import dev.jch0029987.libretibs.ui.sheets.IconsBottomSheet
 import com.google.android.material.color.DynamicColors
 
 class AppearanceSettings : BasePreferenceFragment() {

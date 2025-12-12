@@ -1,18 +1,18 @@
-package com.github.libretube.ui.adapters
+package dev.jch0029987.libretibs.ui.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.os.bundleOf
 import androidx.recyclerview.widget.ListAdapter
-import com.github.libretube.api.PlaylistsHelper
-import com.github.libretube.constants.IntentData
-import com.github.libretube.databinding.CarouselPlaylistThumbnailBinding
-import com.github.libretube.helpers.ImageHelper
-import com.github.libretube.helpers.NavigationHelper
-import com.github.libretube.ui.adapters.callbacks.DiffUtilItemCallback
-import com.github.libretube.ui.base.BaseActivity
-import com.github.libretube.ui.sheets.PlaylistOptionsBottomSheet
-import com.github.libretube.ui.viewholders.CarouselPlaylistViewHolder
+import dev.jch0029987.libretibs.api.PlaylistsHelper
+import dev.jch0029987.libretibs.constants.IntentData
+import dev.jch0029987.libretibs.databinding.CarouselPlaylistThumbnailBinding
+import dev.jch0029987.libretibs.helpers.ImageHelper
+import dev.jch0029987.libretibs.helpers.NavigationHelper
+import dev.jch0029987.libretibs.ui.adapters.callbacks.DiffUtilItemCallback
+import dev.jch0029987.libretibs.ui.base.BaseActivity
+import dev.jch0029987.libretibs.ui.sheets.PlaylistOptionsBottomSheet
+import dev.jch0029987.libretibs.ui.viewholders.CarouselPlaylistViewHolder
 
 data class CarouselPlaylist(
     val id: String,

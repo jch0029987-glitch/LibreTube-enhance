@@ -330,7 +330,7 @@
     <string name="unknown">Nieznane</string>
     <string name="resume">Wznów</string>
     <string name="no_subtitle">Bez napisów</string>
-    <string name="audio_only_mode_summary">Zmień LibreTube w odtwarzacz muzyczny</string>
+    <string name="audio_only_mode_summary">Zmień LibreTibs Enhance w odtwarzacz muzyczny</string>
     <string name="audio_only_mode">Tryb „tylko dźwięk”</string>
     <string name="sleep_timer">Wyłącz po czasie</string>
     <string name="skip_silence">Pomiń cisze</string>
@@ -377,7 +377,7 @@
     <string name="alphabetic_reversed">Alfabetycznie (odwrotnie)</string>
     <string name="import_subscriptions_from">Importuj subskrypcje z</string>
     <string name="export_subscriptions_to">Eksportuj subskrypcje do</string>
-    <string name="welcome">Witamy w LibreTube</string>
+    <string name="welcome">Witamy w LibreTibs Enhance</string>
     <string name="mark_as_unwatched">Oznacz jako nieobejrzane</string>
     <string name="dearrow">Włącz DeArrow</string>
     <string name="dearrow_summary">Pokaż dokładniejsze i mniej sensacyjne tytuły i miniatury. Wydłuża czas ładowania</string>
@@ -504,7 +504,7 @@
     <string name="best_quality">Najwyższy</string>
     <string name="thumbnail_time">Pokaż czas na miniaturze</string>
     <string name="external_download_provider">Zewnętrzny dostawca pobierania</string>
-    <string name="external_download_provider_summary">Wpisz nazwę pakietu aplikacji której chcesz używać do pobierania wideo. Pozostaw puste aby używać wbudowanego narzędzia LibreTube.</string>
+    <string name="external_download_provider_summary">Wpisz nazwę pakietu aplikacji której chcesz używać do pobierania wideo. Pozostaw puste aby używać wbudowanego narzędzia LibreTibs Enhance.</string>
     <string name="pip">OwO</string>
     <string name="screenshot">Zrzut ekranu</string>
     <string name="local_stream_extraction">Lokalna ekstrakcja strumieniowa</string>

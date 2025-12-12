@@ -1,4 +1,4 @@
-package com.github.libretube.ui.models
+package dev.jch0029987.libretibs.ui.models
 
 import android.content.Context
 import androidx.core.text.parseAsHtml
@@ -11,10 +11,10 @@ import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.cachedIn
 import androidx.paging.liveData
-import com.github.libretube.api.obj.Comment
-import com.github.libretube.extensions.updateIfChanged
-import com.github.libretube.helpers.ClipboardHelper
-import com.github.libretube.ui.models.sources.CommentPagingSource
+import dev.jch0029987.libretibs.api.obj.Comment
+import dev.jch0029987.libretibs.extensions.updateIfChanged
+import dev.jch0029987.libretibs.helpers.ClipboardHelper
+import dev.jch0029987.libretibs.ui.models.sources.CommentPagingSource
 
 class CommentsViewModel : ViewModel() {
 

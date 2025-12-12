@@ -1,8 +1,8 @@
-package com.github.libretube.ui.controllers
+package dev.jch0029987.libretibs.ui.controllers
 
 import android.view.animation.AccelerateDecelerateInterpolator
-import com.github.libretube.extensions.dpToPx
-import com.github.libretube.ui.views.CustomExoPlayerView
+import dev.jch0029987.libretibs.extensions.dpToPx
+import dev.jch0029987.libretibs.ui.views.CustomExoPlayerView
 
 /**
  * A class that handles the scale animation in [CustomExoPlayerView] when entering/exiting

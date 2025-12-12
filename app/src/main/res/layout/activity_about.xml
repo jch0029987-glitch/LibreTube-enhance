@@ -17,7 +17,7 @@
             android:fitsSystemWindows="true"
             app:title="@string/about" />
 
-        <com.github.libretube.ui.views.AppIconHeader
+        <dev.jch0029987.libretibs.ui.views.AppIconHeader
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 

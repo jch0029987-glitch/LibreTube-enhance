@@ -1,12 +1,12 @@
-package com.github.libretube.util
+package dev.jch0029987.libretibs.util
 
 import android.content.Context
 import androidx.media3.common.util.UnstableApi
 import androidx.media3.exoplayer.trackselection.DefaultTrackSelector
 import androidx.media3.exoplayer.trackselection.ExoTrackSelection
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.helpers.NetworkHelper
-import com.github.libretube.helpers.PreferenceHelper
+import dev.jch0029987.libretibs.constants.PreferenceKeys
+import dev.jch0029987.libretibs.helpers.NetworkHelper
+import dev.jch0029987.libretibs.helpers.PreferenceHelper
 
 /**
  * [DefaultTrackSelector] that automatically chooses the audio quality based on

@@ -1,4 +1,4 @@
-package com.github.libretube.ui.dialogs
+package dev.jch0029987.libretibs.ui.dialogs
 
 import android.app.Dialog
 import android.content.Intent
@@ -6,16 +6,16 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.DialogFragment
-import com.github.libretube.R
-import com.github.libretube.constants.IntentData
-import com.github.libretube.databinding.DialogDownloadPlaylistBinding
-import com.github.libretube.enums.PlaylistType
-import com.github.libretube.extensions.getWhileDigit
-import com.github.libretube.extensions.serializable
-import com.github.libretube.helpers.LocaleHelper
-import com.github.libretube.helpers.PreferenceHelper
-import com.github.libretube.services.PlaylistDownloadEnqueueService
-import com.github.libretube.util.TextUtils
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.constants.IntentData
+import dev.jch0029987.libretibs.databinding.DialogDownloadPlaylistBinding
+import dev.jch0029987.libretibs.enums.PlaylistType
+import dev.jch0029987.libretibs.extensions.getWhileDigit
+import dev.jch0029987.libretibs.extensions.serializable
+import dev.jch0029987.libretibs.helpers.LocaleHelper
+import dev.jch0029987.libretibs.helpers.PreferenceHelper
+import dev.jch0029987.libretibs.services.PlaylistDownloadEnqueueService
+import dev.jch0029987.libretibs.util.TextUtils
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class DownloadPlaylistDialog : DialogFragment() {

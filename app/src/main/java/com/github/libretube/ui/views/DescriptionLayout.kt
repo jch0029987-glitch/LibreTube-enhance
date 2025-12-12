@@ -1,4 +1,4 @@
-package com.github.libretube.ui.views
+package dev.jch0029987.libretibs.ui.views
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -10,18 +10,18 @@ import androidx.core.text.method.LinkMovementMethodCompat
 import androidx.core.text.parseAsHtml
 import androidx.core.view.isGone
 import androidx.core.view.isVisible
-import com.github.libretube.R
-import com.github.libretube.api.obj.Segment
-import com.github.libretube.api.obj.Streams
-import com.github.libretube.databinding.DescriptionLayoutBinding
-import com.github.libretube.enums.SbSkipOptions
-import com.github.libretube.extensions.formatShort
-import com.github.libretube.helpers.ClipboardHelper
-import com.github.libretube.helpers.PlayerHelper
-import com.github.libretube.ui.activities.VideoTagsAdapter
-import com.github.libretube.util.HtmlParser
-import com.github.libretube.util.LinkHandler
-import com.github.libretube.util.TextUtils
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.api.obj.Segment
+import dev.jch0029987.libretibs.api.obj.Streams
+import dev.jch0029987.libretibs.databinding.DescriptionLayoutBinding
+import dev.jch0029987.libretibs.enums.SbSkipOptions
+import dev.jch0029987.libretibs.extensions.formatShort
+import dev.jch0029987.libretibs.helpers.ClipboardHelper
+import dev.jch0029987.libretibs.helpers.PlayerHelper
+import dev.jch0029987.libretibs.ui.activities.VideoTagsAdapter
+import dev.jch0029987.libretibs.util.HtmlParser
+import dev.jch0029987.libretibs.util.LinkHandler
+import dev.jch0029987.libretibs.util.TextUtils
 import java.util.Locale
 
 class DescriptionLayout(

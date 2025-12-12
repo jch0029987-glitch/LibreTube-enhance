@@ -1,7 +1,7 @@
-package com.github.libretube.api
+package dev.jch0029987.libretibs.api
 
-import com.github.libretube.api.RetrofitInstance.PIPED_API_URL
-import com.github.libretube.api.obj.PipedInstance
+import dev.jch0029987.libretibs.api.RetrofitInstance.PIPED_API_URL
+import dev.jch0029987.libretibs.api.obj.PipedInstance
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import okhttp3.HttpUrl.Companion.toHttpUrl

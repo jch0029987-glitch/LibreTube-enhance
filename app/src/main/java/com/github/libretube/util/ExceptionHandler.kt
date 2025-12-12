@@ -1,6 +1,6 @@
-package com.github.libretube.util
+package dev.jch0029987.libretibs.util
 
-import com.github.libretube.helpers.PreferenceHelper
+import dev.jch0029987.libretibs.helpers.PreferenceHelper
 
 class ExceptionHandler(
     private val defaultExceptionHandler: Thread.UncaughtExceptionHandler?

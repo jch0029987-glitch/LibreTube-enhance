@@ -1,4 +1,4 @@
-package com.github.libretube.helpers
+package dev.jch0029987.libretibs.helpers
 
 import android.content.Context
 import android.graphics.Bitmap
@@ -15,10 +15,10 @@ import coil3.request.CachePolicy
 import coil3.request.ImageRequest
 import coil3.request.crossfade
 import coil3.toBitmap
-import com.github.libretube.BuildConfig
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.extensions.toAndroidUri
-import com.github.libretube.util.DataSaverMode
+import dev.jch0029987.libretibs.BuildConfig
+import dev.jch0029987.libretibs.constants.PreferenceKeys
+import dev.jch0029987.libretibs.extensions.toAndroidUri
+import dev.jch0029987.libretibs.util.DataSaverMode
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import okhttp3.OkHttpClient

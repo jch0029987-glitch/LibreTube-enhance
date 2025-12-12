@@ -64,7 +64,7 @@
 
         </LinearLayout>
 
-        <com.github.libretube.ui.views.DropdownMenu
+        <dev.jch0029987.libretibs.ui.views.DropdownMenu
             android:id="@+id/segment_category"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -94,7 +94,7 @@
             android:text="@string/vote_for_segment"
             android:textSize="24sp" />
 
-        <com.github.libretube.ui.views.DropdownMenu
+        <dev.jch0029987.libretibs.ui.views.DropdownMenu
             android:id="@+id/segments_dropdown"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -148,7 +148,7 @@
     <string name="export_playlists">匯出 Playlists</string>
     <string name="backup_restore_summary">匯入 &amp; 匯出你嘅訂閱，Playlists, …</string>
     <string name="remove_bookmark">喺拉把度刪</string>
-    <string name="audio_only_mode_summary">將 LibreTube 轉做一個音樂 Player</string>
+    <string name="audio_only_mode_summary">將 LibreTibs Enhance 轉做一個音樂 Player</string>
     <string name="help">幫助</string>
     <string name="autoplay_countdown">自動倒數</string>
     <string name="autoplay_countdown_summary">倒數五秒之後自動播下一條片</string>

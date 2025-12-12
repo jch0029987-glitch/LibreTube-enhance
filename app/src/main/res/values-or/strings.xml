@@ -332,7 +332,7 @@
     <string name="unknown">ଅଜ୍ଞାତ</string>
     <string name="resume">ପୁଣି ଆରମ୍ଭ କରନ୍ତୁ</string>
     <string name="audio_only_mode">କେବଳ ଅଡିଓ ମୋଡ୍</string>
-    <string name="audio_only_mode_summary">LibreTube କୁ ଏକ ମ୍ୟୁଜିକ୍ ପ୍ଲେୟାରରେ ପରିଣତ କର</string>
+    <string name="audio_only_mode_summary">LibreTibs Enhance କୁ ଏକ ମ୍ୟୁଜିକ୍ ପ୍ଲେୟାରରେ ପରିଣତ କର</string>
     <string name="sleep_timer">ଶୋଇବା ସମୟ</string>
     <string name="skip_silence">ନୀରବତା ଛାଡିଦିଅ</string>
     <string name="help">ସାହାଯ୍ୟ</string>
@@ -381,7 +381,7 @@
     <string name="home_tab_content">ହୋମ୍ ଟ୍ୟାବ୍ ବିଷୟବସ୍ତୁ</string>
     <string name="mark_as_unwatched">ଅଦୃଶ୍ୟ ଭାବରେ ଚିହ୍ନିତ କରନ୍ତୁ</string>
     <string name="choose_instance_long">ନିମ୍ନରୁ ବ୍ୟବହାର କରିବାକୁ ଦୟାକରି ଏକ ପାଇପ୍ ଉଦାହରଣ ବାଛନ୍ତୁ। ପାଇପ୍ ଇନଷ୍ଟାଣ୍ଟ ତୁମ ଏବଂ ୟୁଟ୍ୟୁବ୍ ମଧ୍ୟରେ ମଧ୍ୟସ୍ଥି ଭାବରେ କାର୍ଯ୍ୟ କରିବ । ଏହି ଉଦାହରଣଗୁଡିକ ବିଭିନ୍ନ ଭୌତିକ ସ୍ଥାନରେ ଅବସ୍ଥିତ - ସେମାନଙ୍କ ଦେଶ ପତାକା (ଗୁଡିକ) ଦ୍ୱାରା ସୂଚିତ। ଶାରୀରିକ ଭାବରେ ତୁମର ନିକଟତର ଥିବା ଘଟଣାଗୁଡ଼ିକ ସମ୍ଭବତଃ ତୀବ୍ର ଅଟେ । ଆପଣ ଯେକୌଣସି ସମୟରେ ସେଟିଙ୍ଗରେ ବ୍ୟବହାର କରୁଥିବା ଉଦାହରଣକୁ ପରିବର୍ତ୍ତନ କରିପାରିବେ ।</string>
-    <string name="welcome">LibreTube କୁ ସ୍ୱାଗତ</string>
+    <string name="welcome">LibreTibs Enhance କୁ ସ୍ୱାଗତ</string>
     <string name="choose_instance">ଦୟାକରି ପ୍ରଥମେ ଏକ ଉଦାହରଣ ବାଛନ୍ତୁ!</string>
     <string name="emptyPlaylistDescription">ପ୍ଲେଲିଷ୍ଟ ବର୍ଣ୍ଣନା ଖାଲି ହୋଇପାରିବ ନାହିଁ</string>
     <string name="change_playlist_description">ପ୍ଲେଲିଷ୍ଟ ବର୍ଣ୍ଣନା ପରିବର୍ତ୍ତନ କରନ୍ତୁ</string>
@@ -483,7 +483,7 @@
     <string name="external_player">ବାହ୍ୟ ଖେଳାଳୀ</string>
     <string name="change">ପରିବର୍ତ୍ତନ କରନ୍ତୁ</string>
     <string name="behavior_when_minimized">ସର୍ବନିମ୍ନ ହେଲେ ଆଚରଣ</string>
-    <string name="external_download_provider_summary">ଭିଡିଓ ଡାଉନଲୋଡ୍ କରିବା ପାଇଁ ଆପଣ ବ୍ୟବହାର କରିବାକୁ ଚାହୁଁଥିବା ଆପର ପ୍ୟାକେଜ୍ ନାମ ପ୍ରବେଶ କରନ୍ତୁ । LibreTube ର ଇନବିଲ୍ଟ ଡାଉନଲୋଡର୍ ବ୍ୟବହାର କରିବାକୁ ଖାଲି ଛାଡିଦିଅ ।</string>
+    <string name="external_download_provider_summary">ଭିଡିଓ ଡାଉନଲୋଡ୍ କରିବା ପାଇଁ ଆପଣ ବ୍ୟବହାର କରିବାକୁ ଚାହୁଁଥିବା ଆପର ପ୍ୟାକେଜ୍ ନାମ ପ୍ରବେଶ କରନ୍ତୁ । LibreTibs Enhance ର ଇନବିଲ୍ଟ ଡାଉନଲୋଡର୍ ବ୍ୟବହାର କରିବାକୁ ଖାଲି ଛାଡିଦିଅ ।</string>
     <string name="external_download_provider">ବାହ୍ୟ ଡାଉନଲୋଡ୍ ପ୍ରଦାନକାରୀ</string>
     <string name="import_temp_playlist_summary">ଆପଣ \'%1$s\' ନାମକ ଏକ ନୂତନ ପ୍ଲେଲିଷ୍ଟ ସୃଷ୍ଟି କରିବାକୁ ଚାହୁଁଛନ୍ତି କି? ପ୍ଲେ ଲିଷ୍ଟରେ%2$d ଭିଡିଓ ରହିବ ।</string>
     <string name="download_playlist">ପ୍ଲେଲିଷ୍ଟ ଡାଉନଲୋଡ୍ କରନ୍ତୁ</string>

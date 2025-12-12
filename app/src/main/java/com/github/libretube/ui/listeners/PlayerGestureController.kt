@@ -1,4 +1,4 @@
-package com.github.libretube.ui.listeners
+package dev.jch0029987.libretibs.ui.listeners
 
 import android.content.res.Configuration
 import android.content.res.Resources
@@ -10,9 +10,9 @@ import android.view.MotionEvent
 import android.view.ScaleGestureDetector
 import android.view.ViewConfiguration
 import androidx.activity.viewModels
-import com.github.libretube.ui.base.BaseActivity
-import com.github.libretube.ui.interfaces.PlayerGestureOptions
-import com.github.libretube.ui.models.CommonPlayerViewModel
+import dev.jch0029987.libretibs.ui.base.BaseActivity
+import dev.jch0029987.libretibs.ui.interfaces.PlayerGestureOptions
+import dev.jch0029987.libretibs.ui.models.CommonPlayerViewModel
 import kotlin.math.abs
 
 class PlayerGestureController(activity: BaseActivity, private val listener: PlayerGestureOptions) {

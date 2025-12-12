@@ -1,13 +1,13 @@
-package com.github.libretube.ui.sheets
+package dev.jch0029987.libretibs.ui.sheets
 
 import android.os.Bundle
 import android.view.View
-import com.github.libretube.R
-import com.github.libretube.constants.IntentData
-import com.github.libretube.databinding.DialogStatsBinding
-import com.github.libretube.extensions.parcelable
-import com.github.libretube.helpers.ClipboardHelper
-import com.github.libretube.obj.VideoStats
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.constants.IntentData
+import dev.jch0029987.libretibs.databinding.DialogStatsBinding
+import dev.jch0029987.libretibs.extensions.parcelable
+import dev.jch0029987.libretibs.helpers.ClipboardHelper
+import dev.jch0029987.libretibs.obj.VideoStats
 
 class StatsSheet : ExpandedBottomSheet(R.layout.dialog_stats) {
     private lateinit var stats: VideoStats

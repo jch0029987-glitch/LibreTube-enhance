@@ -324,7 +324,7 @@
     <string name="rewind">后退</string>
     <string name="alternative_pip_controls">备选画中画控件</string>
     <string name="alternative_pip_controls_summary">在画中画里显示仅音频和跳过控件而非快进和快退控件</string>
-    <string name="audio_only_mode_summary">将 LibreTube 作为音乐播放器</string>
+    <string name="audio_only_mode_summary">将 LibreTibs Enhance 作为音乐播放器</string>
     <string name="no_subtitle">无字幕</string>
     <string name="download_paused">下载已暂停</string>
     <string name="download_completed">下载已完成</string>
@@ -379,7 +379,7 @@
     <string name="export_playlists_to">将播放列表导出到</string>
     <string name="choose_instance">请先选择一个实例！</string>
     <string name="home_tab_content">首页内容</string>
-    <string name="welcome">欢迎使用 LibreTube</string>
+    <string name="welcome">欢迎使用 LibreTibs Enhance</string>
     <string name="choose_instance_long">请在下方选择一个 Piped 实例来使用。Piped 实例将充当您与 YouTube 之间的中间人。这些实例位于不同的物理位置——由相应的国旗表示。离您的地理位置较近的实例相对其他实例可能更快。您可以在设置中随时修改使用的实例。</string>
     <string name="mark_as_unwatched">标记为尚未观看</string>
     <string name="change_playlist_description">更改播放列表描述</string>
@@ -501,7 +501,7 @@
     <string name="thumbnail_time">缩略图时间</string>
     <string name="best_quality">最佳</string>
     <string name="external_download_provider">外部下载提供者</string>
-    <string name="external_download_provider_summary">输入你想用于下载视频的包的名称。留空使用 LibreTube 的内置下载器。</string>
+    <string name="external_download_provider_summary">输入你想用于下载视频的包的名称。留空使用 LibreTibs Enhance 的内置下载器。</string>
     <string name="screenshot">屏幕截图</string>
     <string name="pip">画中画</string>
     <string name="local_stream_extraction">本地流提取</string>

@@ -25,7 +25,7 @@
     <string name="grid">Стоўбцы (ў вертыкальным рэжыме)</string>
     <string name="emptyList">Нічога тут.</string>
     <string name="success">Гатова.</string>
-    <string name="about">Аб LibreTube</string>
+    <string name="about">Аб LibreTibs Enhance</string>
     <string name="systemLanguage">Сістэмны</string>
     <string name="subscribers">%1$s падпісчыкаў</string>
     <string name="settings">Налады</string>
@@ -307,7 +307,7 @@
     <string name="rewind">Перамотка назад</string>
     <string name="add_to_bookmarks">Дадаць у закладкі</string>
     <string name="audio_only_mode">Рэжым толькі аўдыя</string>
-    <string name="audio_only_mode_summary">Ператварыце LibreTube у музычны прайгравальнік</string>
+    <string name="audio_only_mode_summary">Ператварыце LibreTibs Enhance у музычны прайгравальнік</string>
     <string name="sleep_timer">Таймер сну</string>
     <string name="skip_silence">Прапусціць цішыню</string>
     <string name="help">Даведка</string>
@@ -382,7 +382,7 @@
     <string name="export_playlists_to">Экспарт плэйлістоў у</string>
     <string name="home_tab_content">Змесціва галоўнай укладкі</string>
     <string name="mark_as_unwatched">Пазначыць як непрагледжанае</string>
-    <string name="welcome">Сардэчна запрашаем на LibreTube</string>
+    <string name="welcome">Сардэчна запрашаем на LibreTibs Enhance</string>
     <string name="choose_instance">Спачатку абярыце сервер!</string>
     <string name="choose_instance_long">Калі ласка, абярыце сервер Piped, які будзе выкарыстаны, знізу. Сервер Piped будзе выступаць у ролі пасярэдніка паміж YouTube і вамі. Гэтыя серверы размешчаны ў розных частках свету, пазначаных сцягамі іх краін. Серверы, фізічна змешчаныя бліжэй да вас, верагодна, будуць хутчэй сервераў, размешчаных далёка. Змяніць сервер можна ў любы час у наладах.</string>
     <string name="change_playlist_description">Змяніць апісанне плэйліста</string>
@@ -503,7 +503,7 @@
     <string name="title">Загаловак</string>
     <string name="thumbnail_time">Паказваць час на мініяцюры</string>
     <string name="best_quality">Найлепшая</string>
-    <string name="external_download_provider_summary">Назва пакета праграмы, якое будзе выкарыстоўвацца для спампоўкі відэа. Пакіньце пустым, каб спампоўваць праз LibreTube.</string>
+    <string name="external_download_provider_summary">Назва пакета праграмы, якое будзе выкарыстоўвацца для спампоўкі відэа. Пакіньце пустым, каб спампоўваць праз LibreTibs Enhance.</string>
     <string name="external_download_provider">Знешні запамповальнік</string>
     <string name="pip">КўК</string>
     <string name="screenshot">Скрыншот</string>

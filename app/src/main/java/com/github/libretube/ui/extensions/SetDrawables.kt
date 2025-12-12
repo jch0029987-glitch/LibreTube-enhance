@@ -1,4 +1,4 @@
-package com.github.libretube.ui.extensions
+package dev.jch0029987.libretibs.ui.extensions
 
 import android.widget.TextView
 import androidx.appcompat.content.res.AppCompatResources

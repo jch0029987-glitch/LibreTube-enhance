@@ -1,10 +1,10 @@
-package com.github.libretube.ui.adapters
+package dev.jch0029987.libretibs.ui.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.github.libretube.databinding.SliderLabelItemBinding
-import com.github.libretube.ui.viewholders.SliderLabelViewHolder
+import dev.jch0029987.libretibs.databinding.SliderLabelItemBinding
+import dev.jch0029987.libretibs.ui.viewholders.SliderLabelViewHolder
 
 class SliderLabelsAdapter(
     private val playbackSpeeds: List<Float>,

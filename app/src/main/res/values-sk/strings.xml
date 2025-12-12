@@ -70,7 +70,7 @@
     <string name="startpage">Domov</string>
     <string name="subscriptions">Odbery</string>
     <string name="download">Stiahnuť</string>
-    <string name="about">O LibreTube</string>
+    <string name="about">O LibreTibs Enhance</string>
     <string name="unsubscribe">Zrušiť odber</string>
     <string name="share">Zdieľať</string>
     <string name="error">Niečo sa pokazilo.</string>
@@ -238,7 +238,7 @@
     <string name="mobile_data">Mobilné dáta</string>
     <string name="username_email">Používanie e-mailovej adresy ako používateľského mena sa neodporúča. Pokračovať aj tak?</string>
     <string name="download_channel_name">Služba sťahovania</string>
-    <string name="welcome">Vítajte v LibreTube</string>
+    <string name="welcome">Vítajte v LibreTibs Enhance</string>
     <string name="export_playlists_to">Exportovať zoznamy skladieb do</string>
     <string name="import_playlists">Importovať zoznamy skladieb</string>
     <string name="mark_as_watched">Označiť ako sledované</string>
@@ -401,7 +401,7 @@
     <string name="color_violet">Univerzálne fialový</string>
     <string name="playlistUrl">Adresa URL zoznamu skladieb</string>
     <string name="shuffle">Náhodný výber</string>
-    <string name="audio_only_mode_summary">Premení LibreTube na prehrávač hudby</string>
+    <string name="audio_only_mode_summary">Premení LibreTibs Enhance na prehrávač hudby</string>
     <string name="skip_silence">Vynechať ticho</string>
     <string name="help">Pomoc</string>
     <string name="category">Kategória</string>
@@ -503,7 +503,7 @@
     <string name="thumbnail_time">Čas miniatúry</string>
     <string name="best_quality">Najlepšia</string>
     <string name="external_download_provider">Externý poskytovateľ sťahovania</string>
-    <string name="external_download_provider_summary">Zadajte názov aplikácie, ktorú chcete používať na sťahovanie videí. Ak chcete použiť vstavaný sťahovač LibreTube, nechajte prázdne miesto.</string>
+    <string name="external_download_provider_summary">Zadajte názov aplikácie, ktorú chcete používať na sťahovanie videí. Ak chcete použiť vstavaný sťahovač LibreTibs Enhance, nechajte prázdne miesto.</string>
     <string name="screenshot">Snímka obrazovky</string>
     <string name="pip">PiP</string>
     <string name="local_stream_extraction">Lokálna extrakcia streamu</string>

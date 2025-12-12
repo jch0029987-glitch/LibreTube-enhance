@@ -1,8 +1,8 @@
-package com.github.libretube.repo
+package dev.jch0029987.libretibs.repo
 
-import com.github.libretube.api.RetrofitInstance
-import com.github.libretube.api.obj.StreamItem
-import com.github.libretube.helpers.PreferenceHelper
+import dev.jch0029987.libretibs.api.RetrofitInstance
+import dev.jch0029987.libretibs.api.obj.StreamItem
+import dev.jch0029987.libretibs.helpers.PreferenceHelper
 
 class PipedAccountFeedRepository : FeedRepository {
     override suspend fun getFeed(

@@ -1,8 +1,8 @@
-package com.github.libretube.ui.preferences
+package dev.jch0029987.libretibs.ui.preferences
 
 import android.os.Bundle
-import com.github.libretube.R
-import com.github.libretube.ui.base.BasePreferenceFragment
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.ui.base.BasePreferenceFragment
 
 class SponsorBlockSettings : BasePreferenceFragment() {
     override val titleResourceId: Int = R.string.sponsorblock

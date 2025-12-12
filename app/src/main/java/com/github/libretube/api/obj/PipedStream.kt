@@ -1,9 +1,9 @@
-package com.github.libretube.api.obj
+package dev.jch0029987.libretibs.api.obj
 
 import android.os.Parcelable
-import com.github.libretube.db.obj.DownloadItem
-import com.github.libretube.enums.FileType
-import com.github.libretube.helpers.ProxyHelper
+import dev.jch0029987.libretibs.db.obj.DownloadItem
+import dev.jch0029987.libretibs.enums.FileType
+import dev.jch0029987.libretibs.helpers.ProxyHelper
 import kotlinx.parcelize.Parcelize
 import kotlinx.serialization.Serializable
 import kotlin.io.path.Path

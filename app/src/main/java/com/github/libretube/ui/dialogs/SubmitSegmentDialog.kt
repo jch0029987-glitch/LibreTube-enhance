@@ -1,4 +1,4 @@
-package com.github.libretube.ui.dialogs
+package dev.jch0029987.libretibs.ui.dialogs
 
 import android.app.Dialog
 import android.os.Bundle
@@ -8,17 +8,17 @@ import android.widget.Toast
 import androidx.core.view.isGone
 import androidx.fragment.app.DialogFragment
 import androidx.lifecycle.lifecycleScope
-import com.github.libretube.R
-import com.github.libretube.api.MediaServiceRepository
-import com.github.libretube.api.RetrofitInstance
-import com.github.libretube.api.obj.Segment
-import com.github.libretube.constants.IntentData
-import com.github.libretube.databinding.DialogSubmitSegmentBinding
-import com.github.libretube.extensions.TAG
-import com.github.libretube.extensions.toastFromMainDispatcher
-import com.github.libretube.helpers.PreferenceHelper
-import com.github.libretube.util.TextUtils
-import com.github.libretube.util.TextUtils.parseDurationString
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.api.MediaServiceRepository
+import dev.jch0029987.libretibs.api.RetrofitInstance
+import dev.jch0029987.libretibs.api.obj.Segment
+import dev.jch0029987.libretibs.constants.IntentData
+import dev.jch0029987.libretibs.databinding.DialogSubmitSegmentBinding
+import dev.jch0029987.libretibs.extensions.TAG
+import dev.jch0029987.libretibs.extensions.toastFromMainDispatcher
+import dev.jch0029987.libretibs.helpers.PreferenceHelper
+import dev.jch0029987.libretibs.util.TextUtils
+import dev.jch0029987.libretibs.util.TextUtils.parseDurationString
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

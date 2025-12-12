@@ -1,4 +1,4 @@
-package com.github.libretube.ui.listeners
+package dev.jch0029987.libretibs.ui.listeners
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -9,7 +9,7 @@ import android.view.MotionEvent
 import android.view.View
 import android.view.ViewConfiguration
 import androidx.core.os.postDelayed
-import com.github.libretube.ui.interfaces.AudioPlayerOptions
+import dev.jch0029987.libretibs.ui.interfaces.AudioPlayerOptions
 import kotlin.math.abs
 
 class AudioPlayerThumbnailListener(context: Context, private val listener: AudioPlayerOptions) :

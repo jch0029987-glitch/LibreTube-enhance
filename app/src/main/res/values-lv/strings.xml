@@ -267,7 +267,7 @@
     <string name="swipe_controls">Žestu kontroles</string>
     <string name="swipe_controls_summary">Izmantot vilkšanas žestu, lai pielāgotu spilgtumu un skaļumu pilnekrāna režīmā</string>
     <string name="volume">Skaļums</string>
-    <string name="audio_only_mode_summary">Pārvērst LibreTube par mūzikas atskaņotāju</string>
+    <string name="audio_only_mode_summary">Pārvērst LibreTibs Enhance par mūzikas atskaņotāju</string>
     <string name="skip_silence">Izlaist klusumu</string>
     <string name="all_caught_up_summary">Jūs esat redzējuši visus jaunos video</string>
     <string name="all_caught_up">Viss skatīts</string>
@@ -378,7 +378,7 @@
     <string name="play_automatically">Atskaņot automātiski</string>
     <string name="play_automatically_summary">Sākt atskaņot video automātiski, kad to izvēlas</string>
     <string name="home_tab_content">Sākumlapas saturs</string>
-    <string name="welcome">Laipni lūgti LibreTube</string>
+    <string name="welcome">Laipni lūgti LibreTibs Enhance</string>
     <string name="choose_instance">Vispirms izvēlieties instanci!</string>
     <string name="off">Izslēgts</string>
     <string name="manual">Manuāli</string>

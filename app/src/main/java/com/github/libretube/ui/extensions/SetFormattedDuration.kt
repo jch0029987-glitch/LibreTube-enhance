@@ -1,8 +1,8 @@
-package com.github.libretube.ui.extensions
+package dev.jch0029987.libretibs.ui.extensions
 
 import android.text.format.DateUtils
 import android.widget.TextView
-import com.github.libretube.R
+import dev.jch0029987.libretibs.R
 
 fun TextView.setFormattedDuration(duration: Long, isShort: Boolean?, uploadDate: Long) {
     this.text = when {

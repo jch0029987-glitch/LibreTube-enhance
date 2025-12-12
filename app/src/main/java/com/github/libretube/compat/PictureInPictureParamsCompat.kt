@@ -1,4 +1,4 @@
-package com.github.libretube.compat
+package dev.jch0029987.libretibs.compat
 
 import android.app.PictureInPictureParams
 import android.graphics.Rect

@@ -1,7 +1,7 @@
-package com.github.libretube.api.obj
+package dev.jch0029987.libretibs.api.obj
 
-import com.github.libretube.db.obj.PlaylistBookmark
-import com.github.libretube.helpers.ProxyHelper
+import dev.jch0029987.libretibs.db.obj.PlaylistBookmark
+import dev.jch0029987.libretibs.helpers.ProxyHelper
 import kotlinx.serialization.Serializable
 
 @Serializable

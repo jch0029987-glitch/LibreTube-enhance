@@ -10,7 +10,7 @@
     android:paddingHorizontal="16dp"
     android:paddingVertical="8dp">
 
-    <com.github.libretube.ui.views.DrawableTextView
+    <dev.jch0029987.libretibs.ui.views.DrawableTextView
         android:id="@+id/suggestion_text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

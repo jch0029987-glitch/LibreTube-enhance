@@ -1,24 +1,24 @@
-package com.github.libretube.ui.sheets
+package dev.jch0029987.libretibs.ui.sheets
 
 import android.os.Bundle
 import androidx.core.os.bundleOf
 import androidx.fragment.app.setFragmentResult
-import com.github.libretube.R
-import com.github.libretube.api.obj.StreamItem
-import com.github.libretube.constants.IntentData
-import com.github.libretube.enums.ShareObjectType
-import com.github.libretube.extensions.parcelable
-import com.github.libretube.extensions.serializable
-import com.github.libretube.extensions.toID
-import com.github.libretube.helpers.BackgroundHelper
-import com.github.libretube.helpers.ContextHelper
-import com.github.libretube.helpers.NavigationHelper
-import com.github.libretube.obj.ShareData
-import com.github.libretube.ui.activities.NoInternetActivity
-import com.github.libretube.ui.dialogs.ShareDialog
-import com.github.libretube.ui.fragments.DownloadTab
-import com.github.libretube.util.PlayingQueue
-import com.github.libretube.util.PlayingQueueMode
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.api.obj.StreamItem
+import dev.jch0029987.libretibs.constants.IntentData
+import dev.jch0029987.libretibs.enums.ShareObjectType
+import dev.jch0029987.libretibs.extensions.parcelable
+import dev.jch0029987.libretibs.extensions.serializable
+import dev.jch0029987.libretibs.extensions.toID
+import dev.jch0029987.libretibs.helpers.BackgroundHelper
+import dev.jch0029987.libretibs.helpers.ContextHelper
+import dev.jch0029987.libretibs.helpers.NavigationHelper
+import dev.jch0029987.libretibs.obj.ShareData
+import dev.jch0029987.libretibs.ui.activities.NoInternetActivity
+import dev.jch0029987.libretibs.ui.dialogs.ShareDialog
+import dev.jch0029987.libretibs.ui.fragments.DownloadTab
+import dev.jch0029987.libretibs.util.PlayingQueue
+import dev.jch0029987.libretibs.util.PlayingQueueMode
 
 class DownloadOptionsBottomSheet : BaseBottomSheet() {
     override fun onCreate(savedInstanceState: Bundle?) {

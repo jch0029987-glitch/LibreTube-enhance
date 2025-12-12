@@ -1,13 +1,13 @@
-package com.github.libretube.ui.models
+package dev.jch0029987.libretibs.ui.models
 
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asFlow
-import com.github.libretube.api.MediaServiceRepository
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.db.DatabaseHolder
-import com.github.libretube.helpers.PreferenceHelper
+import dev.jch0029987.libretibs.api.MediaServiceRepository
+import dev.jch0029987.libretibs.constants.PreferenceKeys
+import dev.jch0029987.libretibs.db.DatabaseHolder
+import dev.jch0029987.libretibs.helpers.PreferenceHelper
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.mapLatest

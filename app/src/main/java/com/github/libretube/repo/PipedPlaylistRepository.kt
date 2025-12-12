@@ -1,15 +1,15 @@
-package com.github.libretube.repo
+package dev.jch0029987.libretibs.repo
 
-import com.github.libretube.api.PlaylistsHelper
-import com.github.libretube.api.RetrofitInstance
-import com.github.libretube.api.obj.EditPlaylistBody
-import com.github.libretube.api.obj.Message
-import com.github.libretube.api.obj.Playlist
-import com.github.libretube.api.obj.Playlists
-import com.github.libretube.api.obj.StreamItem
-import com.github.libretube.extensions.toID
-import com.github.libretube.helpers.PreferenceHelper
-import com.github.libretube.obj.PipedImportPlaylist
+import dev.jch0029987.libretibs.api.PlaylistsHelper
+import dev.jch0029987.libretibs.api.RetrofitInstance
+import dev.jch0029987.libretibs.api.obj.EditPlaylistBody
+import dev.jch0029987.libretibs.api.obj.Message
+import dev.jch0029987.libretibs.api.obj.Playlist
+import dev.jch0029987.libretibs.api.obj.Playlists
+import dev.jch0029987.libretibs.api.obj.StreamItem
+import dev.jch0029987.libretibs.extensions.toID
+import dev.jch0029987.libretibs.helpers.PreferenceHelper
+import dev.jch0029987.libretibs.obj.PipedImportPlaylist
 
 class PipedPlaylistRepository: PlaylistRepository {
     private fun Message.isOk() = this.message == "ok"

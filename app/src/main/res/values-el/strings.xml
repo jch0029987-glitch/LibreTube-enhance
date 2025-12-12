@@ -320,7 +320,7 @@
     <string name="queue">Ουρά</string>
     <string name="livestreams">Ζωντανές Ροές</string>
     <string name="replies">Απαντήσεις</string>
-    <string name="audio_only_mode_summary">Μετατρέψτε το LibreTube σε πρόγραμμα αναπαραγωγής μουσικής</string>
+    <string name="audio_only_mode_summary">Μετατρέψτε το LibreTibs Enhance σε πρόγραμμα αναπαραγωγής μουσικής</string>
     <string name="concurrent_downloads_limit_reached">Το μέγιστο όριο ταυτόχρονων λήψεων έχει συμπληρωθεί</string>
     <string name="unknown">Άγνωστος</string>
     <string name="resume">Συνέχιση</string>
@@ -342,7 +342,7 @@
     <string name="play_automatically">Αναπαραγωγή αυτόματα</string>
     <string name="choose_instance_long">Παρακαλούμε επιλέξτε μια περίπτωση Piped για χρήση από τα παρακάτω. Η περίπτωση Piped θα λειτουργήσει ως μεσάζων μεταξύ εσάς και του YouTube. Αυτές οι περιπτώσεις βρίσκονται σε διαφορετικές φυσικές τοποθεσίες - που υποδεικνύονται από τη σημαία της χώρας τους. Οι περιπτώσεις που βρίσκονται φυσικά πιο κοντά σε εσάς είναι πιθανότατα ταχύτερες από τις περιπτώσεις που δεν βρίσκονται. Μπορείτε να αλλάξετε την περίπτωση που χρησιμοποιείτε στις ρυθμίσεις ανά πάσα στιγμή.</string>
     <string name="uploaderAndVideoCount">%1$s• %2$d βίντεο</string>
-    <string name="welcome">Καλώς ήρθατε στο LibreTube</string>
+    <string name="welcome">Καλώς ήρθατε στο LibreTibs Enhance</string>
     <string name="choose_instance">Παρακαλώ επιλέξτε πρώτα μια περίπτωση!</string>
     <string name="mark_as_unwatched">Σημειώστε ως μη παρακολουθούμενη</string>
     <string name="home_tab_content">Περιεχόμενο καρτέλας Home</string>

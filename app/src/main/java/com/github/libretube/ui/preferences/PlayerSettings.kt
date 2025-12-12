@@ -1,4 +1,4 @@
-package com.github.libretube.ui.preferences
+package dev.jch0029987.libretibs.ui.preferences
 
 import android.content.ActivityNotFoundException
 import android.content.Intent
@@ -8,11 +8,11 @@ import android.widget.Toast
 import androidx.preference.ListPreference
 import androidx.preference.Preference
 import androidx.preference.SwitchPreferenceCompat
-import com.github.libretube.R
-import com.github.libretube.compat.PictureInPictureCompat
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.helpers.LocaleHelper
-import com.github.libretube.ui.base.BasePreferenceFragment
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.compat.PictureInPictureCompat
+import dev.jch0029987.libretibs.constants.PreferenceKeys
+import dev.jch0029987.libretibs.helpers.LocaleHelper
+import dev.jch0029987.libretibs.ui.base.BasePreferenceFragment
 
 class PlayerSettings : BasePreferenceFragment() {
     override val titleResourceId: Int = R.string.player

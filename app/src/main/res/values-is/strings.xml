@@ -80,7 +80,7 @@
     <string name="alternative_pip_controls">Varastýringar á mynd-í-mynd</string>
     <string name="sleep_timer">Niðurteljari svæfingar</string>
     <string name="alphabetic_reversed">Stafrófsröð (öfug)</string>
-    <string name="welcome">Velkomin í LibreTube</string>
+    <string name="welcome">Velkomin í LibreTibs Enhance</string>
     <string name="go_to_video">Fara á myndskeið</string>
     <string name="dearrow">Virkja DeArrow</string>
     <string name="visibility">Sýnileiki</string>
@@ -153,7 +153,7 @@
     <string name="color_yellow">Galandi gult</string>
     <string name="color_green">Grúví grænt</string>
     <string name="maximum_image_cache">Hámarksstærð skyndiminnis myndar</string>
-    <string name="audio_only_mode_summary">Breyttu LibreTube í tónlistarspilara</string>
+    <string name="audio_only_mode_summary">Breyttu LibreTibs Enhance í tónlistarspilara</string>
     <string name="skip_silence">Sleppa þögnum</string>
     <string name="external_download_provider">Utanaðkomandi niðurhalsveita</string>
     <string name="download_channel_name">Niðurhalsþjónusta</string>
@@ -479,7 +479,7 @@
     <string name="category_outro">Lokaskjáir og kreditlistar</string>
     <string name="trends">Tilhneiging</string>
     <string name="screen_orientation">Stefna skjás</string>
-    <string name="external_download_provider_summary">Settu inn nafn forritspakkans sem þú vilt að sé notaður til að sækja myndskeið. Skildu þetta eftir autt til að nota innbyggða niðurhalarann í LibreTube.</string>
+    <string name="external_download_provider_summary">Settu inn nafn forritspakkans sem þú vilt að sé notaður til að sækja myndskeið. Skildu þetta eftir autt til að nota innbyggða niðurhalarann í LibreTibs Enhance.</string>
     <string name="player_channel_name">Spilaraþjónusta</string>
     <string name="player_channel_description">Birtir tilkynningu við afspilun</string>
     <string name="download_channel_description">Birtir tilkynningu við niðurhal efnis.</string>

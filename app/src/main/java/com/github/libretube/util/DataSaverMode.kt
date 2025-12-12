@@ -1,9 +1,9 @@
-package com.github.libretube.util
+package dev.jch0029987.libretibs.util
 
 import android.content.Context
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.helpers.NetworkHelper
-import com.github.libretube.helpers.PreferenceHelper
+import dev.jch0029987.libretibs.constants.PreferenceKeys
+import dev.jch0029987.libretibs.helpers.NetworkHelper
+import dev.jch0029987.libretibs.helpers.PreferenceHelper
 
 object DataSaverMode {
     fun isEnabled(context: Context): Boolean {

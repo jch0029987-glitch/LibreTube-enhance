@@ -1,16 +1,16 @@
-package com.github.libretube.helpers
+package dev.jch0029987.libretibs.helpers
 
 import android.content.Context
 import android.content.SharedPreferences
 import android.util.Log
 import androidx.core.content.edit
 import androidx.preference.PreferenceManager
-import com.github.libretube.LibreTubeApp
-import com.github.libretube.R
-import com.github.libretube.api.TrendingCategory
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.enums.SbSkipOptions
-import com.github.libretube.helpers.LocaleHelper.getDetectedCountry
+import dev.jch0029987.libretibs.LibreTubeApp
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.api.TrendingCategory
+import dev.jch0029987.libretibs.constants.PreferenceKeys
+import dev.jch0029987.libretibs.enums.SbSkipOptions
+import dev.jch0029987.libretibs.helpers.LocaleHelper.getDetectedCountry
 
 object PreferenceHelper {
     private val TAG = PreferenceHelper::class.simpleName

@@ -1,12 +1,12 @@
-package com.github.libretube.ui.adapters
+package dev.jch0029987.libretibs.ui.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
-import com.github.libretube.databinding.CustomInstanceRowBinding
-import com.github.libretube.db.obj.CustomInstance
-import com.github.libretube.ui.adapters.callbacks.DiffUtilItemCallback
-import com.github.libretube.ui.viewholders.CustomInstancesViewHolder
+import dev.jch0029987.libretibs.databinding.CustomInstanceRowBinding
+import dev.jch0029987.libretibs.db.obj.CustomInstance
+import dev.jch0029987.libretibs.ui.adapters.callbacks.DiffUtilItemCallback
+import dev.jch0029987.libretibs.ui.viewholders.CustomInstancesViewHolder
 
 class CustomInstancesAdapter(
     private val onClickInstance: (CustomInstance) -> Unit,

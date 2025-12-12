@@ -1,11 +1,11 @@
-package com.github.libretube.db.dao
+package dev.jch0029987.libretibs.db.dao
 
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.github.libretube.db.obj.WatchHistoryItem
+import dev.jch0029987.libretibs.db.obj.WatchHistoryItem
 
 @Dao
 interface WatchHistoryDao {

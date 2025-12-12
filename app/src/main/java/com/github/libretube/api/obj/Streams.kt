@@ -1,11 +1,11 @@
-package com.github.libretube.api.obj
+package dev.jch0029987.libretibs.api.obj
 
 import android.os.Parcelable
-import com.github.libretube.db.obj.DownloadItem
-import com.github.libretube.enums.FileType
-import com.github.libretube.extensions.toLocalDate
-import com.github.libretube.json.SafeInstantSerializer
-import com.github.libretube.parcelable.DownloadData
+import dev.jch0029987.libretibs.db.obj.DownloadItem
+import dev.jch0029987.libretibs.enums.FileType
+import dev.jch0029987.libretibs.extensions.toLocalDate
+import dev.jch0029987.libretibs.json.SafeInstantSerializer
+import dev.jch0029987.libretibs.parcelable.DownloadData
 import kotlinx.datetime.Instant
 import kotlinx.parcelize.IgnoredOnParcel
 import kotlinx.parcelize.Parcelize

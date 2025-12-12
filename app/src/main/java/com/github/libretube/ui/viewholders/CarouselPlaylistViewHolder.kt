@@ -1,7 +1,7 @@
-package com.github.libretube.ui.viewholders
+package dev.jch0029987.libretibs.ui.viewholders
 
 import androidx.recyclerview.widget.RecyclerView
-import com.github.libretube.databinding.CarouselPlaylistThumbnailBinding
+import dev.jch0029987.libretibs.databinding.CarouselPlaylistThumbnailBinding
 
 class CarouselPlaylistViewHolder(val binding: CarouselPlaylistThumbnailBinding) :
     RecyclerView.ViewHolder(binding.root)

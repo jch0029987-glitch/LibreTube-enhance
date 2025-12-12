@@ -1,9 +1,9 @@
-package com.github.libretube.repo
+package dev.jch0029987.libretibs.repo
 
-import com.github.libretube.api.RetrofitInstance
-import com.github.libretube.api.SubscriptionHelper
-import com.github.libretube.api.SubscriptionHelper.GET_SUBSCRIPTIONS_LIMIT
-import com.github.libretube.api.obj.StreamItem
+import dev.jch0029987.libretibs.api.RetrofitInstance
+import dev.jch0029987.libretibs.api.SubscriptionHelper
+import dev.jch0029987.libretibs.api.SubscriptionHelper.GET_SUBSCRIPTIONS_LIMIT
+import dev.jch0029987.libretibs.api.obj.StreamItem
 
 class PipedNoAccountFeedRepository : FeedRepository {
     override suspend fun getFeed(

@@ -1,6 +1,6 @@
-package com.github.libretube.ui.viewholders
+package dev.jch0029987.libretibs.ui.viewholders
 
 import androidx.recyclerview.widget.RecyclerView
-import com.github.libretube.databinding.ChaptersRowBinding
+import dev.jch0029987.libretibs.databinding.ChaptersRowBinding
 
 class ChaptersViewHolder(val binding: ChaptersRowBinding) : RecyclerView.ViewHolder(binding.root)

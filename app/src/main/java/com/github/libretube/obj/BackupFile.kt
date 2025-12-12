@@ -1,13 +1,13 @@
-package com.github.libretube.obj
+package dev.jch0029987.libretibs.obj
 
-import com.github.libretube.db.obj.CustomInstance
-import com.github.libretube.db.obj.LocalPlaylistWithVideos
-import com.github.libretube.db.obj.LocalSubscription
-import com.github.libretube.db.obj.PlaylistBookmark
-import com.github.libretube.db.obj.SearchHistoryItem
-import com.github.libretube.db.obj.SubscriptionGroup
-import com.github.libretube.db.obj.WatchHistoryItem
-import com.github.libretube.db.obj.WatchPosition
+import dev.jch0029987.libretibs.db.obj.CustomInstance
+import dev.jch0029987.libretibs.db.obj.LocalPlaylistWithVideos
+import dev.jch0029987.libretibs.db.obj.LocalSubscription
+import dev.jch0029987.libretibs.db.obj.PlaylistBookmark
+import dev.jch0029987.libretibs.db.obj.SearchHistoryItem
+import dev.jch0029987.libretibs.db.obj.SubscriptionGroup
+import dev.jch0029987.libretibs.db.obj.WatchHistoryItem
+import dev.jch0029987.libretibs.db.obj.WatchPosition
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.JsonNames

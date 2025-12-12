@@ -1,17 +1,17 @@
-package com.github.libretube.ui.dialogs
+package dev.jch0029987.libretibs.ui.dialogs
 
 import android.app.Dialog
 import android.content.DialogInterface
 import android.os.Bundle
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.activityViewModels
-import com.github.libretube.R
-import com.github.libretube.constants.IntentData
-import com.github.libretube.databinding.DialogCustomInstanceBinding
-import com.github.libretube.db.obj.CustomInstance
-import com.github.libretube.extensions.parcelable
-import com.github.libretube.extensions.toastFromMainThread
-import com.github.libretube.ui.models.InstancesModel
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.constants.IntentData
+import dev.jch0029987.libretibs.databinding.DialogCustomInstanceBinding
+import dev.jch0029987.libretibs.db.obj.CustomInstance
+import dev.jch0029987.libretibs.extensions.parcelable
+import dev.jch0029987.libretibs.extensions.toastFromMainThread
+import dev.jch0029987.libretibs.ui.models.InstancesModel
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import okhttp3.HttpUrl.Companion.toHttpUrlOrNull
 import java.net.MalformedURLException

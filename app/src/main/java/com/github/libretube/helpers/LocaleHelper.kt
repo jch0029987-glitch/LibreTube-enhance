@@ -1,11 +1,11 @@
-package com.github.libretube.helpers
+package dev.jch0029987.libretibs.helpers
 
 import android.content.Context
 import android.telephony.TelephonyManager
 import androidx.core.content.getSystemService
 import androidx.core.os.ConfigurationCompat
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.obj.Country
+import dev.jch0029987.libretibs.constants.PreferenceKeys
+import dev.jch0029987.libretibs.obj.Country
 import java.util.Locale
 
 object LocaleHelper {

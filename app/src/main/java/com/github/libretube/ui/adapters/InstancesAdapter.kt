@@ -1,14 +1,14 @@
-package com.github.libretube.ui.adapters
+package dev.jch0029987.libretibs.ui.adapters
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
-import com.github.libretube.R
-import com.github.libretube.api.obj.PipedInstance
-import com.github.libretube.databinding.InstanceRowBinding
-import com.github.libretube.ui.adapters.callbacks.DiffUtilItemCallback
-import com.github.libretube.ui.viewholders.InstancesViewHolder
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.api.obj.PipedInstance
+import dev.jch0029987.libretibs.databinding.InstanceRowBinding
+import dev.jch0029987.libretibs.ui.adapters.callbacks.DiffUtilItemCallback
+import dev.jch0029987.libretibs.ui.viewholders.InstancesViewHolder
 
 class InstancesAdapter(
     initialSelectionApiIndex: Int?,

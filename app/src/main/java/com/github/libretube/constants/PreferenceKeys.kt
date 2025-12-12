@@ -1,4 +1,4 @@
-package com.github.libretube.constants
+package dev.jch0029987.libretibs.constants
 
 /**
  * keys for the shared preferences

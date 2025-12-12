@@ -1,18 +1,18 @@
-package com.github.libretube.api
+package dev.jch0029987.libretibs.api
 
-import com.github.libretube.api.obj.Subscription
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.db.obj.SubscriptionsFeedItem
-import com.github.libretube.helpers.PreferenceHelper
-import com.github.libretube.repo.AccountSubscriptionsRepository
-import com.github.libretube.repo.FeedProgress
-import com.github.libretube.repo.FeedRepository
-import com.github.libretube.repo.LocalFeedRepository
-import com.github.libretube.repo.LocalSubscriptionsRepository
-import com.github.libretube.repo.PipedAccountFeedRepository
-import com.github.libretube.repo.PipedLocalSubscriptionsRepository
-import com.github.libretube.repo.PipedNoAccountFeedRepository
-import com.github.libretube.repo.SubscriptionsRepository
+import dev.jch0029987.libretibs.api.obj.Subscription
+import dev.jch0029987.libretibs.constants.PreferenceKeys
+import dev.jch0029987.libretibs.db.obj.SubscriptionsFeedItem
+import dev.jch0029987.libretibs.helpers.PreferenceHelper
+import dev.jch0029987.libretibs.repo.AccountSubscriptionsRepository
+import dev.jch0029987.libretibs.repo.FeedProgress
+import dev.jch0029987.libretibs.repo.FeedRepository
+import dev.jch0029987.libretibs.repo.LocalFeedRepository
+import dev.jch0029987.libretibs.repo.LocalSubscriptionsRepository
+import dev.jch0029987.libretibs.repo.PipedAccountFeedRepository
+import dev.jch0029987.libretibs.repo.PipedLocalSubscriptionsRepository
+import dev.jch0029987.libretibs.repo.PipedNoAccountFeedRepository
+import dev.jch0029987.libretibs.repo.SubscriptionsRepository
 
 object SubscriptionHelper {
     /**

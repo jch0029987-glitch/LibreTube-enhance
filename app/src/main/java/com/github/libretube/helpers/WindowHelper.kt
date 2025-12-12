@@ -1,4 +1,4 @@
-package com.github.libretube.helpers
+package dev.jch0029987.libretibs.helpers
 
 import android.content.Context
 import android.os.Build
@@ -9,7 +9,7 @@ import android.view.WindowManager
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
-import com.github.libretube.ui.extensions.toggleSystemBars
+import dev.jch0029987.libretibs.ui.extensions.toggleSystemBars
 
 object WindowHelper {
     private const val NAVIGATION_MODE = "navigation_mode"

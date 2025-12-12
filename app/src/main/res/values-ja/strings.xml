@@ -333,7 +333,7 @@
     <string name="alternative_pip_controls">PiP 制御方法を変更</string>
     <string name="alternative_pip_controls_summary">PiP では、早送りと巻き戻しの代わりに、音声のみモードとスキップを表示</string>
     <string name="audio_only_mode">音声のみモード</string>
-    <string name="audio_only_mode_summary">LibreTube を音楽プレーヤーに変えます</string>
+    <string name="audio_only_mode_summary">LibreTibs Enhance を音楽プレーヤーに変えます</string>
     <string name="mark_as_watched">視聴済みにする</string>
     <string name="category">カテゴリー</string>
     <string name="codecs">映像コーデック</string>
@@ -379,7 +379,7 @@
     <string name="unlimited_search_history">無制限の検索履歴</string>
     <string name="home_tab_content">ホームタブに表示するコンテンツ</string>
     <string name="mark_as_unwatched">未視聴にする</string>
-    <string name="welcome">LibreTube へようこそ</string>
+    <string name="welcome">LibreTibs Enhance へようこそ</string>
     <string name="choose_instance">最初にインスタンスを選択！</string>
     <string name="choose_instance_long">使用する Piped のインスタンスを以下から選択します。Piped のインスタンスは、あなたと YouTube との間の仲介役です。これらインスタンスは物理的に様々な場所にあり、国旗で示されています。物理的にあなたと近いインスタンスはそうでないより高速な可能性が高いです。インスタンスの選択はいつでも設定から変更できます。</string>
     <string name="change_playlist_description">再生リストの説明を変更</string>
@@ -500,7 +500,7 @@
     <string name="import_temp_playlist_summary">次の名前の新しい再生リストを作成しますか？「%1$s」%2$d 本の動画が含まれます。</string>
     <string name="import_temp_playlist">一時的な再生リストをインポートしますか？</string>
     <string name="best_quality">最高</string>
-    <string name="external_download_provider_summary">動画のダウンロードに使うアプリのパッケージ名を入力します。LibreTube 内蔵のダウンローダーを使うには空欄のままにします。</string>
+    <string name="external_download_provider_summary">動画のダウンロードに使うアプリのパッケージ名を入力します。LibreTibs Enhance 内蔵のダウンローダーを使うには空欄のままにします。</string>
     <string name="external_download_provider">外部のダウンロード機能を使用</string>
     <string name="screenshot">スクリーンショット</string>
     <string name="pip">PiP</string>

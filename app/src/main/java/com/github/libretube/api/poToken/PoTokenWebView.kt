@@ -1,4 +1,4 @@
-package com.github.libretube.api.poToken
+package dev.jch0029987.libretibs.api.poToken
 
 import android.content.Context
 import android.os.Handler
@@ -7,9 +7,9 @@ import android.util.Log
 import android.webkit.JavascriptInterface
 import android.webkit.WebView
 import androidx.annotation.MainThread
-import com.github.libretube.BuildConfig
-import com.github.libretube.api.RetrofitInstance
-import com.github.libretube.api.USER_AGENT
+import dev.jch0029987.libretibs.BuildConfig
+import dev.jch0029987.libretibs.api.RetrofitInstance
+import dev.jch0029987.libretibs.api.USER_AGENT
 import kotlinx.coroutines.CoroutineExceptionHandler
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

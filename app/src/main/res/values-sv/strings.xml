@@ -276,7 +276,7 @@
     <string name="mobile_data">Mobildata</string>
     <string name="unknown_or_no_audio">okänt eller inget ljud</string>
     <string name="audio_video_summary">Kvalitet och format</string>
-    <string name="welcome">Välkommen till LibreTube</string>
+    <string name="welcome">Välkommen till LibreTibs Enhance</string>
     <string name="pinch_control">Nypkontroll</string>
     <string name="change_region">Populära verkar inte vara tillgängligt för den aktuella regionen. Vänligen välj en annan i inställningarna.</string>
     <string name="import_playlists_from">Importera spellistor från</string>
@@ -395,7 +395,7 @@
     <string name="duration_span">Varaktighet: %1$s</string>
     <string name="category">Kategori</string>
     <string name="play_automatically">Spela upp automatiskt</string>
-    <string name="audio_only_mode_summary">Gör LibreTube till en musikspelare</string>
+    <string name="audio_only_mode_summary">Gör LibreTibs Enhance till en musikspelare</string>
     <string name="unknown_audio_language">Okänt språk för ljudet</string>
     <string name="brightness">Ljusstyrka</string>
     <string name="failed_fetching_instances">Kunde inte hämta tillgängliga instanser.</string>
@@ -494,7 +494,7 @@
     <string name="external_player">Extern spelare</string>
     <string name="show_updates">Kontrollera uppdateringar automatiskt</string>
     <string name="albums">Album</string>
-    <string name="external_download_provider_summary">Ange paketnamnet för appen du vill använda för att ladda ner videor. Lämna det tomt för att använda LibreTubes inbyggda nedladdningsprogram.</string>
+    <string name="external_download_provider_summary">Ange paketnamnet för appen du vill använda för att ladda ner videor. Lämna det tomt för att använda LibreTibs Enhances inbyggda nedladdningsprogram.</string>
     <string name="import_temp_playlist_summary">Vill du skapa en ny spellista med namnet \'%1$s\'? Spellistan kommer att innehålla %2$d videor.</string>
     <string name="best_quality">Bästa</string>
     <string name="contribute_to_dearrow">Bidra till DeArrow</string>

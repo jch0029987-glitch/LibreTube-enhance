@@ -53,7 +53,7 @@
     <string name="addToPlaylist">Додати в добірку</string>
     <string name="success">Готово.</string>
     <string name="fail">Невдача :(</string>
-    <string name="about">Про LibreTube</string>
+    <string name="about">Про LibreTibs Enhance</string>
     <string name="changeLanguage">Мова</string>
     <string name="systemLanguage">Як у системі</string>
     <string name="systemDefault">Як у системі</string>
@@ -325,7 +325,7 @@
     <string name="alternative_pip_controls">Альтернативні елементи керування PiP</string>
     <string name="alternative_pip_controls_summary">Показувати лише аудіо та пропускати елементи керування в PiP замість перемотування вперед та назад</string>
     <string name="audio_only_mode">Режим лише аудіо</string>
-    <string name="audio_only_mode_summary">Перетворіть LibreTube на музичний програвач</string>
+    <string name="audio_only_mode_summary">Перетворіть LibreTibs Enhance на музичний програвач</string>
     <string name="no_subtitle">Немає субтитрів</string>
     <string name="download_paused">Завантаження призупинено</string>
     <string name="concurrent_downloads">Максимальна кількість одночасних завантажень</string>
@@ -382,7 +382,7 @@
     <string name="export_playlists_to">Експорт списків відтворення в</string>
     <string name="home_tab_content">Вміст головної вкладки</string>
     <string name="mark_as_unwatched">Позначити як непереглянуте</string>
-    <string name="welcome">Ласкаво просимо до LibreTube</string>
+    <string name="welcome">Ласкаво просимо до LibreTibs Enhance</string>
     <string name="choose_instance">Спочатку виберіть сервер!</string>
     <string name="choose_instance_long">Виберіть сервер Piped для використання нижче. Сервер Piped буде посередником між вами та YouTube. Ці сервери розташовані в різних фізичних місцях, позначених прапорами відповідних країн. Фізично ближчі до вас сервери, швидше за все, працюють швидше, ніж віддалені. Ви можете будь-коли змінити використовуваний сервер у налаштуваннях.</string>
     <string name="change_playlist_description">Змінити опис добірки</string>
@@ -505,7 +505,7 @@
     <string name="thumbnail_time">Показувати час на мініатюрі</string>
     <string name="best_quality">Найвища</string>
     <string name="external_download_provider">Зовнішній постачальник завантажень</string>
-    <string name="external_download_provider_summary">Введіть назву пакету застосунку, який потрібно використовувати для завантаження відео. Залиште порожнім, щоб використовувати вбудований завантажувач LibreTube.</string>
+    <string name="external_download_provider_summary">Введіть назву пакету застосунку, який потрібно використовувати для завантаження відео. Залиште порожнім, щоб використовувати вбудований завантажувач LibreTibs Enhance.</string>
     <string name="screenshot">Знімок екрана</string>
     <string name="pip">PiP</string>
     <string name="local_stream_extraction">Видобування локального потоку</string>

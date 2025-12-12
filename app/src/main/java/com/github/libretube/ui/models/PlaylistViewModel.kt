@@ -1,4 +1,4 @@
-package com.github.libretube.ui.models
+package dev.jch0029987.libretibs.ui.models
 
 import android.os.Parcelable
 import androidx.annotation.StringRes
@@ -9,12 +9,12 @@ import androidx.lifecycle.createSavedStateHandle
 import androidx.lifecycle.viewModelScope
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
-import com.github.libretube.R
-import com.github.libretube.api.PlaylistsHelper
-import com.github.libretube.api.obj.Playlists
-import com.github.libretube.api.obj.StreamItem
-import com.github.libretube.constants.IntentData
-import com.github.libretube.util.PlayingQueue
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.api.PlaylistsHelper
+import dev.jch0029987.libretibs.api.obj.Playlists
+import dev.jch0029987.libretibs.api.obj.StreamItem
+import dev.jch0029987.libretibs.constants.IntentData
+import dev.jch0029987.libretibs.util.PlayingQueue
 import kotlinx.coroutines.launch
 import kotlinx.parcelize.Parcelize
 import kotlinx.parcelize.RawValue

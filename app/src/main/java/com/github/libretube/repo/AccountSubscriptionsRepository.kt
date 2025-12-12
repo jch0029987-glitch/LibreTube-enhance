@@ -1,10 +1,10 @@
-package com.github.libretube.repo
+package dev.jch0029987.libretibs.repo
 
-import com.github.libretube.api.RetrofitInstance
-import com.github.libretube.api.obj.Subscribe
-import com.github.libretube.api.obj.Subscription
-import com.github.libretube.extensions.toID
-import com.github.libretube.helpers.PreferenceHelper
+import dev.jch0029987.libretibs.api.RetrofitInstance
+import dev.jch0029987.libretibs.api.obj.Subscribe
+import dev.jch0029987.libretibs.api.obj.Subscription
+import dev.jch0029987.libretibs.extensions.toID
+import dev.jch0029987.libretibs.helpers.PreferenceHelper
 
 class AccountSubscriptionsRepository : SubscriptionsRepository {
     private val token get() = PreferenceHelper.getToken()

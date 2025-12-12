@@ -332,7 +332,7 @@
     <string name="unknown">לא ידוע</string>
     <string name="resume">המשך</string>
     <string name="audio_only_mode">מצב שמע בלבד</string>
-    <string name="audio_only_mode_summary">הפיכת LibreTube לנגן מוזיקה</string>
+    <string name="audio_only_mode_summary">הפיכת LibreTibs Enhance לנגן מוזיקה</string>
     <string name="sleep_timer">מתזמן שינה</string>
     <string name="skip_silence">דילוג על שקט</string>
     <string name="help">עזרה</string>
@@ -381,7 +381,7 @@
     <string name="export_playlists_to">ייצוא רשימות נגינה אל</string>
     <string name="home_tab_content">תוכן לשונית בית</string>
     <string name="mark_as_unwatched">סימון כלא נצפה</string>
-    <string name="welcome">ברוך בואך ל־LibreTube</string>
+    <string name="welcome">ברוך בואך ל־LibreTibs Enhance</string>
     <string name="choose_instance">נא לבחור עותק תחילה!</string>
     <string name="choose_instance_long">נא לבחור עותק של Piped לשימוש מאלו שלהלן. עותק ה־Piped יכהן כתווך בינך לבין YouTube. העותקים האלו ממוקמים במקומות פיזיים שונים - בציון דגל המדינה/ות. עותקים שנמצאים קרוב אליך פיזית יהיו כנראה מהירים יותר מעותקים שאינם. אפשר לשנות את העותק הפעיל בהגדרות בכל עת.</string>
     <string name="change_playlist_description">עריכת תיאור רשימת נגינה</string>
@@ -506,7 +506,7 @@
     <string name="thumbnail_time">זמן תצוגה ממוזערת</string>
     <string name="import_temp_playlist_summary">ליצור רשימת נגינה חדשה בשם ‚%1$s’? רשימת הנגינה תכיל %2$d סרטונים.</string>
     <string name="screenshot">צילום מסך</string>
-    <string name="external_download_provider_summary">נא למלא את שם חבילת היישום לשימוש להורדת סרטונים. יש להשאיר ריק כדי להשתמש במוריד המובנה של LibreTube.</string>
+    <string name="external_download_provider_summary">נא למלא את שם חבילת היישום לשימוש להורדת סרטונים. יש להשאיר ריק כדי להשתמש במוריד המובנה של LibreTibs Enhance.</string>
     <string name="local_stream_extraction">חילוץ תזרים מקומי</string>
     <string name="audio_codecs">מפענחי שמע</string>
     <string name="import_watch_history">ייבוא היסטוריית צפייה</string>

@@ -1,12 +1,12 @@
-package com.github.libretube.ui.sheets
+package dev.jch0029987.libretibs.ui.sheets
 
 import android.os.Bundle
 import android.view.View
 import androidx.recyclerview.widget.GridLayoutManager
-import com.github.libretube.constants.IntentData
-import com.github.libretube.databinding.BottomSheetBinding
-import com.github.libretube.helpers.IntentHelper
-import com.github.libretube.ui.adapters.IntentChooserAdapter
+import dev.jch0029987.libretibs.constants.IntentData
+import dev.jch0029987.libretibs.databinding.BottomSheetBinding
+import dev.jch0029987.libretibs.helpers.IntentHelper
+import dev.jch0029987.libretibs.ui.adapters.IntentChooserAdapter
 
 class IntentChooserSheet : BaseBottomSheet() {
     private lateinit var url: String

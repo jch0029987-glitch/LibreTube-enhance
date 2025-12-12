@@ -326,7 +326,7 @@
     <string name="alternative_pip_controls_summary">Chỉ hiển thị âm thanh và bỏ qua các điều khiển trong HtH thay vì tua đi và tua lại</string>
     <string name="disable_proxy">Vô hiệu hóa proxy Piped</string>
     <string name="home_tab_content">Nội dung thẻ trang chủ</string>
-    <string name="audio_only_mode_summary">Biến LibreTube thành một trình phát nhạc</string>
+    <string name="audio_only_mode_summary">Biến LibreTibs Enhance thành một trình phát nhạc</string>
     <string name="sb_custom_colors">Tùy chỉnh màu phân đoạn</string>
     <string name="app_backup">Sao lưu Ứng dụng</string>
     <string name="sleep_timer">Hẹn giờ ngủ</string>
@@ -376,7 +376,7 @@
     <string name="alphabetic">Theo chữ cái</string>
     <string name="alphabetic_reversed">Theo chữ cái (ngược lên)</string>
     <string name="creation_date_reversed">Ngày tạo (đảo ngược)</string>
-    <string name="welcome">Chào mừng đến với LibreTube</string>
+    <string name="welcome">Chào mừng đến với LibreTibs Enhance</string>
     <string name="choose_instance">Vui lòng chọn một phiên bản trước đã!</string>
     <plurals name="channel_new_streams">
         <item quantity="other">%d luồng mới</item>

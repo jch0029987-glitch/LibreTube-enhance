@@ -99,7 +99,7 @@
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
-                <com.github.libretube.ui.views.DrawableTextView
+                <dev.jch0029987.libretibs.ui.views.DrawableTextView
                     android:id="@+id/likes_textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -130,7 +130,7 @@
                     app:shapeAppearance="@style/CircleImageView"
                     tools:visibility="gone" />
 
-                <com.github.libretube.ui.views.DrawableTextView
+                <dev.jch0029987.libretibs.ui.views.DrawableTextView
                     android:id="@+id/replies_count"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

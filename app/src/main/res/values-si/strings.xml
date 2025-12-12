@@ -233,7 +233,7 @@
     <string name="color_violet">ජම්බූල පාට</string>
     <string name="import_playlists">වාදන ලැයිස්තු ආනයනය කරන්න</string>
     <string name="playlistUrl">වාදන ලැයිස්තු URL</string>
-    <string name="audio_only_mode_summary">LibreTube සංගීත වාදකයක් බවට පත් කරන්න</string>
+    <string name="audio_only_mode_summary">LibreTibs Enhance සංගීත වාදකයක් බවට පත් කරන්න</string>
     <string name="shuffle">කලවම් කරන්න</string>
     <string name="add_to_bookmarks">පොත් සලකුණු වලට එකතු කරන්න</string>
     <string name="rewind">ආපස්සට යන්න</string>

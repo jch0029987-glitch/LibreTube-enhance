@@ -1,11 +1,11 @@
-package com.github.libretube.api.poToken
+package dev.jch0029987.libretibs.api.poToken
 
 import android.os.Handler
 import android.os.Looper
 import android.util.Log
 import android.webkit.CookieManager
-import com.github.libretube.BuildConfig
-import com.github.libretube.LibreTubeApp
+import dev.jch0029987.libretibs.BuildConfig
+import dev.jch0029987.libretibs.LibreTubeApp
 import kotlinx.coroutines.runBlocking
 import org.schabi.newpipe.extractor.NewPipe
 import org.schabi.newpipe.extractor.services.youtube.InnertubeClientRequestInfo

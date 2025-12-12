@@ -28,28 +28,28 @@
             android:layout_height="wrap_content"
             android:text="@string/download_playlist_note" />
 
-        <com.github.libretube.ui.views.DropdownMenu
+        <dev.jch0029987.libretibs.ui.views.DropdownMenu
             android:id="@+id/video_spinner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:hint="@string/video"
             app:icon="@drawable/ic_video" />
 
-        <com.github.libretube.ui.views.DropdownMenu
+        <dev.jch0029987.libretibs.ui.views.DropdownMenu
             android:id="@+id/audio_spinner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:hint="@string/audio"
             app:icon="@drawable/ic_audio" />
 
-        <com.github.libretube.ui.views.DropdownMenu
+        <dev.jch0029987.libretibs.ui.views.DropdownMenu
             android:id="@+id/audio_language_spinner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:hint="@string/audio_language"
             app:icon="@drawable/ic_region" />
 
-        <com.github.libretube.ui.views.DropdownMenu
+        <dev.jch0029987.libretibs.ui.views.DropdownMenu
             android:id="@+id/subtitle_spinner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

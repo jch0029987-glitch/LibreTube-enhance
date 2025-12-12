@@ -275,7 +275,7 @@
         <item quantity="one">%d nove fluxo</item>
         <item quantity="other">%d nove fluxos</item>
     </plurals>
-    <string name="welcome">Benvenite in LibreTube</string>
+    <string name="welcome">Benvenite in LibreTibs Enhance</string>
     <string name="import_playlists_from">Importar listas ab</string>
     <string name="added_to_playlist">Addite al lista de reproduction %1$s</string>
     <string name="sb_create_segment">Crear segmento</string>
@@ -376,7 +376,7 @@
     <string name="duration_span">Duration: %1$s</string>
     <string name="category">Categoria</string>
     <string name="play_automatically">Reproducer automaticamente</string>
-    <string name="audio_only_mode_summary">Converter LibreTube in un reproductor de musica</string>
+    <string name="audio_only_mode_summary">Converter LibreTibs Enhance in un reproductor de musica</string>
     <string name="unknown_audio_language">Lingua de audio incognite</string>
     <string name="brightness">Luminositate</string>
     <string name="invalid_color">Valor de color invalide inserite!</string>
@@ -502,7 +502,7 @@
     <string name="thumbnail_time">Tempore de miniatura</string>
     <string name="best_quality">Melior</string>
     <string name="external_download_provider">Fornitor de discarganentos externe</string>
-    <string name="external_download_provider_summary">Insere le nomine de pacchettos del app que tu vole usar pro discargar le videos. Lassa in blanc pro usar le discargator de LibreTube.</string>
+    <string name="external_download_provider_summary">Insere le nomine de pacchettos del app que tu vole usar pro discargar le videos. Lassa in blanc pro usar le discargator de LibreTibs Enhance.</string>
     <string name="screenshot">Captura de schermo</string>
     <string name="local_stream_extraction_summary">Obtene directemente le information de reproduction de video ab YouTube sin usar Piped.</string>
     <string name="pip">PiP</string>

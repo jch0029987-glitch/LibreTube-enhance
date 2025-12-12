@@ -1,4 +1,4 @@
-package com.github.libretube.ui.adapters
+package dev.jch0029987.libretibs.ui.adapters
 
 import android.view.LayoutInflater
 import android.view.View
@@ -10,17 +10,17 @@ import androidx.core.view.isVisible
 import androidx.core.view.updateLayoutParams
 import androidx.core.view.updatePadding
 import androidx.paging.PagingDataAdapter
-import com.github.libretube.R
-import com.github.libretube.api.obj.Comment
-import com.github.libretube.databinding.CommentsRowBinding
-import com.github.libretube.extensions.formatShort
-import com.github.libretube.helpers.ImageHelper
-import com.github.libretube.helpers.ThemeHelper
-import com.github.libretube.ui.adapters.callbacks.DiffUtilItemCallback
-import com.github.libretube.ui.viewholders.CommentViewHolder
-import com.github.libretube.util.HtmlParser
-import com.github.libretube.util.LinkHandler
-import com.github.libretube.util.TextUtils
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.api.obj.Comment
+import dev.jch0029987.libretibs.databinding.CommentsRowBinding
+import dev.jch0029987.libretibs.extensions.formatShort
+import dev.jch0029987.libretibs.helpers.ImageHelper
+import dev.jch0029987.libretibs.helpers.ThemeHelper
+import dev.jch0029987.libretibs.ui.adapters.callbacks.DiffUtilItemCallback
+import dev.jch0029987.libretibs.ui.viewholders.CommentViewHolder
+import dev.jch0029987.libretibs.util.HtmlParser
+import dev.jch0029987.libretibs.util.LinkHandler
+import dev.jch0029987.libretibs.util.TextUtils
 
 class CommentsPagingAdapter(
     private val isReplies: Boolean,

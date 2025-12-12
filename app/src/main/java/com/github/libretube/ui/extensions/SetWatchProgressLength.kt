@@ -1,4 +1,4 @@
-package com.github.libretube.ui.extensions
+package dev.jch0029987.libretibs.ui.extensions
 
 import android.graphics.Color
 import android.graphics.Outline
@@ -9,8 +9,8 @@ import androidx.core.graphics.ColorUtils
 import androidx.core.view.isGone
 import androidx.core.view.isVisible
 import androidx.core.view.updateLayoutParams
-import com.github.libretube.db.DatabaseHelper
-import com.github.libretube.helpers.ThemeHelper
+import dev.jch0029987.libretibs.db.DatabaseHelper
+import dev.jch0029987.libretibs.helpers.ThemeHelper
 
 /**
  * Shows the already watched time under the video

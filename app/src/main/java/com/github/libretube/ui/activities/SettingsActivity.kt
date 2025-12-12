@@ -1,14 +1,14 @@
-package com.github.libretube.ui.activities
+package dev.jch0029987.libretibs.ui.activities
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.commit
 import androidx.fragment.app.replace
-import com.github.libretube.R
-import com.github.libretube.databinding.ActivitySettingsBinding
-import com.github.libretube.ui.base.BaseActivity
-import com.github.libretube.ui.preferences.InstanceSettings
-import com.github.libretube.ui.preferences.MainSettings
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.databinding.ActivitySettingsBinding
+import dev.jch0029987.libretibs.ui.base.BaseActivity
+import dev.jch0029987.libretibs.ui.preferences.InstanceSettings
+import dev.jch0029987.libretibs.ui.preferences.MainSettings
 
 class SettingsActivity : BaseActivity() {
     lateinit var binding: ActivitySettingsBinding

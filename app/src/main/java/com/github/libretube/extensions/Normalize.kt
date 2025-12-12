@@ -1,4 +1,4 @@
-package com.github.libretube.extensions
+package dev.jch0029987.libretibs.extensions
 
 fun Int.normalize(oldMin: Int, oldMax: Int, newMin: Int, newMax: Int): Int {
     val oldRange = oldMax - oldMin

@@ -1,4 +1,4 @@
-package com.github.libretube.helpers
+package dev.jch0029987.libretibs.helpers
 
 import android.annotation.SuppressLint
 import android.app.NotificationManager
@@ -9,20 +9,20 @@ import androidx.core.content.getSystemService
 import androidx.core.os.bundleOf
 import androidx.fragment.app.commitNow
 import androidx.fragment.app.replace
-import com.github.libretube.NavDirections
-import com.github.libretube.R
-import com.github.libretube.constants.IntentData
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.enums.PlaylistType
-import com.github.libretube.extensions.toID
-import com.github.libretube.parcelable.PlayerData
-import com.github.libretube.ui.activities.MainActivity
-import com.github.libretube.ui.activities.ZoomableImageActivity
-import com.github.libretube.ui.base.BaseActivity
-import com.github.libretube.ui.fragments.AudioPlayerFragment
-import com.github.libretube.ui.fragments.PlayerFragment
-import com.github.libretube.ui.views.SingleViewTouchableMotionLayout
-import com.github.libretube.util.PlayingQueue
+import dev.jch0029987.libretibs.NavDirections
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.constants.IntentData
+import dev.jch0029987.libretibs.constants.PreferenceKeys
+import dev.jch0029987.libretibs.enums.PlaylistType
+import dev.jch0029987.libretibs.extensions.toID
+import dev.jch0029987.libretibs.parcelable.PlayerData
+import dev.jch0029987.libretibs.ui.activities.MainActivity
+import dev.jch0029987.libretibs.ui.activities.ZoomableImageActivity
+import dev.jch0029987.libretibs.ui.base.BaseActivity
+import dev.jch0029987.libretibs.ui.fragments.AudioPlayerFragment
+import dev.jch0029987.libretibs.ui.fragments.PlayerFragment
+import dev.jch0029987.libretibs.ui.views.SingleViewTouchableMotionLayout
+import dev.jch0029987.libretibs.util.PlayingQueue
 
 object NavigationHelper {
     fun navigateChannel(context: Context, channelUrlOrId: String?) {

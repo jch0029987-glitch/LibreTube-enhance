@@ -1,4 +1,4 @@
-package com.github.libretube.db.obj
+package dev.jch0029987.libretibs.db.obj
 
 import android.os.Parcelable
 import androidx.room.ColumnInfo

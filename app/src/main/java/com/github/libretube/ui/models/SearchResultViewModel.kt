@@ -1,4 +1,4 @@
-package com.github.libretube.ui.models
+package dev.jch0029987.libretibs.ui.models
 
 import androidx.core.net.toUri
 import androidx.lifecycle.MutableLiveData
@@ -8,10 +8,10 @@ import androidx.lifecycle.viewModelScope
 import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.cachedIn
-import com.github.libretube.ui.dialogs.ShareDialog
-import com.github.libretube.ui.fragments.SearchResultFragmentArgs
-import com.github.libretube.ui.models.sources.SearchPagingSource
-import com.github.libretube.util.TextUtils
+import dev.jch0029987.libretibs.ui.dialogs.ShareDialog
+import dev.jch0029987.libretibs.ui.fragments.SearchResultFragmentArgs
+import dev.jch0029987.libretibs.ui.models.sources.SearchPagingSource
+import dev.jch0029987.libretibs.util.TextUtils
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.flatMapLatest

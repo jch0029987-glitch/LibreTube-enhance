@@ -346,7 +346,7 @@
     <string name="rewind">Keri tagasi</string>
     <string name="forward">Keri edasi</string>
     <string name="alternative_pip_controls">Täiendavad võimalused pilt-pildis vaate halduseks</string>
-    <string name="audio_only_mode_summary">Muuda LibreTube muusikamängijaks</string>
+    <string name="audio_only_mode_summary">Muuda LibreTibs Enhance muusikamängijaks</string>
     <string name="sleep_timer">Unetaimer</string>
     <string name="skip_silence">Jäta vaikus vahele</string>
     <string name="faq">Korduma kippuvad küsimused</string>
@@ -478,7 +478,7 @@
     <string name="import_temp_playlist_summary">Kas sa soovid luua uue esitusloendi nimega „%1$s“? Seal saab kokku olema %2$d video(t).</string>
     <string name="alphabetic">Tähestikuline järjekord</string>
     <string name="alphabetic_reversed">Tähestikuline järjekord (tagurpidi)</string>
-    <string name="welcome">Tere tulemast kasutama LibreTube\'i</string>
+    <string name="welcome">Tere tulemast kasutama LibreTibs Enhance\'i</string>
     <string name="playlist_description">Esitusloendi kirjeldus</string>
     <string name="shorts_notifications">Lühiklippide teavitus</string>
     <string name="creation_date">Loomise kuupäev</string>
@@ -502,7 +502,7 @@
     <string name="export_subscriptions_to">Vali rakendus, mille jaoks ekspordid tellimused</string>
     <string name="tooltip_play">Esita</string>
     <string name="external_download_provider">Väline allalaadimisrakendus</string>
-    <string name="external_download_provider_summary">Sisesta välise allalaadimisrakenduse paketi nimi, mida soovid kasutada. Kui eelistad LibreTube\'i oma allalaadimislahendust, siis jäta tühjaks.</string>
+    <string name="external_download_provider_summary">Sisesta välise allalaadimisrakenduse paketi nimi, mida soovid kasutada. Kui eelistad LibreTibs Enhance\'i oma allalaadimislahendust, siis jäta tühjaks.</string>
     <string name="screenshot">Ekraanitõmmis</string>
     <string name="pip">PiP</string>
     <string name="local_stream_extraction">Töötle meediavoogu kohalikus seadmes</string>

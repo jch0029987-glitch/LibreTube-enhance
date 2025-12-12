@@ -327,7 +327,7 @@
     <string name="alternative_pip_controls">Alternatif PiP (RiR) denetimleri</string>
     <string name="pinch_control">Kıstırma denetimi</string>
     <string name="audio_only_mode">Sadece ses modu</string>
-    <string name="audio_only_mode_summary">LibreTube uygulamasını bir müzik çalara dönüştürün</string>
+    <string name="audio_only_mode_summary">LibreTibs Enhance uygulamasını bir müzik çalara dönüştürün</string>
     <string name="no_subtitle">Alt yazı yok</string>
     <string name="download_paused">İndirme duraklatıldı</string>
     <string name="download_completed">İndirme tamamlandı</string>
@@ -502,7 +502,7 @@
     <string name="thumbnail_time">Küçük resim zamanı</string>
     <string name="best_quality">En iyi</string>
     <string name="external_download_provider">Harici indirme sağlayıcısı</string>
-    <string name="external_download_provider_summary">Video indirmek için kullanmak istediğiniz uygulamanın paket adını girin. LibreTube\'un dahili indiricisini kullanmak için boş bırakın.</string>
+    <string name="external_download_provider_summary">Video indirmek için kullanmak istediğiniz uygulamanın paket adını girin. LibreTibs Enhance\'un dahili indiricisini kullanmak için boş bırakın.</string>
     <string name="screenshot">Ekran Görüntüsü</string>
     <string name="pip">RiR</string>
     <string name="local_stream_extraction">Yerel akış çıkarımı</string>

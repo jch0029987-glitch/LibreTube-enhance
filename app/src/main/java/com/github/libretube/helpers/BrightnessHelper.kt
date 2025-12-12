@@ -1,8 +1,8 @@
-package com.github.libretube.helpers
+package dev.jch0029987.libretibs.helpers
 
 import android.app.Activity
 import android.view.WindowManager
-import com.github.libretube.extensions.normalize
+import dev.jch0029987.libretibs.extensions.normalize
 
 class BrightnessHelper(activity: Activity) {
     private val window = activity.window

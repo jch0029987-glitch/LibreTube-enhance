@@ -1,4 +1,4 @@
-package com.github.libretube.ui.models
+package dev.jch0029987.libretibs.ui.models
 
 import android.content.Context
 import android.net.Uri
@@ -13,14 +13,14 @@ import androidx.lifecycle.createSavedStateHandle
 import androidx.lifecycle.viewModelScope
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
-import com.github.libretube.R
-import com.github.libretube.api.InstanceRepository
-import com.github.libretube.api.RetrofitInstance
-import com.github.libretube.api.obj.PipedInstance
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.helpers.BackupHelper
-import com.github.libretube.helpers.PlayerHelper
-import com.github.libretube.helpers.PreferenceHelper
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.api.InstanceRepository
+import dev.jch0029987.libretibs.api.RetrofitInstance
+import dev.jch0029987.libretibs.api.obj.PipedInstance
+import dev.jch0029987.libretibs.constants.PreferenceKeys
+import dev.jch0029987.libretibs.helpers.BackupHelper
+import dev.jch0029987.libretibs.helpers.PlayerHelper
+import dev.jch0029987.libretibs.helpers.PreferenceHelper
 import kotlinx.coroutines.launch
 import kotlinx.parcelize.Parcelize
 

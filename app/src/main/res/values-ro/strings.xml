@@ -320,7 +320,7 @@
     <string name="add_to_bookmarks">Adăugați la marcaje</string>
     <string name="forward">Înainte</string>
     <string name="audio_only_mode">Modul numai audio</string>
-    <string name="audio_only_mode_summary">Transformă LibreTube într-un player audio</string>
+    <string name="audio_only_mode_summary">Transformă LibreTibs Enhance într-un player audio</string>
     <string name="help">Ajutor</string>
     <string name="faq">Întrebări frecvente</string>
     <string name="mark_as_watched">Marcați ca urmărit</string>
@@ -381,7 +381,7 @@
     <string name="export_playlists_to">Exportă playlist-uri la</string>
     <string name="choose_instance">Mai întâi alegeți o instanță!</string>
     <string name="mark_as_unwatched">Marcați ca nevăzut</string>
-    <string name="welcome">Bun venit la LibreTube</string>
+    <string name="welcome">Bun venit la LibreTibs Enhance</string>
     <string name="choose_instance_long">Vă rugăm să alegeți o instanță Piped pe care să o utilizați de mai jos. Instanța Piped va acționa ca intermediar între dvs. și YouTube. Aceste instanțe sunt situate în diferite locații fizice - indicate de steagurile țării lor. Instanțele mai apropiate fizic de tine sunt probabil mai rapide decât cazurile care nu sunt. Puteți schimba oricând instanța pe care o utilizați în setări.</string>
     <string name="home_tab_content">Conținutul filei Acasă</string>
     <string name="off">Oprit</string>
@@ -502,6 +502,6 @@
     <string name="import_temp_playlist">Importați un playlist temporar?</string>
     <string name="import_temp_playlist_summary">Doriți să creați un nou playlist numit „%1$s”? Playlist-ul va conține %2$d (de) videoclipuri.</string>
     <string name="contribute_to_dearrow">Contribuie la DeArrow</string>
-    <string name="external_download_provider_summary">Introduceți numele aplicației pe care vrei să o folosești pentru a descărca videoclipuri. Lăsați spațiul gol pentru a folosi descărcătorul integrat din LibreTube.</string>
+    <string name="external_download_provider_summary">Introduceți numele aplicației pe care vrei să o folosești pentru a descărca videoclipuri. Lăsați spațiul gol pentru a folosi descărcătorul integrat din LibreTibs Enhance.</string>
     <string name="screenshot">Captură de ecran</string>
 </resources>

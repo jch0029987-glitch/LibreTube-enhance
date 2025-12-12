@@ -1,11 +1,11 @@
-package com.github.libretube.ui.models
+package dev.jch0029987.libretibs.ui.models
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.media3.common.util.UnstableApi
-import com.github.libretube.api.obj.Segment
-import com.github.libretube.api.obj.Subtitle
-import com.github.libretube.helpers.PlayerHelper
+import dev.jch0029987.libretibs.api.obj.Segment
+import dev.jch0029987.libretibs.api.obj.Subtitle
+import dev.jch0029987.libretibs.helpers.PlayerHelper
 
 @UnstableApi
 class PlayerViewModel : ViewModel() {

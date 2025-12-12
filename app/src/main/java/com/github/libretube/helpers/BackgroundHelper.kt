@@ -1,4 +1,4 @@
-package com.github.libretube.helpers
+package dev.jch0029987.libretibs.helpers
 
 import android.content.ComponentName
 import android.content.Context
@@ -10,15 +10,15 @@ import androidx.fragment.app.commit
 import androidx.media3.common.util.UnstableApi
 import androidx.media3.session.MediaController
 import androidx.media3.session.SessionToken
-import com.github.libretube.constants.IntentData
-import com.github.libretube.parcelable.PlayerData
-import com.github.libretube.services.AbstractPlayerService
-import com.github.libretube.services.OfflinePlayerService
-import com.github.libretube.services.OnlinePlayerService
-import com.github.libretube.ui.activities.MainActivity
-import com.github.libretube.ui.activities.NoInternetActivity
-import com.github.libretube.ui.fragments.DownloadTab
-import com.github.libretube.ui.fragments.PlayerFragment
+import dev.jch0029987.libretibs.constants.IntentData
+import dev.jch0029987.libretibs.parcelable.PlayerData
+import dev.jch0029987.libretibs.services.AbstractPlayerService
+import dev.jch0029987.libretibs.services.OfflinePlayerService
+import dev.jch0029987.libretibs.services.OnlinePlayerService
+import dev.jch0029987.libretibs.ui.activities.MainActivity
+import dev.jch0029987.libretibs.ui.activities.NoInternetActivity
+import dev.jch0029987.libretibs.ui.fragments.DownloadTab
+import dev.jch0029987.libretibs.ui.fragments.PlayerFragment
 import com.google.common.util.concurrent.MoreExecutors
 
 /**

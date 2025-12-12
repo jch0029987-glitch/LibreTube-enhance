@@ -1,4 +1,4 @@
-package com.github.libretube.ui.dialogs
+package dev.jch0029987.libretibs.ui.dialogs
 
 import android.app.Dialog
 import android.os.Bundle
@@ -8,11 +8,11 @@ import androidx.core.view.isVisible
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.setFragmentResult
 import androidx.lifecycle.lifecycleScope
-import com.github.libretube.R
-import com.github.libretube.api.PlaylistsHelper
-import com.github.libretube.constants.IntentData
-import com.github.libretube.databinding.DialogCreatePlaylistBinding
-import com.github.libretube.extensions.toastFromMainDispatcher
+import dev.jch0029987.libretibs.R
+import dev.jch0029987.libretibs.api.PlaylistsHelper
+import dev.jch0029987.libretibs.constants.IntentData
+import dev.jch0029987.libretibs.databinding.DialogCreatePlaylistBinding
+import dev.jch0029987.libretibs.extensions.toastFromMainDispatcher
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

@@ -324,7 +324,7 @@
     <string name="alternative_pip_controls_summary">Mostrar boton \"Modo audio\" y Anterior/Siguiente en la ventana flotante en lugar de avance y retroceso</string>
     <string name="rewind">Retroceder</string>
     <string name="alternative_pip_controls">Controles PiP alternativos</string>
-    <string name="audio_only_mode_summary">Convierte LibreTube en un reproductor de música</string>
+    <string name="audio_only_mode_summary">Convierte LibreTibs Enhance en un reproductor de música</string>
     <string name="no_subtitle">Sin subtítulos</string>
     <string name="download_paused">Descarga pausada</string>
     <string name="download_completed">Descarga completa</string>
@@ -381,7 +381,7 @@
     <string name="import_playlists_from">Importar listas desde</string>
     <string name="home_tab_content">Contenido de pestaña \"Inicio\"</string>
     <string name="mark_as_unwatched">Marcar como no visto</string>
-    <string name="welcome">Bienvenido a LibreTube</string>
+    <string name="welcome">Bienvenido a LibreTibs Enhance</string>
     <string name="choose_instance">Por favor, primero elige una instancia!</string>
     <string name="choose_instance_long">Por favor elige una instancia de Piped que usar. La instancia de Piped actuará como intermediario entre tú y YouTube . Estas instancias se encuentran en diferentes ubicaciones físicas -indicadas con las banderas de su/s país/es-. Instancias más cercanas a ti físicamente serán probablemente más rápidas que las más lejanas. Puedes cambiar la instancia a usar en los ajustes en cualquier momento.</string>
     <string name="playlist_description">Descripción de la lista</string>

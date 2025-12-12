@@ -1,6 +1,6 @@
-package com.github.libretube.helpers
+package dev.jch0029987.libretibs.helpers
 
-import com.github.libretube.util.NewPipeDownloaderImpl
+import dev.jch0029987.libretibs.util.NewPipeDownloaderImpl
 import org.schabi.newpipe.extractor.NewPipe
 import org.schabi.newpipe.extractor.ServiceList
 import org.schabi.newpipe.extractor.StreamingService

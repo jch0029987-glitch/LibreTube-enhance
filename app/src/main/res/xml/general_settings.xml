@@ -48,7 +48,7 @@
 
     <PreferenceCategory app:title="@string/downloads">
 
-        <com.github.libretube.ui.views.SliderPreference
+        <dev.jch0029987.libretibs.ui.views.SliderPreference
             android:icon="@drawable/ic_download"
             android:key="max_parallel_downloads"
             android:title="@string/concurrent_downloads"

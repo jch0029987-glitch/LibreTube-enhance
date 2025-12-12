@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.github.libretube.ui.views.SingleViewTouchableMotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<dev.jch0029987.libretibs.ui.views.SingleViewTouchableMotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/playerMotionLayout"
@@ -351,4 +351,4 @@
 
     </LinearLayout>
 
-</com.github.libretube.ui.views.SingleViewTouchableMotionLayout>
+</dev.jch0029987.libretibs.ui.views.SingleViewTouchableMotionLayout>

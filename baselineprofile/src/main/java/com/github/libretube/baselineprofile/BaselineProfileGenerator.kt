@@ -1,4 +1,4 @@
-package com.github.libretube.baselineprofile
+package dev.jch0029987.libretibs.baselineprofile
 
 import android.widget.RadioButton
 import androidx.benchmark.macro.MacrobenchmarkScope
