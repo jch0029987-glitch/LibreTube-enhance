@@ -1,10 +1,10 @@
-package dev.jch0029987.libretibs.db.obj
+package com.github.libretube.db.obj
 
 import androidx.room.Entity
 import androidx.room.ForeignKey
 import androidx.room.Index
 import androidx.room.PrimaryKey
-import dev.jch0029987.libretibs.enums.FileType
+import com.github.libretube.enums.FileType
 import java.nio.file.Path
 
 @Entity(

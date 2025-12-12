@@ -1,4 +1,4 @@
-package dev.jch0029987.libretibs.db.dao
+package com.github.libretube.db.dao
 
 import androidx.room.Dao
 import androidx.room.Delete
@@ -7,14 +7,14 @@ import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Transaction
 import androidx.room.Update
-import dev.jch0029987.libretibs.db.obj.Download
-import dev.jch0029987.libretibs.db.obj.DownloadChapter
-import dev.jch0029987.libretibs.db.obj.DownloadItem
-import dev.jch0029987.libretibs.db.obj.DownloadPlaylist
-import dev.jch0029987.libretibs.db.obj.DownloadPlaylistVideosCrossRef
-import dev.jch0029987.libretibs.db.obj.DownloadPlaylistWithDownload
-import dev.jch0029987.libretibs.db.obj.DownloadPlaylistWithDownloadWithItems
-import dev.jch0029987.libretibs.db.obj.DownloadWithItems
+import com.github.libretube.db.obj.Download
+import com.github.libretube.db.obj.DownloadChapter
+import com.github.libretube.db.obj.DownloadItem
+import com.github.libretube.db.obj.DownloadPlaylist
+import com.github.libretube.db.obj.DownloadPlaylistVideosCrossRef
+import com.github.libretube.db.obj.DownloadPlaylistWithDownload
+import com.github.libretube.db.obj.DownloadPlaylistWithDownloadWithItems
+import com.github.libretube.db.obj.DownloadWithItems
 
 @Dao
 interface DownloadDao {

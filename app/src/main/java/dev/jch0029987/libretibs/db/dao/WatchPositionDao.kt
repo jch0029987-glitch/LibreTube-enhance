@@ -1,10 +1,10 @@
-package dev.jch0029987.libretibs.db.dao
+package com.github.libretube.db.dao
 
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import dev.jch0029987.libretibs.db.obj.WatchPosition
+import com.github.libretube.db.obj.WatchPosition
 
 @Dao
 interface WatchPositionDao {

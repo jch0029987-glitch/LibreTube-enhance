@@ -1,34 +1,34 @@
-package dev.jch0029987.libretibs.db
+package com.github.libretube.db
 
 import androidx.room.AutoMigration
 import androidx.room.Database
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
-import dev.jch0029987.libretibs.db.dao.CustomInstanceDao
-import dev.jch0029987.libretibs.db.dao.DownloadDao
-import dev.jch0029987.libretibs.db.dao.LocalPlaylistsDao
-import dev.jch0029987.libretibs.db.dao.LocalSubscriptionDao
-import dev.jch0029987.libretibs.db.dao.PlaylistBookmarkDao
-import dev.jch0029987.libretibs.db.dao.SearchHistoryDao
-import dev.jch0029987.libretibs.db.dao.SubscriptionGroupsDao
-import dev.jch0029987.libretibs.db.dao.SubscriptionsFeedDao
-import dev.jch0029987.libretibs.db.dao.WatchHistoryDao
-import dev.jch0029987.libretibs.db.dao.WatchPositionDao
-import dev.jch0029987.libretibs.db.obj.CustomInstance
-import dev.jch0029987.libretibs.db.obj.Download
-import dev.jch0029987.libretibs.db.obj.DownloadChapter
-import dev.jch0029987.libretibs.db.obj.DownloadItem
-import dev.jch0029987.libretibs.db.obj.DownloadPlaylist
-import dev.jch0029987.libretibs.db.obj.DownloadPlaylistVideosCrossRef
-import dev.jch0029987.libretibs.db.obj.LocalPlaylist
-import dev.jch0029987.libretibs.db.obj.LocalPlaylistItem
-import dev.jch0029987.libretibs.db.obj.LocalSubscription
-import dev.jch0029987.libretibs.db.obj.PlaylistBookmark
-import dev.jch0029987.libretibs.db.obj.SearchHistoryItem
-import dev.jch0029987.libretibs.db.obj.SubscriptionGroup
-import dev.jch0029987.libretibs.db.obj.SubscriptionsFeedItem
-import dev.jch0029987.libretibs.db.obj.WatchHistoryItem
-import dev.jch0029987.libretibs.db.obj.WatchPosition
+import com.github.libretube.db.dao.CustomInstanceDao
+import com.github.libretube.db.dao.DownloadDao
+import com.github.libretube.db.dao.LocalPlaylistsDao
+import com.github.libretube.db.dao.LocalSubscriptionDao
+import com.github.libretube.db.dao.PlaylistBookmarkDao
+import com.github.libretube.db.dao.SearchHistoryDao
+import com.github.libretube.db.dao.SubscriptionGroupsDao
+import com.github.libretube.db.dao.SubscriptionsFeedDao
+import com.github.libretube.db.dao.WatchHistoryDao
+import com.github.libretube.db.dao.WatchPositionDao
+import com.github.libretube.db.obj.CustomInstance
+import com.github.libretube.db.obj.Download
+import com.github.libretube.db.obj.DownloadChapter
+import com.github.libretube.db.obj.DownloadItem
+import com.github.libretube.db.obj.DownloadPlaylist
+import com.github.libretube.db.obj.DownloadPlaylistVideosCrossRef
+import com.github.libretube.db.obj.LocalPlaylist
+import com.github.libretube.db.obj.LocalPlaylistItem
+import com.github.libretube.db.obj.LocalSubscription
+import com.github.libretube.db.obj.PlaylistBookmark
+import com.github.libretube.db.obj.SearchHistoryItem
+import com.github.libretube.db.obj.SubscriptionGroup
+import com.github.libretube.db.obj.SubscriptionsFeedItem
+import com.github.libretube.db.obj.WatchHistoryItem
+import com.github.libretube.db.obj.WatchPosition
 
 @Database(
     entities = [
@@ -49,3 +49,66 @@ import dev.jch0029987.libretibs.db.obj.WatchPosition
         SubscriptionsFeedItem::class
     ],
     version = 21,
+    autoMigrations = [
+        AutoMigration(from = 7, to = 8),
+        AutoMigration(from = 8, to = 9),
+        AutoMigration(from = 9, to = 10),
+        AutoMigration(from = 10, to = 11),
+        AutoMigration(from = 16, to = 17),
+        AutoMigration(from = 18, to = 19),
+        AutoMigration(from = 19, to = 20),
+        AutoMigration(from = 20, to = 21)
+    ]
+)
+@TypeConverters(Converters::class)
+abstract class AppDatabase : RoomDatabase() {
+    /**
+     * Watch History
+     */
+    abstract fun watchHistoryDao(): WatchHistoryDao
+
+    /**
+     * Watch Positions
+     */
+    abstract fun watchPositionDao(): WatchPositionDao
+
+    /**
+     * Search History
+     */
+    abstract fun searchHistoryDao(): SearchHistoryDao
+
+    /**
+     * Custom Instances
+     */
+    abstract fun customInstanceDao(): CustomInstanceDao
+
+    /**
+     * Local Subscriptions
+     */
+    abstract fun localSubscriptionDao(): LocalSubscriptionDao
+
+    /**
+     * Bookmarked Playlists
+     */
+    abstract fun playlistBookmarkDao(): PlaylistBookmarkDao
+
+    /**
+     * Local playlists
+     */
+    abstract fun localPlaylistsDao(): LocalPlaylistsDao
+
+    /**
+     * Downloads
+     */
+    abstract fun downloadDao(): DownloadDao
+
+    /**
+     * Subscription groups
+     */
+    abstract fun subscriptionGroupsDao(): SubscriptionGroupsDao
+
+    /**
+     * Locally cached subscription feed
+     */
+    abstract fun feedDao(): SubscriptionsFeedDao
+}

@@ -1,4 +1,4 @@
-package dev.jch0029987.libretibs.db.obj
+package com.github.libretube.db.obj
 
 import androidx.room.Embedded
 import androidx.room.Entity

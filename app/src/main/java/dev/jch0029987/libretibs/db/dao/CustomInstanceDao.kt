@@ -1,11 +1,11 @@
-package dev.jch0029987.libretibs.db.dao
+package com.github.libretube.db.dao
 
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import dev.jch0029987.libretibs.db.obj.CustomInstance
+import com.github.libretube.db.obj.CustomInstance
 import kotlinx.coroutines.flow.Flow
 
 @Dao

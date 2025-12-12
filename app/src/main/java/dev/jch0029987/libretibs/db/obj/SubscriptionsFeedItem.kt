@@ -1,9 +1,9 @@
-package dev.jch0029987.libretibs.db.obj
+package com.github.libretube.db.obj
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import dev.jch0029987.libretibs.api.obj.StreamItem
-import dev.jch0029987.libretibs.extensions.toLocalDate
+import com.github.libretube.api.obj.StreamItem
+import com.github.libretube.extensions.toLocalDate
 
 @Entity(tableName = "feedItem")
 data class SubscriptionsFeedItem(

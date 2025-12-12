@@ -1,4 +1,4 @@
-package dev.jch0029987.libretibs.db.dao
+package com.github.libretube.db.dao
 
 import androidx.room.Dao
 import androidx.room.Delete
@@ -6,9 +6,9 @@ import androidx.room.Insert
 import androidx.room.Query
 import androidx.room.Transaction
 import androidx.room.Update
-import dev.jch0029987.libretibs.db.obj.LocalPlaylist
-import dev.jch0029987.libretibs.db.obj.LocalPlaylistItem
-import dev.jch0029987.libretibs.db.obj.LocalPlaylistWithVideos
+import com.github.libretube.db.obj.LocalPlaylist
+import com.github.libretube.db.obj.LocalPlaylistItem
+import com.github.libretube.db.obj.LocalPlaylistWithVideos
 
 @Dao
 interface LocalPlaylistsDao {

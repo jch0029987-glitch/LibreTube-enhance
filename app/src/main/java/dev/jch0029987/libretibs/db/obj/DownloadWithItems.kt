@@ -1,9 +1,9 @@
-package dev.jch0029987.libretibs.db.obj
+package com.github.libretube.db.obj
 
 import androidx.room.Embedded
 import androidx.room.Relation
-import dev.jch0029987.libretibs.enums.FileType
-import dev.jch0029987.libretibs.ui.fragments.DownloadTab
+import com.github.libretube.enums.FileType
+import com.github.libretube.ui.fragments.DownloadTab
 
 data class DownloadWithItems(
     @Embedded val download: Download,

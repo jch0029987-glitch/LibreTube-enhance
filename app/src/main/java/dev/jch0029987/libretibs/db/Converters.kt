@@ -1,7 +1,7 @@
-package dev.jch0029987.libretibs.db
+package com.github.libretube.db
 
 import androidx.room.TypeConverter
-import dev.jch0029987.libretibs.api.JsonHelper
+import com.github.libretube.api.JsonHelper
 import kotlinx.datetime.LocalDate
 import kotlinx.serialization.encodeToString
 import java.nio.file.Path

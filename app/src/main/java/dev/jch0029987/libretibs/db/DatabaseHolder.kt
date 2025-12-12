@@ -1,9 +1,9 @@
-package dev.jch0029987.libretibs.db
+package com.github.libretube.db
 
 import androidx.room.Room
 import androidx.room.migration.Migration
 import androidx.sqlite.db.SupportSQLiteDatabase
-import dev.jch0029987.libretibs.LibreTubeApp
+import com.github.libretube.LibreTubeApp
 
 object DatabaseHolder {
     private const val DATABASE_NAME = "LibreTubeDatabase"
