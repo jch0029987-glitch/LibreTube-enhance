@@ -18,14 +18,6 @@
         <item name="materialAlertDialogTheme">@style/AlertDialogTheme</item>
     <!-- New accent colors -->
         <!-- Material 3 Polish -->
-        <item name="shapeCornerExtraSmall">4dp</item>
-        <item name="shapeCornerSmall">8dp</item>
-        <item name="shapeCornerMedium">12dp</item>
-        <item name="shapeCornerLarge">16dp</item>
-        <item name="shapeCornerExtraLarge">28dp</item>
-
-        <!-- Enhanced Motion -->
-        <item name="motionDurationLong1">300ms</item>
         <item name="motionDurationLong2">400ms</item>
         <item name="motionDurationMedium1">200ms</item>
         <item name="motionDurationMedium2">250ms</item>
@@ -33,12 +25,12 @@
         <item name="motionDurationShort2">150ms</item>
 
         <!-- Typography Scale -->
-        <item name="textAppearanceTitleLarge">@style/TextAppearance.TitleLarge</item>
-        <item name="textAppearanceTitleMedium">@style/TextAppearance.TitleMedium</item>
-        <item name="textAppearanceTitleSmall">@style/TextAppearance.TitleSmall</item>
-        <item name="textAppearanceBodyLarge">@style/TextAppearance.BodyLarge</item>
-        <item name="textAppearanceBodyMedium">@style/TextAppearance.BodyMedium</item>
-        <item name="textAppearanceBodySmall">@style/TextAppearance.BodySmall</item>
+        <item name="textAppearanceTitleLarge">?attr/textAppearanceTitleLarge</item>
+        <item name="textAppearanceTitleMedium">?attr/textAppearanceTitleMedium</item>
+        <item name="textAppearanceTitleSmall">?attr/textAppearanceTitleSmall</item>
+        <item name="textAppearanceBodyLarge">?attr/textAppearanceBodyLarge</item>
+        <item name="textAppearanceBodyMedium">?attr/textAppearanceBodyMedium</item>
+        <item name="textAppearanceBodySmall">?attr/textAppearanceBodySmall</item>
 
         <!-- Elevation Overlays -->
         <item name="elevationOverlayEnabled">true</item>
