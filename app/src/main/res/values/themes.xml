@@ -18,11 +18,11 @@
         <item name="materialAlertDialogTheme">@style/AlertDialogTheme</item>
     <!-- New accent colors -->
         <!-- Material 3 Polish -->
-        <item name="motionDurationLong2">400ms</item>
-        <item name="motionDurationMedium1">200ms</item>
-        <item name="motionDurationMedium2">250ms</item>
-        <item name="motionDurationShort1">100ms</item>
-        <item name="motionDurationShort2">150ms</item>
+        <item name="motionDurationLong2">@integer/motion_duration_long2</item>
+        <item name="motionDurationMedium1">@integer/motion_duration_medium1</item>
+        <item name="motionDurationMedium2">@integer/motion_duration_medium2</item>
+        <item name="motionDurationShort1">@integer/motion_duration_short1</item>
+        <item name="motionDurationShort2">@integer/motion_duration_short2</item>
 
         <!-- Typography Scale -->
         <item name="textAppearanceTitleLarge">?attr/textAppearanceTitleLarge</item>
