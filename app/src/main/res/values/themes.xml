@@ -55,6 +55,37 @@
 
     </style>
 
+    <!-- New accent colors -->
+    <style name="Theme.Orange" parent="BaseTheme">
+        <item name="colorPrimary">@color/accent_orange</item>
+        <item name="colorPrimaryDark">@color/accent_orange_dark</item>
+        <item name="colorAccent">@color/accent_orange</item>
+    </style>
+
+    <style name="Theme.Teal" parent="BaseTheme">
+        <item name="colorPrimary">@color/accent_teal</item>
+        <item name="colorPrimaryDark">@color/accent_teal_dark</item>
+        <item name="colorAccent">@color/accent_teal</item>
+    </style>
+
+    <style name="Theme.Indigo" parent="BaseTheme">
+        <item name="colorPrimary">@color/accent_indigo</item>
+        <item name="colorPrimaryDark">@color/accent_indigo_dark</item>
+        <item name="colorAccent">@color/accent_indigo</item>
+    </style>
+
+    <style name="Theme.Brown" parent="BaseTheme">
+        <item name="colorPrimary">@color/accent_brown</item>
+        <item name="colorPrimaryDark">@color/accent_brown_dark</item>
+        <item name="colorAccent">@color/accent_brown</item>
+    </style>
+
+    <style name="Theme.Grey" parent="BaseTheme">
+        <item name="colorPrimary">@color/accent_grey</item>
+        <item name="colorPrimaryDark">@color/accent_grey_dark</item>
+        <item name="colorAccent">@color/accent_grey</item>
+    </style>
+
     <style name="Theme.Red" parent="BaseTheme">
 
         <item name="colorPrimary">@color/red_md_theme_light_primary</item>
