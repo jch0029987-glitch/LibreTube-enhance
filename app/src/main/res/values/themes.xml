@@ -6,6 +6,11 @@
     <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.App.LargeComponent</item>
     <item name="buttonStyle">@style/Widget.App.Button</item>
     <item name="materialCardViewStyle">@style/Widget.App.CardView</item>
+    <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
+    <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.App.MediumComponent</item>
+    <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.App.LargeComponent</item>
+    <item name="buttonStyle">@style/Widget.App.Button</item>
+    <item name="materialCardViewStyle">@style/Widget.App.CardView</item>
 
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:windowLightStatusBar">true</item>
