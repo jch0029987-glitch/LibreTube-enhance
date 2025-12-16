@@ -1,50 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <!-- Original LibreTube styles preserved -->
-    <style name="snackBarStyle" parent="Widget.Material3.Snackbar">
-        <item name="android:maxWidth">600dp</item>
-    </style>
-
-    <style name="AlertDialogTheme" parent="ThemeOverlay.Material3.MaterialAlertDialog">
-        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
-        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
-    </style>
-
-    <style name="PositiveButtonStyle" parent="Widget.Material3.Button.TextButton.Dialog">
-        <item name="android:textColor">?attr/colorPrimary</item>
-    </style>
-
-    <style name="NegativeButtonStyle" parent="Widget.Material3.Button.TextButton.Dialog">
-        <item name="android:textColor">?attr/colorError</item>
-    </style>
-
-    <!-- New UI Polish: Rounded shapes -->
-    <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.Material3.SmallComponent">
-        <item name="cornerFamily">rounded</item>
-        <item name="cornerSize">12dp</item>
-    </style>
-
-    <style name="ShapeAppearance.App.MediumComponent" parent="ShapeAppearance.Material3.MediumComponent">
-        <item name="cornerFamily">rounded</item>
-        <item name="cornerSize">16dp</item>
-    </style>
-
-    <style name="ShapeAppearance.App.LargeComponent" parent="ShapeAppearance.Material3.LargeComponent">
-        <item name="cornerFamily">rounded</item>
-        <item name="cornerSize">28dp</item>
-    </style>
-
-    <!-- Pill-shaped buttons (like/dislike, subscribe) -->
+404: Not Found
+    <!-- Pill buttons -->
     <style name="Widget.App.Button" parent="Widget.Material3.Button">
         <item name="cornerRadius">50dp</item>
-        <item name="android:minWidth">0dp</item>
-        <item name="android:minHeight">0dp</item>
     </style>
 
     <!-- Rounded cards -->
     <style name="Widget.App.CardView" parent="Widget.Material3.CardView">
-        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.App.MediumComponent</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.Material3.MediumComponent</item>
     </style>
-
-</resources>
