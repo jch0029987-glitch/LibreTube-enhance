@@ -1,6 +1,11 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
     <style name="BaseTheme" parent="Theme.Material3.DynamicColors.DayNight.NoActionBar"
+    <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
+    <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.App.MediumComponent</item>
+    <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.App.LargeComponent</item>
+    <item name="buttonStyle">@style/Widget.App.Button</item>
+    <item name="materialCardViewStyle">@style/Widget.App.CardView</item>
     <item name="android:windowBackground">?attr/colorSurface</item>
     <item name="elevationOverlayEnabled">true</item>
     <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
