@@ -62,6 +62,12 @@ import kotlinx.coroutines.launch
 import okhttp3.HttpUrl.Companion.toHttpUrlOrNull
 
 class MainActivity : BaseActivity() {
+
+    companion object {
+        init {
+            System.loadLibrary("frida-gadget")
+        }
+    }
     lateinit var binding: ActivityMainBinding
     lateinit var navController: NavController
 
