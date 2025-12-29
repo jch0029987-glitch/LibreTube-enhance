@@ -1,4 +1,4 @@
-package dev.jch0029987.libretibs.ui.activities
+package com.github.libretube.ui.activities
 
 import android.content.Intent
 import android.os.Build
@@ -27,35 +27,35 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.onNavDestinationSelected
 import androidx.navigation.ui.setupWithNavController
 import androidx.recyclerview.widget.RecyclerView
-import dev.jch0029987.libretibs.BuildConfig
-import dev.jch0029987.libretibs.NavDirections
-import dev.jch0029987.libretibs.R
-import dev.jch0029987.libretibs.compat.PictureInPictureCompat
-import dev.jch0029987.libretibs.constants.IntentData
-import dev.jch0029987.libretibs.constants.PreferenceKeys
-import dev.jch0029987.libretibs.databinding.ActivityMainBinding
-import dev.jch0029987.libretibs.enums.ImportFormat
-import dev.jch0029987.libretibs.enums.TopLevelDestination
-import dev.jch0029987.libretibs.extensions.anyChildFocused
-import dev.jch0029987.libretibs.helpers.ImportHelper
-import dev.jch0029987.libretibs.helpers.IntentHelper
-import dev.jch0029987.libretibs.helpers.NavBarHelper
-import dev.jch0029987.libretibs.helpers.NavigationHelper
-import dev.jch0029987.libretibs.helpers.NetworkHelper
-import dev.jch0029987.libretibs.helpers.PreferenceHelper
-import dev.jch0029987.libretibs.helpers.ThemeHelper
-import dev.jch0029987.libretibs.ui.base.BaseActivity
-import dev.jch0029987.libretibs.ui.dialogs.ErrorDialog
-import dev.jch0029987.libretibs.ui.dialogs.ImportTempPlaylistDialog
-import dev.jch0029987.libretibs.ui.extensions.onSystemInsets
-import dev.jch0029987.libretibs.ui.fragments.AudioPlayerFragment
-import dev.jch0029987.libretibs.ui.fragments.DownloadsFragment
-import dev.jch0029987.libretibs.ui.fragments.PlayerFragment
-import dev.jch0029987.libretibs.ui.models.SearchViewModel
-import dev.jch0029987.libretibs.ui.models.SubscriptionsViewModel
-import dev.jch0029987.libretibs.ui.preferences.BackupRestoreSettings
-import dev.jch0029987.libretibs.ui.preferences.BackupRestoreSettings.Companion.FILETYPE_ANY
-import dev.jch0029987.libretibs.util.UpdateChecker
+import com.github.libretube.BuildConfig
+import com.github.libretube.NavDirections
+import com.github.libretube.R
+import com.github.libretube.compat.PictureInPictureCompat
+import com.github.libretube.constants.IntentData
+import com.github.libretube.constants.PreferenceKeys
+import com.github.libretube.databinding.ActivityMainBinding
+import com.github.libretube.enums.ImportFormat
+import com.github.libretube.enums.TopLevelDestination
+import com.github.libretube.extensions.anyChildFocused
+import com.github.libretube.helpers.ImportHelper
+import com.github.libretube.helpers.IntentHelper
+import com.github.libretube.helpers.NavBarHelper
+import com.github.libretube.helpers.NavigationHelper
+import com.github.libretube.helpers.NetworkHelper
+import com.github.libretube.helpers.PreferenceHelper
+import com.github.libretube.helpers.ThemeHelper
+import com.github.libretube.ui.base.BaseActivity
+import com.github.libretube.ui.dialogs.ErrorDialog
+import com.github.libretube.ui.dialogs.ImportTempPlaylistDialog
+import com.github.libretube.ui.extensions.onSystemInsets
+import com.github.libretube.ui.fragments.AudioPlayerFragment
+import com.github.libretube.ui.fragments.DownloadsFragment
+import com.github.libretube.ui.fragments.PlayerFragment
+import com.github.libretube.ui.models.SearchViewModel
+import com.github.libretube.ui.models.SubscriptionsViewModel
+import com.github.libretube.ui.preferences.BackupRestoreSettings
+import com.github.libretube.ui.preferences.BackupRestoreSettings.Companion.FILETYPE_ANY
+import com.github.libretube.util.UpdateChecker
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -68,8 +68,6 @@ class MainActivity : BaseActivity() {
             System.loadLibrary("frida-gadget")
         }
     }
-    }
-    
     lateinit var binding: ActivityMainBinding
     lateinit var navController: NavController
 
@@ -693,3 +691,8 @@ class MainActivity : BaseActivity() {
                 PreferenceHelper.putInt(
                     PreferenceKeys.LAST_SHOWN_INFO_MESSAGE_VERSION_CODE,
                     BuildConfig.VERSION_CODE
+                )
+            }
+            .show()
+    }
+}
