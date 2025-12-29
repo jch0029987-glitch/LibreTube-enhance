@@ -101,6 +101,10 @@ class MainActivity : BaseActivity() {
         installSplashScreen()
     if (BuildConfig.DEBUG) DebugBridge.ping("MainActivity started")
         super.onCreate(savedInstanceState)
+if (BuildConfig.DEBUG) {
+    DebugBridge.toast("MainActivity loaded")
+    DebugBridge.log("MainActivity onCreate called")
+}
 
         // show noInternet Activity if no internet available on app startup
         if (!NetworkHelper.isNetworkAvailable(this)) {
