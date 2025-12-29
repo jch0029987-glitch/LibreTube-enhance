@@ -63,10 +63,6 @@ import okhttp3.HttpUrl.Companion.toHttpUrlOrNull
 
 class MainActivity : BaseActivity() {
 
-    companion object {
-        init {
-            System.loadLibrary("frida-gadget")
-        }
     }
     lateinit var binding: ActivityMainBinding
     lateinit var navController: NavController
@@ -101,8 +97,10 @@ class MainActivity : BaseActivity() {
         }
     }
 
+        System.loadLibrary("frida-gadget")
     override fun onCreate(savedInstanceState: Bundle?) {
         installSplashScreen()
+        System.loadLibrary("frida-gadget")
         super.onCreate(savedInstanceState)
 
         // show noInternet Activity if no internet available on app startup
