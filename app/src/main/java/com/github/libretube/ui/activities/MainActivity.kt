@@ -69,13 +69,7 @@ class MainActivity : BaseActivity() {
         }
     }
 
-    }
-
-    }
-
-    }
-
-    }
+    
     lateinit var binding: ActivityMainBinding
     lateinit var navController: NavController
 
