@@ -109,9 +109,8 @@ class MainActivity : BaseActivity() {
         }
 
 if (BuildConfig.DEBUG) {
-    DebugBridge.toast("MainActivity loaded")
-    DebugBridge.log("MainActivity onCreate called")
-}
+    DebugBridge.init(this)
+    DebugServer.startServer()}
 
         // show noInternet Activity if no internet available on app startup
         if (!NetworkHelper.isNetworkAvailable(this)) {
