@@ -6,6 +6,17 @@ import android.os.Looper
 import android.widget.Toast
 
 object DebugBridge {
+
+    init {
+        System.loadLibrary("debug_bridge")
+    }
+
+    @JvmStatic
+    external fun nativeToast(message: String)
+
+    @JvmStatic
+    external fun nativeLog(message: String)
+
     @Volatile var javaReady: Boolean = false
 
 
