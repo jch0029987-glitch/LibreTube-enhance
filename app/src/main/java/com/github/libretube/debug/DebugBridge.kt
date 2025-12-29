@@ -3,57 +3,26 @@ package dev.jch0029987.libretibs.debug
 import android.content.Context
 import android.os.Handler
 import android.os.Looper
+import android.util.Log
 import android.widget.Toast
 
 object DebugBridge {
 
-    init {
-        System.loadLibrary("debug_bridge")
-    }
-
-    @JvmStatic
-    external fun nativeToast(message: String)
-
-    @JvmStatic
-    external fun nativeLog(message: String)
-
-    @Volatile var javaReady: Boolean = false
-
-
-
-    @JvmStatic
-
-    fun markJavaReady() {
-
-        javaReady = true
-
-    }
-
-
     private lateinit var appContext: Context
     private val mainHandler = Handler(Looper.getMainLooper())
 
-    @JvmStatic
     fun init(context: Context) {
         appContext = context.applicationContext
+        log("DebugBridge initialized")
     }
 
-    @JvmStatic
     fun toast(message: String) {
-        if (!::appContext.isInitialized) return
-
         mainHandler.post {
             Toast.makeText(appContext, message, Toast.LENGTH_SHORT).show()
         }
     }
 
-    @JvmStatic
-    fun echo(input: String): String {
-        return "DebugBridge: $input"
-    }
-
-    @JvmStatic
-    fun add(a: Int, b: Int): Int {
-        return a + b
+    fun log(message: String) {
+        Log.d("LibreTube-Debug", message)
     }
 }
