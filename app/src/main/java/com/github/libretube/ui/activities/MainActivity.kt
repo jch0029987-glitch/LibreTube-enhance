@@ -703,4 +703,3 @@ class MainActivity : BaseActivity() {
             }
             .show()
     }
-}
