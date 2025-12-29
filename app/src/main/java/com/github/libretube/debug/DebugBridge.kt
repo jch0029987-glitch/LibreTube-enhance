@@ -6,6 +6,18 @@ import android.os.Looper
 import android.widget.Toast
 
 object DebugBridge {
+    @Volatile var javaReady: Boolean = false
+
+
+
+    @JvmStatic
+
+    fun markJavaReady() {
+
+        javaReady = true
+
+    }
+
 
     private lateinit var appContext: Context
     private val mainHandler = Handler(Looper.getMainLooper())
