@@ -1,5 +1,5 @@
 package dev.jch0029987.libretibs.ui.activities
-
+import dev.jch0029987.libretibs.debug.DebugBridge
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
@@ -63,10 +63,6 @@ import okhttp3.HttpUrl.Companion.toHttpUrlOrNull
 
 class MainActivity : BaseActivity() {
 
-    companion object {
-        init {
-            System.loadLibrary("frida-gadget")
-        }
     }
     lateinit var binding: ActivityMainBinding
     lateinit var navController: NavController
@@ -103,6 +99,7 @@ class MainActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         installSplashScreen()
+    if (BuildConfig.DEBUG) DebugBridge.ping("MainActivity started")
         super.onCreate(savedInstanceState)
 
         // show noInternet Activity if no internet available on app startup
