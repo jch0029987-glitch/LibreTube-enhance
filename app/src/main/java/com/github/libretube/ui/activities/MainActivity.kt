@@ -693,7 +693,3 @@ class MainActivity : BaseActivity() {
                 PreferenceHelper.putInt(
                     PreferenceKeys.LAST_SHOWN_INFO_MESSAGE_VERSION_CODE,
                     BuildConfig.VERSION_CODE
-                )
-            }
-            .show()
-    }
