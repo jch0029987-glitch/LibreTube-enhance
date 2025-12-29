@@ -68,7 +68,7 @@ class MainActivity : BaseActivity() {
             System.loadLibrary("frida-gadget")
         }
     }
-
+    }
     
     lateinit var binding: ActivityMainBinding
     lateinit var navController: NavController
