@@ -1,69 +1,49 @@
-name: Debug Build
+name: LibreTube Debug CI (Frida-ready)
 
 on:
+  workflow_dispatch:
   push:
-    branches: [ master, feature/accent-colors-expanded ]
   pull_request:
-    branches: [ master ]
 
 jobs:
-  build:
+  debug-build:
     runs-on: ubuntu-latest
-    
+
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+      - name: Checkout repo
+        uses: actions/checkout@v6
+
+      - name: Checkout Frida-ready fallback commit
+        run: |
+          git fetch origin
+          git checkout da52cfe33559880698bc3c31020af86d07613c19
 
       - name: Set up JDK 17
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v5
         with:
-          distribution: temurin
           java-version: 17
+          distribution: temurin
+          cache: gradle
 
-      - name: Setup Android SDK
+      - name: Set up Android SDK
         uses: android-actions/setup-android@v3
 
-      - name: Cache Gradle
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.gradle/caches
-            ~/.gradle/wrapper
-            ~/.android/build-cache
-          key: \${{ runner.os }}-gradle-\${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
-          restore-keys: |
-            \${{ runner.os }}-gradle-
+      - name: Accept SDK licenses
+        run: yes | sdkmanager --licenses
 
-      - name: Make gradlew executable
-        run: chmod +x ./gradlew
+      - name: Install NDK
+        run: sdkmanager "ndk;25.2.9519653"
+
+      - name: Make Gradle executable
+        run: chmod +x gradlew
 
       - name: Build debug APK
-        run: ./gradlew assembleDebug --no-daemon --stacktrace
+        env:
+          ANDROID_NDK_HOME: ${{ env.ANDROID_SDK_ROOT }}/ndk/25.2.9519653
+        run: ./gradlew clean assembleDebug --stacktrace
 
-      - name: List APK files (debug)
-        run: |
-          echo "=== Generated APKs ==="
-          find . -name "*.apk" -type f | head -20
-          echo ""
-          echo "=== Debug APK path ==="
-          ls -la app/build/outputs/apk/debug/ || true
-
-      - name: Upload APK
-        uses: actions/upload-artifact@v4
+      - name: Upload debug APK
+        uses: actions/upload-artifact@v5
         with:
-          name: LibreTube-Enhance-debug-apk
+          name: LibreTube-debug-apk
           path: app/build/outputs/apk/debug/*.apk
-          if-no-files-found: error
-
-      - name: Verify accent colors in build
-        run: |
-          echo "=== Build Verification ==="
-          echo "Checking for new accent colors in resources..."
-          if grep -r "accent_orange\|accent_teal\|accent_indigo\|accent_brown\|accent_grey" app/src/main/res/; then
-            echo "✅ New accent colors found in resources"
-          else
-            echo "❌ New accent colors NOT found"
-            exit 1
-          fi
