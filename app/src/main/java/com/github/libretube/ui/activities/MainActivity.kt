@@ -69,6 +69,11 @@ class MainActivity : BaseActivity() {
         }
     }
 
+    companion object {
+        init {
+        }
+    }
+
     }
     lateinit var binding: ActivityMainBinding
     lateinit var navController: NavController
