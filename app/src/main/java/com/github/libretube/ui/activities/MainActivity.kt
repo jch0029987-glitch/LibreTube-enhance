@@ -69,14 +69,10 @@ class MainActivity : BaseActivity() {
         }
     }
 
-    companion object {
-        init {
-        }
     }
 
-    companion object {
-        init {
-        }
+    }
+
     }
 
     }
