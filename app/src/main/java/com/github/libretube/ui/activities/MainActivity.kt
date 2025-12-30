@@ -63,7 +63,6 @@ import okhttp3.HttpUrl.Companion.toHttpUrlOrNull
 
 class MainActivity : BaseActivity() {
 
-    }
     lateinit var binding: ActivityMainBinding
     lateinit var navController: NavController
 
@@ -95,7 +94,6 @@ class MainActivity : BaseActivity() {
                 selectedPlaylistIds = listOf(exportPlaylistId!!)
             )
         }
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         installSplashScreen()
@@ -149,7 +147,6 @@ if (BuildConfig.DEBUG) {
                             paddingRight,
                             paddingBottom
                         )
-                    }
                     with(binding.bottomNav) {
                         setPadding(
                             paddingLeft,
@@ -157,11 +154,8 @@ if (BuildConfig.DEBUG) {
                             paddingRight,
                             systemBarInsets.bottom
                         )
-                    }
                     binding.root.viewTreeObserver.removeOnGlobalLayoutListener(this)
-                }
             })
-        }
         // manually update the bottom bar height in the mini player transition
         binding.bottomNav.addOnLayoutChangeListener { _, _, _, _, _, _, _, _, _ ->
             val transition = binding.root.getTransition(R.id.bottom_bar_transition)
@@ -179,15 +173,12 @@ if (BuildConfig.DEBUG) {
                         -binding.bottomNav.height
                     )
                 }
-            }
             binding.root.scene.setTransition(transition)
-        }
 
         // Check update automatically
         if (PreferenceHelper.getBoolean(PreferenceKeys.AUTOMATIC_UPDATE_CHECKS, false)) {
             lifecycleScope.launch(Dispatchers.IO) {
                 UpdateChecker(this@MainActivity).checkUpdate(false)
-            }
         }
 
         // set the action bar for the activity
@@ -207,7 +198,6 @@ if (BuildConfig.DEBUG) {
         // set default tab as start fragment
         navController.graph = navController.navInflater.inflate(R.navigation.nav).also {
             it.setStartDestination(startFragmentId)
-        }
 
         // Prevent duplicate entries into backstack, if selected item and current
         // visible fragment is different, then navigate to selected item.
@@ -219,11 +209,9 @@ if (BuildConfig.DEBUG) {
                 val fragment = navHostFragment.childFragmentManager.fragments.firstOrNull()
                 tryScrollToTop(fragment?.requireView())
             }
-        }
 
         binding.bottomNav.setOnItemSelectedListener {
             navigateToBottomSelectedItem(it)
-        }
 
         if (binding.bottomNav.menu.children.none { it.itemId == startFragmentId }) deselectBottomBarItems()
 
@@ -233,7 +221,6 @@ if (BuildConfig.DEBUG) {
         PreferenceHelper.getErrorLog().ifBlank { null }?.let {
             if (!BuildConfig.DEBUG)
                 ErrorDialog().show(supportFragmentManager, null)
-        }
 
         setupSubscriptionsBadge()
 
@@ -249,9 +236,7 @@ if (BuildConfig.DEBUG) {
         binding.bottomNav.menu.setGroupCheckable(0, true, false)
         for (child in binding.bottomNav.menu.children) {
             child.isChecked = false
-        }
         binding.bottomNav.menu.setGroupCheckable(0, true, true)
-    }
 
     /**
      * Try to find a scroll or recycler view and scroll it back to the top
@@ -263,7 +248,6 @@ if (BuildConfig.DEBUG) {
             is ScrollView -> scrollView.smoothScrollTo(0, 0)
             is NestedScrollView -> scrollView.smoothScrollTo(0, 0)
             is RecyclerView -> scrollView.smoothScrollToPosition(0)
-        }
     }
 
     /**
@@ -297,9 +281,7 @@ if (BuildConfig.DEBUG) {
                     this@MainActivity,
                     com.google.android.material.R.attr.colorOnPrimary
                 )
-            }
         }
-    }
 
     private fun isSearchInProgress(): Boolean {
         if (!this::navController.isInitialized) return false
@@ -311,7 +293,6 @@ if (BuildConfig.DEBUG) {
             R.id.channelFragment,
             R.id.playlistFragment
         )
-    }
 
     override fun invalidateMenu() {
         // Don't invalidate menu when in search in progress
@@ -319,9 +300,7 @@ if (BuildConfig.DEBUG) {
         // details of bug: https://issuetracker.google.com/issues/244336571
         if (isSearchInProgress()) {
             return
-        }
         super.invalidateMenu()
-    }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -351,7 +330,6 @@ if (BuildConfig.DEBUG) {
                 navController.navigate(NavDirections.showSearchResults(query))
 
                 return true
-            }
 
             override fun onQueryTextChange(newText: String?): Boolean {
                 if (!shouldOpenSuggestions) return true
@@ -363,7 +341,6 @@ if (BuildConfig.DEBUG) {
                     }
                 ) {
                     return true
-                }
 
                 // prevent malicious navigation when the search view is getting collapsed
                 val destIds = listOf(
@@ -373,7 +350,6 @@ if (BuildConfig.DEBUG) {
                 )
                 if (navController.currentDestination?.id in destIds && newText == null) {
                     return false
-                }
 
                 if (navController.currentDestination?.id != R.id.searchFragment) {
                     navController.navigate(
@@ -385,7 +361,6 @@ if (BuildConfig.DEBUG) {
                 }
 
                 return true
-            }
         })
 
         searchItem.setOnActionExpandListener(object : MenuItem.OnActionExpandListener {
@@ -393,7 +368,6 @@ if (BuildConfig.DEBUG) {
                 if (navController.currentDestination?.id != R.id.searchResultFragment) {
                     searchViewModel.setQuery(null)
                     navController.navigate(R.id.openSearch)
-                }
                 item.setShowAsAction(
                     MenuItem.SHOW_AS_ACTION_ALWAYS or MenuItem.SHOW_AS_ACTION_COLLAPSE_ACTION_VIEW
                 )
@@ -419,7 +393,6 @@ if (BuildConfig.DEBUG) {
         }
 
         return super.onCreateOptionsMenu(menu)
-    }
 
     /**
      * @return whether the search view focus was cleared successfully
@@ -429,7 +402,6 @@ if (BuildConfig.DEBUG) {
 
         searchView.clearFocus()
         return true
-    }
 
     /**
      * Update the query text in the search bar without opening the search suggestions
@@ -459,19 +431,16 @@ if (BuildConfig.DEBUG) {
                 val settingsIntent = Intent(this, SettingsActivity::class.java)
                 startActivity(settingsIntent)
                 true
-            }
 
             R.id.action_about -> {
                 val aboutIntent = Intent(this, AboutActivity::class.java)
                 startActivity(aboutIntent)
                 true
-            }
 
             R.id.action_help -> {
                 val helpIntent = Intent(this, HelpActivity::class.java)
                 startActivity(helpIntent)
                 true
-            }
 
             R.id.action_donate -> {
                 IntentHelper.openLinkFromHref(
@@ -481,11 +450,9 @@ if (BuildConfig.DEBUG) {
                     forceDefaultOpen = true
                 )
                 true
-            }
 
             else -> super.onOptionsItemSelected(item)
         }
-    }
 
     private fun loadIntentData() {
         // If activity is running in PiP mode, then start it in front.
@@ -493,7 +460,6 @@ if (BuildConfig.DEBUG) {
             val nIntent = Intent(this, MainActivity::class.java)
             nIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TOP)
             startActivity(nIntent)
-        }
 
         if (intent?.getBooleanExtra(IntentData.maximizePlayer, false) == true) {
             // attempt to open the current video player fragment
@@ -533,7 +499,6 @@ if (BuildConfig.DEBUG) {
                 TopLevelDestination.Subscriptions.route -> navController.navigate(R.id.subscriptionsFragment)
                 TopLevelDestination.Library.route -> navController.navigate(R.id.libraryFragment)
             }
-        }
 
         // Rebind the download service if the user is currently downloading
         if (intent?.getBooleanExtra(IntentData.downloading, false) == true) {
@@ -541,7 +506,6 @@ if (BuildConfig.DEBUG) {
                 ?.childFragmentManager?.fragments?.forEach { fragment ->
                     (fragment as? DownloadsFragment)?.bindDownloadService()
                 }
-        }
     }
 
     /**
@@ -559,7 +523,6 @@ if (BuildConfig.DEBUG) {
             actionBefore()
             navController.navigate(NavDirections.openChannel(channelName = it))
             return true
-        }
         intent.getStringExtra(IntentData.playlistId)?.let {
             actionBefore()
             navController.navigate(NavDirections.openPlaylist(playlistId = it))
@@ -573,7 +536,6 @@ if (BuildConfig.DEBUG) {
                         IntentData.playlistName to intent.getStringExtra(IntentData.playlistName),
                         IntentData.videoIds to it
                     )
-                }
                 .show(supportFragmentManager, null)
             return true
         }
@@ -605,7 +567,6 @@ if (BuildConfig.DEBUG) {
             }
 
             return true
-        }
 
         return false
     }
@@ -613,13 +574,11 @@ if (BuildConfig.DEBUG) {
     private fun navigateToBottomSelectedItem(item: MenuItem): Boolean {
         if (item.itemId == R.id.subscriptionsFragment) {
             binding.bottomNav.removeBadge(R.id.subscriptionsFragment)
-        }
 
         // Remove focus from search view when navigating to bottom view.
         searchItem.collapseActionView()
 
         return item.onNavDestinationSelected(navController)
-    }
 
     override fun onUserLeaveHint() {
         super.onUserLeaveHint()
@@ -627,7 +586,6 @@ if (BuildConfig.DEBUG) {
         runOnPlayerFragment {
             onUserLeaveHint()
             true
-        }
     }
 
     override fun onNewIntent(intent: Intent) {
@@ -639,7 +597,6 @@ if (BuildConfig.DEBUG) {
     override fun onKeyUp(keyCode: Int, event: KeyEvent?): Boolean {
         if (runOnPlayerFragment { onKeyUp(keyCode) }) {
             return true
-        }
 
         return super.onKeyUp(keyCode, event)
     }
@@ -653,7 +610,6 @@ if (BuildConfig.DEBUG) {
             .firstOrNull()
             ?.let(action)
             ?: false
-    }
 
     fun runOnAudioPlayerFragment(action: AudioPlayerFragment.() -> Boolean): Boolean {
         return supportFragmentManager.fragments.filterIsInstance<AudioPlayerFragment>()
@@ -699,7 +655,5 @@ if (BuildConfig.DEBUG) {
                     PreferenceKeys.LAST_SHOWN_INFO_MESSAGE_VERSION_CODE,
                     BuildConfig.VERSION_CODE
                 )
-            }
             .show()
-    }
 }
