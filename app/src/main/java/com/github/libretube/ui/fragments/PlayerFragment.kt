@@ -1,3 +1,4 @@
+import com.google.android.exoplayer2.ExoPlayer
 package dev.jch0029987.libretibs.ui.fragments
 
 import android.annotation.SuppressLint
@@ -1614,3 +1615,6 @@ class PlayerFragment : Fragment(R.layout.fragment_player), OnlinePlayerOptions {
     fun isPlaying(): Boolean = player?.isPlaying == true
 
 }
+fun getCurrentVideoId(): String? = requireArguments().parcelable<PlayerData>(IntentData.playerData)?.videoId
+
+fun getPlayer(): ExoPlayer? = playerController.player
