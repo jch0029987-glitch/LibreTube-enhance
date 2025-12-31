@@ -352,11 +352,11 @@ class MainActivity : BaseActivity() {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R && binding.bottomNav.menu.isNotEmpty()) {
                 binding.bottomNav.viewTreeObserver.addOnGlobalLayoutListener(object : ViewTreeObserver.OnGlobalLayoutListener {
                     override fun onGlobalLayout() {
-                        NavigationHelper.navigateVideo(this@MainActivity, it, intent.getLongExtra(IntentData.timeStamp, 0L))
+                        NavigationHelper.navigateVideo(this@MainActivity, it, intent.getLongExtra(IntentData.timeStamp, 0L).toString())
                         binding.bottomNav.viewTreeObserver.removeOnGlobalLayoutListener(this)
                     }
                 })
-            } else NavigationHelper.navigateVideo(this@MainActivity, it, intent.getLongExtra(IntentData.timeStamp, 0L))
+            } else NavigationHelper.navigateVideo(this@MainActivity, it, intent.getLongExtra(IntentData.timeStamp, 0L).toString())
             return true
         }
 
@@ -414,4 +414,10 @@ class MainActivity : BaseActivity() {
             }
             .show()
     }
+    fun getCurrentSearchQuery(): String? {
+        return if (this::searchView.isInitialized) {
+            searchView.query?.toString()
+        } else null
+    }
+
 }

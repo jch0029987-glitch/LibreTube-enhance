@@ -1609,4 +1609,8 @@ class PlayerFragment : Fragment(R.layout.fragment_player), OnlinePlayerOptions {
         super.onDestroyView()
         _binding = null
     }
+    fun getCurrentVideoId(): String? = currentVideoId
+
+    fun isPlaying(): Boolean = player?.isPlaying == true
+
 }

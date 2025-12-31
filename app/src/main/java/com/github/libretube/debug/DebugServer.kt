@@ -64,7 +64,7 @@ object DebugServer {
                 }
 
                 "/search" -> {
-                    val query = mainActivity?.currentSearchQuery ?: ""
+                    val query = mainActivity?.mainActivity?.getCurrentSearchQuery() ?: ""
                     newFixedLengthResponse(
                         Response.Status.OK,
                         "application/json",
@@ -80,19 +80,17 @@ object DebugServer {
             }
         }
 
-        private fun getPlayerInfo(): String {
-            mainActivity ?: return """{"player":"not available"}"""
-
-            var info = """{"player":"none"}"""
-            mainActivity?.runOnUiThread {
-                val playerFragment = mainActivity?.runOnPlayerFragment { this }
-                playerFragment?.let {
-                    val videoId = it.currentVideoId ?: "unknown"
-                    val isPlaying = it.isPlaying()
-                    info = """{"player":"active","videoId":"$videoId","isPlaying":$isPlaying}"""
-                }
-            }
-            return info
+    private fun getPlayerInfo(): String {
+        val activity = mainActivity ?: return """{"player":"not available"}"""
+        var info = """{"player":"none"}"""
+        activity.runOnPlayerFragment {
+            val videoId = getCurrentVideoId()
+            val playing = isPlaying()
+            info = """{"player":"active","videoId":"$videoId","isPlaying":$playing}"""
+            true
+        }
+        return info
+    }
         }
     }
 }
