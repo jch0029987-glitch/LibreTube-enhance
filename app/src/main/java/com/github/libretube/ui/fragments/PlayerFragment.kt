@@ -1,4 +1,3 @@
-import com.google.android.exoplayer2.ExoPlayer
 package dev.jch0029987.libretibs.ui.fragments
 
 import android.annotation.SuppressLint
@@ -1613,3 +1612,4 @@ fun getCurrentVideoId(): String? = requireArguments().parcelable<PlayerData>(Int
 
 fun isPlaying(): Boolean = playerController.player?.isPlaying == true
     }
+}
