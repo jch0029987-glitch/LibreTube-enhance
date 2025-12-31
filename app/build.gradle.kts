@@ -127,6 +127,7 @@ android {
 }
 
 dependencies {
+    implementation("org.nanohttpd:nanohttpd:2.3.1")
     /* Android Core */
     implementation(libs.androidx.activity)
     implementation(libs.androidx.appcompat)

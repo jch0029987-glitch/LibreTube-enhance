@@ -64,7 +64,7 @@ object DebugServer {
                 }
 
                 "/search" -> {
-                    val query = mainActivity?.runOnUiThread { mainActivity?.searchView?.query.toString() }
+                    val query = mainActivity?.currentSearchQuery ?: ""
                     newFixedLengthResponse(
                         Response.Status.OK,
                         "application/json",
