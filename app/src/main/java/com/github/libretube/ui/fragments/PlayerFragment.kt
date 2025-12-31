@@ -1609,12 +1609,7 @@ class PlayerFragment : Fragment(R.layout.fragment_player), OnlinePlayerOptions {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
-    }
-    fun getCurrentVideoId(): String? = currentVideoId
-
-    fun isPlaying(): Boolean = player?.isPlaying == true
-
-}
 fun getCurrentVideoId(): String? = requireArguments().parcelable<PlayerData>(IntentData.playerData)?.videoId
 
-fun getPlayer(): ExoPlayer? = playerController.player
+fun isPlaying(): Boolean = playerController.player?.isPlaying == true
+    }
