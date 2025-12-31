@@ -1,60 +1,48 @@
 package dev.jch0029987.libretibs.debug
 
-import android.util.Log
-import dev.jch0029987.libretibs.ui.activities.MainActivity
+import android.content.Context
 import fi.iki.elonen.NanoHTTPD
-import fi.iki.elonen.NanoHTTPD.IHTTPSession
-import fi.iki.elonen.NanoHTTPD.Response
-import fi.iki.elonen.NanoHTTPD.newFixedLengthResponse
+import androidx.fragment.app.FragmentActivity
+import dev.jch0029987.libretibs.ui.fragments.PlayerFragment
+import com.google.android.exoplayer2.ExoPlayer
 
-class DebugServer(
-    private val activity: MainActivity
-) : NanoHTTPD(8765) {
+class DebugServer(private val context: Context, port: Int = 8080) : NanoHTTPD(port) {
 
-    override fun serve(session: IHTTPSession): Response {
-        return when (session.uri) {
-            "/status" -> serveStatus()
-            else -> newFixedLengthResponse(
-                Response.Status.NOT_FOUND,
-                MIME_PLAINTEXT,
-                "Not found"
-            )
-        }
+    private val playerFragment: PlayerFragment?
+        get() = (context as? FragmentActivity)
+            ?.supportFragmentManager
+            ?.fragments
+            ?.firstOrNull { it is PlayerFragment } as? PlayerFragment
+
+    fun getCurrentVideoId(): String? {
+        return playerFragment?.getCurrentVideoId()
     }
 
-    private fun serveStatus(): Response {
-        val searchQuery = activity.getCurrentSearchQuery()
+    fun isPlaying(): Boolean {
+        return playerFragment?.isPlaying() ?: false
+    }
 
-        var videoId: String? = null
-        var isPlaying = false
+    fun getPlayer(): ExoPlayer? {
+        return playerFragment?.getPlayer()
+    }
 
-        activity.runOnPlayerFragment {
-            videoId = getCurrentVideoId()
-            isPlaying = isPlaying()
-            true
-        }
-
-        val json = """
-            {
-              "searchQuery": ${searchQuery?.let { "\"$it\"" } ?: "null"},
-              "videoId": ${videoId?.let { "\"$it\"" } ?: "null"},
-              "isPlaying": $isPlaying
-            }
+    override fun serve(session: IHTTPSession?): Response {
+        val id = getCurrentVideoId() ?: "unknown"
+        val playing = isPlaying()
+        val html = """
+            <html>
+                <body>
+                    <h2>LibreTube DebugServer</h2>
+                    <p>Current Video ID: $id</p>
+                    <p>Is Playing: $playing</p>
+                </body>
+            </html>
         """.trimIndent()
 
-        return newFixedLengthResponse(
-            Response.Status.OK,
-            "application/json",
-            json
-        )
+        return newFixedLengthResponse(Response.Status.OK, "text/html", html)
     }
 
-    fun startServer() {
-        try {
-            start(SOCKET_READ_TIMEOUT, false)
-            Log.d("DebugServer", "Debug server started on port 8765")
-        } catch (e: Exception) {
-            Log.e("DebugServer", "Failed to start debug server", e)
-        }
+    fun logStatus() {
+        println("DebugServer: currentVideoId=${getCurrentVideoId()}, isPlaying=${isPlaying()}")
     }
 }
