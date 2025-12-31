@@ -37,13 +37,7 @@ import dev.jch0029987.libretibs.databinding.ActivityMainBinding
 import dev.jch0029987.libretibs.enums.ImportFormat
 import dev.jch0029987.libretibs.enums.TopLevelDestination
 import dev.jch0029987.libretibs.extensions.anyChildFocused
-import dev.jch0029987.libretibs.helpers.ImportHelper
-import dev.jch0029987.libretibs.helpers.IntentHelper
-import dev.jch0029987.libretibs.helpers.NavBarHelper
-import dev.jch0029987.libretibs.helpers.NavigationHelper
-import dev.jch0029987.libretibs.helpers.NetworkHelper
-import dev.jch0029987.libretibs.helpers.PreferenceHelper
-import dev.jch0029987.libretibs.helpers.ThemeHelper
+import dev.jch0029987.libretibs.helpers.*
 import dev.jch0029987.libretibs.ui.base.BaseActivity
 import dev.jch0029987.libretibs.ui.dialogs.ErrorDialog
 import dev.jch0029987.libretibs.ui.dialogs.ImportTempPlaylistDialog
@@ -76,8 +70,6 @@ class MainActivity : BaseActivity() {
     private var savedSearchQuery: String? = null
     private var shouldOpenSuggestions = true
 
-    // registering for activity results is only possible, this here should have been part of
-    // PlaylistOptionsBottomSheet instead if Android allowed us to
     private var playlistExportFormat: ImportFormat = ImportFormat.NEWPIPE
     private var exportPlaylistId: String? = null
     private val createPlaylistsFile = registerForActivityResult(
@@ -99,10 +91,8 @@ class MainActivity : BaseActivity() {
         installSplashScreen()
         super.onCreate(savedInstanceState)
 
-        // show noInternet Activity if no internet available on app startup
         if (!NetworkHelper.isNetworkAvailable(this)) {
-            val noInternetIntent = Intent(this, NoInternetActivity::class.java)
-            startActivity(noInternetIntent)
+            startActivity(Intent(this, NoInternetActivity::class.java))
             finish()
             return
         }
@@ -111,8 +101,7 @@ class MainActivity : BaseActivity() {
             PreferenceHelper.getBoolean(PreferenceKeys.LOCAL_FEED_EXTRACTION, false) ||
                     PreferenceHelper.getString(PreferenceKeys.FETCH_INSTANCE, "").isNotEmpty()
         if (!isAppConfigured) {
-            val welcomeIntent = Intent(this, WelcomeActivity::class.java)
-            startActivity(welcomeIntent)
+            startActivity(Intent(this, WelcomeActivity::class.java))
             finish()
             return
         }
@@ -120,132 +109,76 @@ class MainActivity : BaseActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // manually apply additional padding for edge-to-edge compatibility
-        // see https://developer.android.com/develop/ui/views/layout/edge-to-edge
         binding.root.onSystemInsets { _, systemBarInsets ->
-            // there's a possibility that the paddings are not being applied properly when
-            // exiting from player's fullscreen. Adding OnGlobalLayoutListener serves as
-            // a workaround for this issue
             binding.root.viewTreeObserver.addOnGlobalLayoutListener(object :
                 ViewTreeObserver.OnGlobalLayoutListener {
                 override fun onGlobalLayout() {
                     with(binding.appBarLayout) {
-                        setPadding(
-                            paddingLeft,
-                            systemBarInsets.top,
-                            paddingRight,
-                            paddingBottom
-                        )
+                        setPadding(paddingLeft, systemBarInsets.top, paddingRight, paddingBottom)
                     }
                     with(binding.bottomNav) {
-                        setPadding(
-                            paddingLeft,
-                            paddingTop,
-                            paddingRight,
-                            systemBarInsets.bottom
-                        )
+                        setPadding(paddingLeft, paddingTop, paddingRight, systemBarInsets.bottom)
                     }
                     binding.root.viewTreeObserver.removeOnGlobalLayoutListener(this)
                 }
             })
         }
-        // manually update the bottom bar height in the mini player transition
+
         binding.bottomNav.addOnLayoutChangeListener { _, _, _, _, _, _, _, _, _ ->
             val transition = binding.root.getTransition(R.id.bottom_bar_transition)
             transition.keyFrameList.forEach { keyFrame ->
-                // These frame positions are hardcoded in activity_main_scene.xml!
                 for (key in keyFrame.getKeyFramesForView(binding.bottomNav.id)) {
-                    if (key.framePosition == 1) key.setValue(
-                        Key.TRANSLATION_Y,
-                        binding.bottomNav.height
-                    )
+                    if (key.framePosition == 1) key.setValue(Key.TRANSLATION_Y, binding.bottomNav.height)
                 }
                 for (key in keyFrame.getKeyFramesForView(binding.container.id)) {
-                    if (key.framePosition == 100) key.setValue(
-                        Key.TRANSLATION_Y,
-                        -binding.bottomNav.height
-                    )
+                    if (key.framePosition == 100) key.setValue(Key.TRANSLATION_Y, -binding.bottomNav.height)
                 }
             }
             binding.root.scene.setTransition(transition)
         }
 
-        // Check update automatically
         if (PreferenceHelper.getBoolean(PreferenceKeys.AUTOMATIC_UPDATE_CHECKS, false)) {
-            lifecycleScope.launch(Dispatchers.IO) {
-                UpdateChecker(this@MainActivity).checkUpdate(false)
-            }
+            lifecycleScope.launch(Dispatchers.IO) { UpdateChecker(this@MainActivity).checkUpdate(false) }
         }
 
-        // set the action bar for the activity
         setSupportActionBar(binding.toolbar)
 
         val navHostFragment = binding.fragment.getFragment<NavHostFragment>()
         navController = navHostFragment.navController
         binding.bottomNav.setupWithNavController(navController)
 
-        // save start tab fragment id and apply navbar style
-        startFragmentId = try {
-            NavBarHelper.applyNavBarStyle(binding.bottomNav)
-        } catch (e: Exception) {
-            R.id.homeFragment
-        }
+        startFragmentId = try { NavBarHelper.applyNavBarStyle(binding.bottomNav) } catch (e: Exception) { R.id.homeFragment }
 
-        // set default tab as start fragment
         navController.graph = navController.navInflater.inflate(R.navigation.nav).also {
             it.setStartDestination(startFragmentId)
         }
 
-        // Prevent duplicate entries into backstack, if selected item and current
-        // visible fragment is different, then navigate to selected item.
         binding.bottomNav.setOnItemReselectedListener {
-            if (it.itemId != navController.currentDestination?.id) {
-                navigateToBottomSelectedItem(it)
-            } else {
-                // get the current fragment
-                val fragment = navHostFragment.childFragmentManager.fragments.firstOrNull()
-                tryScrollToTop(fragment?.requireView())
-            }
+            if (it.itemId != navController.currentDestination?.id) navigateToBottomSelectedItem(it)
+            else tryScrollToTop(navHostFragment.childFragmentManager.fragments.firstOrNull()?.requireView())
         }
 
-        binding.bottomNav.setOnItemSelectedListener {
-            navigateToBottomSelectedItem(it)
-        }
+        binding.bottomNav.setOnItemSelectedListener { navigateToBottomSelectedItem(it) }
 
         if (binding.bottomNav.menu.children.none { it.itemId == startFragmentId }) deselectBottomBarItems()
 
         binding.toolbar.title = ThemeHelper.getStyledAppName(this)
 
-        // handle error logs
-        PreferenceHelper.getErrorLog().ifBlank { null }?.let {
-            if (!BuildConfig.DEBUG)
-                ErrorDialog().show(supportFragmentManager, null)
-        }
+        PreferenceHelper.getErrorLog().ifBlank { null }?.let { if (!BuildConfig.DEBUG) ErrorDialog().show(supportFragmentManager, null) }
 
         setupSubscriptionsBadge()
-
         loadIntentData()
-
         showUserInfoDialogIfNeeded()
     }
 
-    /**
-     * Deselect all bottom bar items
-     */
     private fun deselectBottomBarItems() {
         binding.bottomNav.menu.setGroupCheckable(0, true, false)
-        for (child in binding.bottomNav.menu.children) {
-            child.isChecked = false
-        }
+        for (child in binding.bottomNav.menu.children) child.isChecked = false
         binding.bottomNav.menu.setGroupCheckable(0, true, true)
     }
 
-    /**
-     * Try to find a scroll or recycler view and scroll it back to the top
-     */
     private fun tryScrollToTop(view: View?) {
-        val scrollView = view?.allViews
-            ?.firstOrNull { it is ScrollView || it is NestedScrollView || it is RecyclerView }
+        val scrollView = view?.allViews?.firstOrNull { it is ScrollView || it is NestedScrollView || it is RecyclerView }
         when (scrollView) {
             is ScrollView -> scrollView.smoothScrollTo(0, 0)
             is NestedScrollView -> scrollView.smoothScrollTo(0, 0)
@@ -253,37 +186,19 @@ class MainActivity : BaseActivity() {
         }
     }
 
-    /**
-     * Initialize the notification badge showing the amount of new videos
-     */
     private fun setupSubscriptionsBadge() {
-        if (!PreferenceHelper.getBoolean(
-                PreferenceKeys.NEW_VIDEOS_BADGE,
-                false
-            )
-        ) {
-            return
-        }
+        if (!PreferenceHelper.getBoolean(PreferenceKeys.NEW_VIDEOS_BADGE, false)) return
 
         subscriptionsViewModel.fetchSubscriptions(this)
-
         subscriptionsViewModel.videoFeed.observe(this) { feed ->
             val lastCheckedFeedTime = PreferenceHelper.getLastCheckedFeedTime(seenByUser = true)
-            val lastSeenVideoIndex = feed.orEmpty()
-                .filter { !it.isUpcoming }
-                .indexOfFirst { it.uploaded <= lastCheckedFeedTime }
+            val lastSeenVideoIndex = feed.orEmpty().filter { !it.isUpcoming }.indexOfFirst { it.uploaded <= lastCheckedFeedTime }
             if (lastSeenVideoIndex < 1) return@observe
 
             binding.bottomNav.getOrCreateBadge(R.id.subscriptionsFragment).apply {
                 number = lastSeenVideoIndex
-                backgroundColor = ThemeHelper.getThemeColor(
-                    this@MainActivity,
-                    androidx.appcompat.R.attr.colorPrimary
-                )
-                badgeTextColor = ThemeHelper.getThemeColor(
-                    this@MainActivity,
-                    com.google.android.material.R.attr.colorOnPrimary
-                )
+                backgroundColor = ThemeHelper.getThemeColor(this@MainActivity, androidx.appcompat.R.attr.colorPrimary)
+                badgeTextColor = ThemeHelper.getThemeColor(this@MainActivity, com.google.android.material.R.attr.colorOnPrimary)
             }
         }
     }
@@ -291,30 +206,16 @@ class MainActivity : BaseActivity() {
     private fun isSearchInProgress(): Boolean {
         if (!this::navController.isInitialized) return false
         val id = navController.currentDestination?.id ?: return false
-
-        return id in listOf(
-            R.id.searchFragment,
-            R.id.searchResultFragment,
-            R.id.channelFragment,
-            R.id.playlistFragment
-        )
+        return id in listOf(R.id.searchFragment, R.id.searchResultFragment, R.id.channelFragment, R.id.playlistFragment)
     }
 
     override fun invalidateMenu() {
-        // Don't invalidate menu when in search in progress
-        // this is a workaround as there is bug in android code
-        // details of bug: https://issuetracker.google.com/issues/244336571
-        if (isSearchInProgress()) {
-            return
-        }
+        if (isSearchInProgress()) return
         super.invalidateMenu()
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.action_bar, menu)
-
-        // stuff for the search in the topBar
         val searchItem = menu.findItem(R.id.action_search)
         this.searchItem = searchItem
         searchView = searchItem.actionView as SearchView
@@ -322,55 +223,25 @@ class MainActivity : BaseActivity() {
         searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String): Boolean {
                 searchView.clearFocus()
-
-                // handle inserted YouTube-like URLs and directly open the referenced
-                // channel, playlist or video instead of showing search results
                 if (query.toHttpUrlOrNull() != null) {
                     val queryIntent = IntentHelper.resolveType(query.toUri())
-
                     val didNavigate = navigateToMediaByIntent(queryIntent) {
                         navController.popBackStack(R.id.searchFragment, true)
                         searchItem.collapseActionView()
                     }
                     if (didNavigate) return true
                 }
-
                 navController.navigate(NavDirections.showSearchResults(query))
-
                 return true
             }
 
             override fun onQueryTextChange(newText: String?): Boolean {
                 if (!shouldOpenSuggestions) return true
-
-                // Prevent navigation when search view is collapsed
-                if (searchView.isIconified ||
-                    binding.bottomNav.menu.children.any {
-                        it.itemId == navController.currentDestination?.id
-                    }
-                ) {
-                    return true
-                }
-
-                // prevent malicious navigation when the search view is getting collapsed
-                val destIds = listOf(
-                    R.id.searchResultFragment,
-                    R.id.channelFragment,
-                    R.id.playlistFragment
-                )
-                if (navController.currentDestination?.id in destIds && newText == null) {
-                    return false
-                }
-
-                if (navController.currentDestination?.id != R.id.searchFragment) {
-                    navController.navigate(
-                        R.id.searchFragment,
-                        bundleOf(IntentData.query to newText)
-                    )
-                } else {
-                    searchViewModel.setQuery(newText)
-                }
-
+                if (searchView.isIconified || binding.bottomNav.menu.children.any { it.itemId == navController.currentDestination?.id }) return true
+                val destIds = listOf(R.id.searchResultFragment, R.id.channelFragment, R.id.playlistFragment)
+                if (navController.currentDestination?.id in destIds && newText == null) return false
+                if (navController.currentDestination?.id != R.id.searchFragment) navController.navigate(R.id.searchFragment, bundleOf(IntentData.query to newText))
+                else searchViewModel.setQuery(newText)
                 return true
             }
         })
@@ -381,24 +252,16 @@ class MainActivity : BaseActivity() {
                     searchViewModel.setQuery(null)
                     navController.navigate(R.id.openSearch)
                 }
-                item.setShowAsAction(
-                    MenuItem.SHOW_AS_ACTION_ALWAYS or MenuItem.SHOW_AS_ACTION_COLLAPSE_ACTION_VIEW
-                )
+                item.setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS or MenuItem.SHOW_AS_ACTION_COLLAPSE_ACTION_VIEW)
                 return true
             }
 
             override fun onMenuItemActionCollapse(item: MenuItem): Boolean {
-                // Handover back press to `BackPressedDispatcher` if not on a root destination
-                if (navController.previousBackStackEntry != null) {
-                    this@MainActivity.onBackPressedDispatcher.onBackPressed()
-                }
-
-                // Suppress collapsing of search when search in progress.
+                if (navController.previousBackStackEntry != null) this@MainActivity.onBackPressedDispatcher.onBackPressed()
                 return !isSearchInProgress()
             }
         })
 
-        // handle search queries passed by the intent
         if (savedSearchQuery != null) {
             searchItem.expandActionView()
             searchView.setQuery(savedSearchQuery, true)
@@ -408,74 +271,34 @@ class MainActivity : BaseActivity() {
         return super.onCreateOptionsMenu(menu)
     }
 
-    /**
-     * @return whether the search view focus was cleared successfully
-     */
     fun clearSearchViewFocus(): Boolean {
         if (!this::searchView.isInitialized || !searchView.anyChildFocused()) return false
-
         searchView.clearFocus()
         return true
     }
 
-    /**
-     * Update the query text in the search bar without opening the search suggestions
-     */
     fun setQuerySilent(query: String) {
         if (!this::searchView.isInitialized) return
-
         shouldOpenSuggestions = false
         searchView.setQuery(query, false)
         shouldOpenSuggestions = true
     }
 
-    /**
-     * Update the query text in the search bar and load the search suggestions
-     * @param submit whether to immediately load the search results (not suggestions)
-     */
     fun setQuery(query: String, submit: Boolean) {
         if (::searchView.isInitialized) searchView.setQuery(query, submit)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
         return when (item.itemId) {
-            R.id.action_settings -> {
-                val settingsIntent = Intent(this, SettingsActivity::class.java)
-                startActivity(settingsIntent)
-                true
-            }
-
-            R.id.action_about -> {
-                val aboutIntent = Intent(this, AboutActivity::class.java)
-                startActivity(aboutIntent)
-                true
-            }
-
-            R.id.action_help -> {
-                val helpIntent = Intent(this, HelpActivity::class.java)
-                startActivity(helpIntent)
-                true
-            }
-
-            R.id.action_donate -> {
-                IntentHelper.openLinkFromHref(
-                    this,
-                    supportFragmentManager,
-                    AboutActivity.DONATE_URL,
-                    forceDefaultOpen = true
-                )
-                true
-            }
-
+            R.id.action_settings -> { startActivity(Intent(this, SettingsActivity::class.java)); true }
+            R.id.action_about -> { startActivity(Intent(this, AboutActivity::class.java)); true }
+            R.id.action_help -> { startActivity(Intent(this, HelpActivity::class.java)); true }
+            R.id.action_donate -> { IntentHelper.openLinkFromHref(this, supportFragmentManager, AboutActivity.DONATE_URL, forceDefaultOpen = true); true }
             else -> super.onOptionsItemSelected(item)
         }
     }
 
     private fun loadIntentData() {
-        // If activity is running in PiP mode, then start it in front.
         if (PictureInPictureCompat.isInPictureInPictureMode(this)) {
             val nIntent = Intent(this, MainActivity::class.java)
             nIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TOP)
@@ -483,35 +306,20 @@ class MainActivity : BaseActivity() {
         }
 
         if (intent?.getBooleanExtra(IntentData.maximizePlayer, false) == true) {
-            // attempt to open the current video player fragment
             if (intent?.getBooleanExtra(IntentData.audioOnly, false) == false) {
                 runOnPlayerFragment { binding.playerMotionLayout.transitionToStart(); true }
                 return
             }
-
-            // if it's an audio only session, attempt to maximize the audio player or create a new one
             if (runOnAudioPlayerFragment { binding.playerMotionLayout.transitionToStart(); true }) return
-
             val offlinePlayer = intent!!.getBooleanExtra(IntentData.offlinePlayer, false)
             NavigationHelper.openAudioPlayerFragment(this, offlinePlayer = offlinePlayer)
             return
         }
 
-        // navigate to (temporary) playlist or channel if available
         if (navigateToMediaByIntent(intent)) return
+        intent?.getStringExtra(IntentData.query)?.let { savedSearchQuery = it }
+        if (intent?.getBooleanExtra(IntentData.OPEN_DOWNLOADS, false) == true) { navController.navigate(R.id.downloadsFragment); return }
 
-        // Get saved search query if available
-        intent?.getStringExtra(IntentData.query)?.let {
-            savedSearchQuery = it
-        }
-
-        // Open the Downloads screen if requested
-        if (intent?.getBooleanExtra(IntentData.OPEN_DOWNLOADS, false) == true) {
-            navController.navigate(R.id.downloadsFragment)
-            return
-        }
-
-        // Handle navigation from app shortcuts (Home, Trends, etc.)
         intent?.getStringExtra(IntentData.fragmentToOpen)?.let {
             ShortcutManagerCompat.reportShortcutUsed(this, it)
             when (it) {
@@ -522,75 +330,33 @@ class MainActivity : BaseActivity() {
             }
         }
 
-        // Rebind the download service if the user is currently downloading
         if (intent?.getBooleanExtra(IntentData.downloading, false) == true) {
             (supportFragmentManager.fragments.find { it is NavHostFragment })
-                ?.childFragmentManager?.fragments?.forEach { fragment ->
-                    (fragment as? DownloadsFragment)?.bindDownloadService()
-                }
+                ?.childFragmentManager?.fragments?.forEach { (it as? DownloadsFragment)?.bindDownloadService() }
         }
     }
 
-    /**
-     * Navigates to the channel, video or playlist provided in the [Intent] if available
-     *
-     * @return Whether the method handled the event and triggered the navigation to a new fragment
-     */
     fun navigateToMediaByIntent(intent: Intent, actionBefore: () -> Unit = {}): Boolean {
-        intent.getStringExtra(IntentData.channelId)?.let {
-            actionBefore()
-            navController.navigate(NavDirections.openChannel(channelId = it))
-            return true
-        }
-        intent.getStringExtra(IntentData.channelName)?.let {
-            actionBefore()
-            navController.navigate(NavDirections.openChannel(channelName = it))
-            return true
-        }
-        intent.getStringExtra(IntentData.playlistId)?.let {
-            actionBefore()
-            navController.navigate(NavDirections.openPlaylist(playlistId = it))
-            return true
-        }
+        intent.getStringExtra(IntentData.channelId)?.let { actionBefore(); navController.navigate(NavDirections.openChannel(channelId = it)); return true }
+        intent.getStringExtra(IntentData.channelName)?.let { actionBefore(); navController.navigate(NavDirections.openChannel(channelName = it)); return true }
+        intent.getStringExtra(IntentData.playlistId)?.let { actionBefore(); navController.navigate(NavDirections.openPlaylist(playlistId = it)); return true }
         intent.getStringArrayExtra(IntentData.videoIds)?.let {
             actionBefore()
-            ImportTempPlaylistDialog()
-                .apply {
-                    arguments = bundleOf(
-                        IntentData.playlistName to intent.getStringExtra(IntentData.playlistName),
-                        IntentData.videoIds to it
-                    )
-                }
-                .show(supportFragmentManager, null)
+            ImportTempPlaylistDialog().apply {
+                arguments = bundleOf(IntentData.playlistName to intent.getStringExtra(IntentData.playlistName), IntentData.videoIds to it)
+            }.show(supportFragmentManager, null)
             return true
         }
 
         intent.getStringExtra(IntentData.videoId)?.let {
-            // the below explained work around only seems to work on Android 11 and above
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R && binding.bottomNav.menu.isNotEmpty()) {
-                // the bottom navigation bar has to be created before opening the video
-                // otherwise the player layout measures aren't calculated properly
-                // and the miniplayer is opened at a closed state and overlapping the navigation bar
-                binding.bottomNav.viewTreeObserver.addOnGlobalLayoutListener(object :
-                    ViewTreeObserver.OnGlobalLayoutListener {
+                binding.bottomNav.viewTreeObserver.addOnGlobalLayoutListener(object : ViewTreeObserver.OnGlobalLayoutListener {
                     override fun onGlobalLayout() {
-                        NavigationHelper.navigateVideo(
-                            context = this@MainActivity,
-                            videoId = it,
-                            timestamp = intent.getLongExtra(IntentData.timeStamp, 0L)
-                        )
-
+                        NavigationHelper.navigateVideo(this@MainActivity, it, intent.getLongExtra(IntentData.timeStamp, 0L))
                         binding.bottomNav.viewTreeObserver.removeOnGlobalLayoutListener(this)
                     }
                 })
-            } else {
-                NavigationHelper.navigateVideo(
-                    context = this@MainActivity,
-                    videoId = it,
-                    timestamp = intent.getLongExtra(IntentData.timeStamp, 0L)
-                )
-            }
-
+            } else NavigationHelper.navigateVideo(this@MainActivity, it, intent.getLongExtra(IntentData.timeStamp, 0L))
             return true
         }
 
@@ -598,23 +364,14 @@ class MainActivity : BaseActivity() {
     }
 
     private fun navigateToBottomSelectedItem(item: MenuItem): Boolean {
-        if (item.itemId == R.id.subscriptionsFragment) {
-            binding.bottomNav.removeBadge(R.id.subscriptionsFragment)
-        }
-
-        // Remove focus from search view when navigating to bottom view.
+        if (item.itemId == R.id.subscriptionsFragment) binding.bottomNav.removeBadge(R.id.subscriptionsFragment)
         searchItem.collapseActionView()
-
         return item.onNavDestinationSelected(navController)
     }
 
     override fun onUserLeaveHint() {
         super.onUserLeaveHint()
-
-        runOnPlayerFragment {
-            onUserLeaveHint()
-            true
-        }
+        runOnPlayerFragment { onUserLeaveHint(); true }
     }
 
     override fun onNewIntent(intent: Intent) {
@@ -624,68 +381,36 @@ class MainActivity : BaseActivity() {
     }
 
     override fun onKeyUp(keyCode: Int, event: KeyEvent?): Boolean {
-        if (runOnPlayerFragment { onKeyUp(keyCode) }) {
-            return true
-        }
-
+        if (runOnPlayerFragment { onKeyUp(keyCode) }) return true
         return super.onKeyUp(keyCode, event)
     }
 
-    /**
-     * Attempt to run code on the player fragment if running
-     * Returns true if a running player fragment was found and the action got consumed, else false
-     */
     fun runOnPlayerFragment(action: PlayerFragment.() -> Boolean): Boolean {
-        return supportFragmentManager.fragments.filterIsInstance<PlayerFragment>()
-            .firstOrNull()
-            ?.let(action)
-            ?: false
+        return supportFragmentManager.fragments.filterIsInstance<PlayerFragment>().firstOrNull()?.let(action) ?: false
     }
 
     fun runOnAudioPlayerFragment(action: AudioPlayerFragment.() -> Boolean): Boolean {
-        return supportFragmentManager.fragments.filterIsInstance<AudioPlayerFragment>()
-            .firstOrNull()
-            ?.let(action)
-            ?: false
+        return supportFragmentManager.fragments.filterIsInstance<AudioPlayerFragment>().firstOrNull()?.let(action) ?: false
     }
 
-    fun startPlaylistExport(
-        playlistId: String,
-        playlistName: String,
-        format: ImportFormat,
-        includeTimestamp: Boolean
-    ) {
+    fun startPlaylistExport(playlistId: String, playlistName: String, format: ImportFormat, includeTimestamp: Boolean) {
         playlistExportFormat = format
         exportPlaylistId = playlistId
-
-        val fileName =
-            BackupRestoreSettings.getExportFileName(this, format, playlistName, includeTimestamp)
+        val fileName = BackupRestoreSettings.getExportFileName(this, format, playlistName, includeTimestamp)
         createPlaylistsFile.launch(fileName)
     }
 
     private fun showUserInfoDialogIfNeeded() {
-        // don't show the update information dialog for debug builds
         if (BuildConfig.DEBUG) return
-
-        val lastShownVersionCode =
-            PreferenceHelper.getInt(PreferenceKeys.LAST_SHOWN_INFO_MESSAGE_VERSION_CODE, -1)
-
-        // mapping of version code to info message
+        val lastShownVersionCode = PreferenceHelper.getInt(PreferenceKeys.LAST_SHOWN_INFO_MESSAGE_VERSION_CODE, -1)
         val infoMessages = emptyList<Pair<Int, String>>()
-
-        val message =
-            infoMessages.lastOrNull { (versionCode, _) -> versionCode > lastShownVersionCode }?.second
-                ?: return
-
+        val message = infoMessages.lastOrNull { (versionCode, _) -> versionCode > lastShownVersionCode }?.second ?: return
         MaterialAlertDialogBuilder(this)
             .setTitle(R.string.update_information)
             .setMessage(message)
             .setNegativeButton(R.string.okay, null)
             .setPositiveButton(R.string.never_show_again) { _, _ ->
-                PreferenceHelper.putInt(
-                    PreferenceKeys.LAST_SHOWN_INFO_MESSAGE_VERSION_CODE,
-                    BuildConfig.VERSION_CODE
-                )
+                PreferenceHelper.putInt(PreferenceKeys.LAST_SHOWN_INFO_MESSAGE_VERSION_CODE, BuildConfig.VERSION_CODE)
             }
             .show()
     }
